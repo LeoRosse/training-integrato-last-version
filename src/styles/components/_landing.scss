@@ -1,0 +1,22 @@
+.box-layout-landing{
+    align-items: center;
+    background: url('/images/landing.jpg');
+    background-size:cover;
+    display: flex;
+    height:100vh;
+    justify-content: center;
+    width:100vw;
+}
+
+.box-layout-landing__box{
+    background: fade-out(white, .20);
+    border-radius:3px;
+    padding:$l-size $m-size;
+    text-align: center;
+    width:50rem;
+}
+
+.box-layout-landing__title{
+    margin:0 0 $m-size 0;
+    line-height: 1;
+}

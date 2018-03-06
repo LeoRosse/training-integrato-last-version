@@ -10,6 +10,34 @@
     text-decoration: none;
 }
 
+.button__landing{
+    background: $blue;
+    border-radius:3px;
+    color:$white;
+    display: inline-block;
+    font-size:$font-size-large;
+    font-weight: 300m;
+    line-height: 1;
+    padding:$s-size;
+    text-decoration: none;
+}
+
+.button__header{
+    background: none;
+    border-radius:3px;
+    color: $dark-grey;
+    display: inline-block;
+    margin:0 10px 0 0;
+    font-size:$font-size-large;
+    line-height: 1;
+    padding:0.1rem;
+    text-decoration: none;
+    &:hover{
+        background: $green;
+        color: $dark-grey;
+    }
+}
+
 .button--link{
     background: none;
 }
