@@ -17,3 +17,34 @@
         margin:0;
     }
 }
+
+.header__dropdown{
+        position: relative;
+        display: inline-block;
+}
+
+.header__dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.header__dropdown-content {
+    div {
+        color: black;
+        padding: 12px 16px 0px 12px;
+        text-decoration: none;
+        display: block;
+    }
+}
+
+.header__dropdown-content {
+    div:hover {background-color: #ddd}}
+
+.header__dropdown:hover .header__dropdown-content {
+    display: block;
+}

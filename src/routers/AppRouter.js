@@ -8,6 +8,7 @@ import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
 import LandingPage from '../components/LandingPage';
 import DashboardPublicPage from '../components/DashboardPublicPage';
+import InfoPage from '../components/InfoPage';
 
 export const history = createHistory();
 

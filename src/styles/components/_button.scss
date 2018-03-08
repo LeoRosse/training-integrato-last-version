@@ -32,6 +32,24 @@
     line-height: 1;
     padding:0.1rem;
     text-decoration: none;
+    cursor:pointer;
+    &:hover{
+        background: $green;
+        color: $dark-grey;
+    }
+}
+
+.button__header-content{
+    background: none;
+    border-radius:3px;
+    color: $dark-grey;
+    display: inline-block;
+    margin:auto;
+    font-size:$font-size-large;
+    line-height: 1;
+    padding:0.1rem;
+    text-decoration: none;
+    cursor:pointer;
     &:hover{
         background: $green;
         color: $dark-grey;
@@ -39,6 +57,10 @@
 }
 
 .button--link{
+    background: none;
+}
+
+.button--div{
     background: none;
 }
 
