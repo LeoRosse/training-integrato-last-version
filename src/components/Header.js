@@ -10,69 +10,44 @@ class Header extends Component {
                 </div>
                 <div className="header__bottom"></div>
                 <div className="header__content">
-                    <div className="button__header" >
-                        <h5>Home</h5>
-                    </div>
-                    <div className="header__dropdown">
-                        <div className="button__header" ><h5>Area Sport</h5></div>
-                        <div className="header__dropdown-content">
-                            <li className="button__header" >
-                                <h5>Home Fitness</h5>
+                    <nav>
+                        <ul>
+                            <li class="sub-menu-parent" tab-index="0">
+                                <a>Home</a>
                             </li>
-                            {/*                             <li className="button__header" >
-                                <h5>Stretching attivo</h5>
-                            </li> */}
-                            {/*                             <li className="button__header" >
-                                <h5>Programmi di Allenamento Personalizzati</h5>
-                            </li> */}
-                            <li className="button__header" >
-                                <h5>Preparazione Atletica</h5>
+                            <li class="sub-menu-parent" tab-index="0">
+                                <a>Area Sport</a>
+                                <ul class="sub-menu">
+                                    <li><a>Home Fitness</a></li>
+                                    <li><a>Preparazione Atletica</a></li>
+                                    <li><a>Recupero Funzionale</a></li>
+                                </ul>
                             </li>
-                            {/*                             <li className="button__header" >
-                                <h5>Pilates</h5>
-                            </li> */}
-                            <li className="button__header" >
-                                <h5>Recupero Funzionale</h5>
+                            <li class="sub-menu-parent" tab-index="0">
+                                <a>Area Salute</a>
+                                <ul class="sub-menu">
+                                    <li><a>Training Integrato</a></li>
+                                    <li><a>Alimentazione Naturale</a></li>
+                                    <li><a>Naturopatia</a></li>
+                                    <li><a>Postural Pilates</a></li>
+                                </ul>
                             </li>
-                        </div>
-                    </div>
-                    <div className="header__dropdown">
-                        <div className="button__header" ><h5>Area Salute</h5></div>
-                        <div className="header__dropdown-content">
-                            <li className="button__header" >
-                                <h5>Training Integrato</h5>
+                            <li class="sub-menu-parent" tab-index="0">
+                                <a>Area Studio Corporeo</a>
+                                <ul class="sub-menu">
+                                    <li><a>Analisi della Composizione Corporea BIA</a></li>
+                                    <li><a>Test Fisici e Studio del Gesto Tecnico</a></li>
+                                </ul>
                             </li>
-                            <li className="button__header" >
-                                <h5>Alimentazione Naturale</h5>
+                            <li class="sub-menu-parent" tab-index="0" onClick={this.props.clickInfo}>
+                                <a>Chi Siamo</a>
                             </li>
-                            <li className="button__header" >
-                                <h5>Naturopatia</h5>
+                            <li class="sub-menu-parent" tab-index="0">
+                                <a>Contatta</a>
                             </li>
-                            {/*<li className="button__header" >
-                                <h5>Trattamento Olistico</h5>
-                            </li> */}
-                            <li className="button__header" >
-                                <h5>Postural Pilates</h5>
-                            </li>
-                        </div>
-                    </div>
-                    <div className="header__dropdown">
-                        <div className="button__header" ><h5>Area Studio Corporeo</h5></div>
-                        <div className="header__dropdown-content">
-                            <li className="button__header" >
-                                <h5>Analisi della Composizione Corporea BIA</h5>
-                            </li>
-                            <li className="button__header" >
-                                <h5>Test Fisici e Studio del Gesto Tecnico</h5>
-                            </li>
-                        </div>
-                    </div>
-                    <div className="button__header" onClick={this.props.clickInfo}>
-                        <h5>Chi Siamo</h5>
-                    </div>
-                    <div className="button__header" >
-                        <h5>Contatta</h5>
-                    </div>
+                        </ul>
+                    </nav>
+
                 </div>
             </header>
         )

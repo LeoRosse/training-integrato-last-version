@@ -2,6 +2,7 @@
     align-items: center;
     display: flex;
     width:100%;
+    margin-top:10px;
 }
 
 .container-info__photo{
@@ -19,7 +20,7 @@
 }
 
 .info__text{
-    margin: 15px 0 0 0;
+    margin: -35px 0 0 0;
     height: 450px;
-    width: 800px;
+    width: 50%;
 }
