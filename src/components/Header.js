@@ -15,18 +15,18 @@ class Header extends Component {
                             <li className="button__header" >
                                 <h5>Home Fitness</h5>
                             </li>
-                            <li className="button__header" >
+                            {/*                             <li className="button__header" >
                                 <h5>Stretching attivo</h5>
-                            </li>
-                            <li className="button__header" >
+                            </li> */}
+                            {/*                             <li className="button__header" >
                                 <h5>Programmi di Allenamento Personalizzati</h5>
-                            </li>
+                            </li> */}
                             <li className="button__header" >
                                 <h5>Preparazione Atletica</h5>
                             </li>
-                            <li className="button__header" >
+                            {/*                             <li className="button__header" >
                                 <h5>Pilates</h5>
-                            </li>
+                            </li> */}
                             <li className="button__header" >
                                 <h5>Recupero Funzionale</h5>
                             </li>
@@ -39,13 +39,16 @@ class Header extends Component {
                                 <h5>Training Integrato</h5>
                             </li>
                             <li className="button__header" >
-                                <h5>Integrazione Alimentare Naturale</h5>
+                                <h5>Alimentazione Naturale</h5>
                             </li>
                             <li className="button__header" >
                                 <h5>Naturopatia</h5>
                             </li>
-                            <li className="button__header" >
+                            {/*<li className="button__header" >
                                 <h5>Trattamento Olistico</h5>
+                            </li> */}
+                            <li className="button__header" >
+                                <h5>Postural Pilates</h5>
                             </li>
                         </div>
                     </div>
@@ -53,10 +56,10 @@ class Header extends Component {
                         <div className="button__header" ><h5>Area Studio Corporeo</h5></div>
                         <div className="header__dropdown-content">
                             <li className="button__header" >
-                                <h5>Test Fisici e Studio del Gesto Tecnico</h5>
+                                <h5>Analisi della Composizione Corporea BIA</h5>
                             </li>
                             <li className="button__header" >
-                                <h5>Analisi della Composizione Corporea BIA</h5>
+                                <h5>Test Fisici e Studio del Gesto Tecnico</h5>
                             </li>
                         </div>
                     </div>
