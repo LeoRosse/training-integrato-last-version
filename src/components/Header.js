@@ -4,7 +4,11 @@ class Header extends Component {
     render() {
         return (
             <header>
-                <img className="header__image" src="/images/header.jpg" />
+                <div className="header__content__top">
+                    <img className="header__image" src="/images/logo.jpg" />
+                    <div className="header__title"><h1>Training Integrato</h1></div>
+                </div>
+                <div className="header__bottom"></div>
                 <div className="header__content">
                     <div className="button__header" >
                         <h5>Home</h5>

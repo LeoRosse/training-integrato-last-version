@@ -6,7 +6,7 @@ export const InfoPage = () => (
             <img src="/images/alberto.jpg" className="info__image" />
         </div>
         <div className="info__text">
-            <p><h2>Alberto Santarato,<br />
+            <h2>Alberto Santarato,<br />
                 Dottore in Scienze Motorie, Personal trainer, Naturopata</h2>
 
                 Nato a Firenze il 30 Luglio 1975.<br />
@@ -18,7 +18,7 @@ export const InfoPage = () => (
             “Doctor of Naturopathic Medicine” rilasciato dal College of Naturopathic Medicine, (CNM), Londra.<br />
                 E’ specializzato in analisi della composizione corporea e studio del metabolismo mediante Bioimpedenziometria (BIA).
             Svolge attività di personal trainer e consulente sportivo.
-            Fondatore e promotore del metodo “Training Integrato”.</p>
+            Fondatore e promotore del metodo “Training Integrato”.
         </div>
     </div>
 );
