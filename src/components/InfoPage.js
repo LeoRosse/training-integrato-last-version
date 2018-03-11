@@ -1,13 +1,17 @@
 import React from 'react';
+import Header from './Header';
 
-export const InfoPage = () => (
-    <div className="container-info">
-        <div className="container-info__photo">
-            <img src="/images/alberto.jpg" className="info__image" />
-        </div>
-        <div className="info__text">
-            <h2>Alberto Santarato,<br />
-                Dottore in Scienze Motorie, Personal trainer, Naturopata</h2>
+const InfoPage = () => (
+    <div>
+        <Header />
+
+        <div className="container-info">
+            <div className="container-info__photo">
+                <img src="/images/alberto.jpg" className="info__image" />
+            </div>
+            <div className="info__text">
+                <h2>Alberto Santarato,<br />
+                    Dottore in Scienze Motorie, Personal trainer, Naturopata</h2>
 
                 Nato a Firenze il 30 Luglio 1975.<br />
                 Si laurea in scienze motorie col massimo dei voti nel 2002 presso l’Università degli Studi di Firenze.<br />
@@ -19,6 +23,7 @@ export const InfoPage = () => (
                 E’ specializzato in analisi della composizione corporea e studio del metabolismo mediante Bioimpedenziometria (BIA).
             Svolge attività di personal trainer e consulente sportivo.
             Fondatore e promotore del metodo “Training Integrato”.
+        </div>
         </div>
     </div>
 );
