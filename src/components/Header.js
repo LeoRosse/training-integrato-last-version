@@ -20,7 +20,7 @@ class Header extends Component {
                                 <a>Area Sport</a>
                                 <ul className="sub-menu">
                                     <Link to="/home-fitness">Home Fitness</Link>
-                                    <li><a>Preparazione Atletica</a></li>
+                                    <Link to="/athletic-training">Preparazione Atletica</Link>
                                     <li><a>Recupero Funzionale</a></li>
                                 </ul>
                             </li>
