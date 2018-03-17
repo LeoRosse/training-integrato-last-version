@@ -8,11 +8,11 @@ class DashboardPublicPage extends Component {
         return (
             <div>
                 <Header />
+               
             </div>
         )
     }
 }
-
 
 
 export default DashboardPublicPage;

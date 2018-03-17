@@ -4,7 +4,6 @@ import Header from './Header';
 const InfoPage = () => (
     <div>
         <Header />
-
         <div className="container-info">
             <div className="container-info__photo">
                 <img src="/images/alberto.jpg" className="info__image" />
