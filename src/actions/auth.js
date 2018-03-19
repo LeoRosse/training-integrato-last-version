@@ -5,9 +5,10 @@ export const login = (uid) => ({
     uid
 });
 
-export const startLogin = ({ email, password }) => {
+export const startLogin = (email, password) => {
     return () => {
-        return auth.signInWithEmailAndPassword(email, password);
+        return auth.signInWithEmailAndPassword(email, password)
+        .catch(e => console.log(e.message));
     };
 };
 

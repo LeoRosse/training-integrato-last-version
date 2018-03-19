@@ -4,9 +4,9 @@ import { startLogin } from '../actions/auth';
 import SignInForm from './SignInForm';
 
 export class LoginPage extends React.Component {
-    onSubmit = ({ email, password }) => {
-        this.props.startLogin({ email, password });
-        // this.props.history.push('/dashboard');
+    onSubmit = (email,password) => {
+        console.log(this.props)
+        this.props.startLogin(email, password);
     };
     render() {
         return (
@@ -25,7 +25,7 @@ export class LoginPage extends React.Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-    startLogin: ({email, password}) => dispatch(startLogin({ email, password }))
+    startLogin: (email, password) => dispatch(startLogin( email, password ))
 });
 
 export default connect(undefined, mapDispatchToProps)(LoginPage);

@@ -29,10 +29,10 @@ export default class SignInForm extends React.Component {
             this.setState(() => ({ error: 'Please provide email and password.' }))
         } else {
             this.setState(() => ({ error: '' }))
-            this.props.onSubmit({
-                email: this.state.email,
-                password: this.state.password
-            });
+            this.props.onSubmit(
+                this.state.email,
+                this.state.password
+            );
         }
     };
 

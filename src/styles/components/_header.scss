@@ -2,7 +2,8 @@
 .header {
     // overflow: hidden;
     // background: -webkit-linear-gradient(left, rgb(147, 250, 3) 0%, rgb(6, 93, 1) 100%);
-    background: -webkit-radial-gradient(50% 80%, #31cb00, #1e441e);
+    // background: -webkit-radial-gradient(50% 80%, #31cb00, #1e441e);
+    background: transparent;
     position: fixed;
     top: 0; 
     width: 100%;
@@ -22,8 +23,8 @@
         padding: 14px 16px;
         text-decoration: none;
         &:hover{
-            background: fade-out(white, .40);
-            color: black;
+            // background: fade-out(white, .40);
+            color: #008148;
             border-radius: 3px;
             cursor: pointer;
         }
@@ -37,7 +38,7 @@
                         float:left;
                         &:hover{
                             background: none;
-                            color: black;
+                            color: #008148;
                             cursor: pointer;                        
                         }
                     }
@@ -56,7 +57,8 @@
   top: 100%;
   left: 0;
   width: 190px;
-  background: -webkit-radial-gradient(50% 80%, #31cb00, #1e441e);
+//   background: -webkit-radial-gradient(50% 80%, #31cb00, #1e441e);
+  background: fade-out(white, .90);
   border-radius:3px;
   transform: translateY(-2em);
   z-index: -1;
@@ -81,7 +83,8 @@
     top: 100%;
     left: 0;
     width: 210px;
-    background: -webkit-radial-gradient(50% 80%, #31cb00, #1e441e);
+    // background: -webkit-radial-gradient(50% 80%, #31cb00, #1e441e);
+    background: fade-out(white, .90);
     border-radius:3px;
     transform: translateY(-2em);
     z-index: -1;
@@ -105,7 +108,8 @@
     top: 100%;
     left: 0;
     width: 300px;
-    background: -webkit-radial-gradient(50% 80%, #31cb00, #1e441e);
+    // background: -webkit-radial-gradient(50% 80%, #31cb00, #1e441e);
+    background: fade-out(white, .90);
     border-radius:3px;
     transform: translateY(-2em);
     z-index: -1;
@@ -129,7 +133,8 @@
     top: 100%;
     left: 0;
     width: 170px;
-    background: -webkit-radial-gradient(50% 80%, #31cb00, #1e441e);
+    // background: -webkit-radial-gradient(50% 80%, #31cb00, #1e441e);
+    background: fade-out(white, .90);
     border-radius:3px;
     transform: translateY(-2em);
     z-index: -1;
