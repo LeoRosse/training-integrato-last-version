@@ -11,6 +11,9 @@ import DashboardPublicPage from '../components/DashboardPublicPage';
 import InfoPage from '../components/InfoPage';
 import HomeFitness from '../components/HomeFitness';
 import AthleticTraining from '../components/AthleticTraining';
+import AddArticlePage from '../components/AddArticlePage';
+import EditArticlePage from '../components/EditArticlePage';
+
 
 export const history = createHistory();
 
@@ -19,12 +22,14 @@ const AppRouter = () => (
         <div>
             <Switch>
                 <PublicRoute path="/" component={LandingPage} exact={true} />
-                <PublicRoute path="/dashboard-public" component={DashboardPublicPage} exact={true} />
-                <PublicRoute path="/home-fitness" component={HomeFitness} exact={true} />
-                <PublicRoute path="/athletic-training" component={AthleticTraining} exact={true} />
-                <PublicRoute path="/info" component={InfoPage} exact={true} />
-                <PublicRoute path="/login" component={LoginPage} exact={true} />
+                <PublicRoute path="/dashboard-public" component={DashboardPublicPage}  />
+                <PublicRoute path="/home-fitness" component={HomeFitness}  />
+                <PublicRoute path="/athletic-training" component={AthleticTraining} />
+                <PublicRoute path="/info" component={InfoPage} />
+                <PublicRoute path="/login" component={LoginPage} />
                 <PrivateRoute path="/dashboard" component={DashboardPage} />
+                <PrivateRoute path="/create" component={AddArticlePage} />
+                <PrivateRoute path="/edit/:id" component={EditArticlePage} />
                 <PublicRoute component={NotFoundPage} />
             </Switch>
         </div>

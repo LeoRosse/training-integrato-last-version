@@ -1,9 +1,13 @@
 import React from 'react';
-
+import ArticlesSummary from './ArticlesSummary';
+import ArticleList from  './ArticleList';
+import ArticleListFilters from './ArticleListFilters';
 
 const DashboardPage = () => (
     <div>
-        DashboardPage Content
+        <ArticlesSummary />
+        <ArticleListFilters />
+        <ArticleList />
     </div>
 );
 
