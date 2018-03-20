@@ -1,4 +1,4 @@
-.box-layout-landing{
+/* .box-layout-landing{
     align-items: center;
     background: url('/images/landing.jpg');
     background-size:cover;
@@ -19,4 +19,164 @@
 .box-layout-landing__title{
     margin:0 0 $m-size 0;
     line-height: 1;
+} */
+
+.landing{
+    background:linear-gradient(
+        to right bottom,
+        rgba(126,213,111,0.8),
+        rgba(40,180,131,0.8)),url('/images/landing.jpg'); 
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+    position:relative;
+}
+
+.logo-box{
+    position:absolute; /*si aspetta che tu definisca le variabili top left right e bottom per posizionarlo!*/
+    top:40px;
+    left:40px;
+}
+
+.logo{
+    height:35px; /*la larghezza la gestisce automaticamente il browser*/
+}
+
+.text-box{
+    position: absolute;
+    top:40%;
+    left:50%; /*questo come il top è il 50% del parent element in questo caso dell'header */
+    transform: translate(-50%,-50%); /*è Y X */
+    text-align: center;
+}
+
+.heading-primary{
+    color:#fff;
+    text-transform: uppercase; /*mette al testo tutte maiuscole*/
+
+    backface-visibility: hidden; /*per rimuovere l'effetto shake dei caratteri dal background*/
+    margin-bottom: 60px;
+}
+
+.heading-primary-main{
+    display: block; /*così prendono tutta la larghezza a disposizione e gesticono le righe prima e dopo*/
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s; /*1 secondi*/
+    animation-timing-function: ease-out;
+    /*
+    animation-delay: 3s; 3 secondi e parte la animazione
+    animation-iteration-count:3; l'animazione avverrà tre volte, conta il numero di iterazioni dell'animazione
+    animation-timing-funcion:ease-in;comincia l'animazione piano e poi va accellerando!
+    */
+}
+
+.heading-primary-sub{
+    display: block;
+    font-size: 20px;
+    font-weight: 700; /*la grandezza di ogni singolo carattere, come se gli mettessi bold*/
+    letter-spacing: 17.4px;
+    animation: moveInRight 1s ease-out; /*short-cut, capisce che quello è il nome dell'animazione quanto deve durare e il timing*/
+}
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px) /*va da sinistra a destra, valori negativi la fanno andare a sinistra e valori positivi a destra,chiaramente da dove è statica è lo zero*/
+    }
+
+    80%{
+        transform: translateX(10px)
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px) /*va da sinistra a destra, valori negativi la fanno andare a sinistra e valori positivi a destra,chiaramente da dove è statica è lo zero*/
+    }
+
+    80%{
+        transform: translateX(-10px)
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(100px)
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none; /*così mi toglie le sottolineature*/
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s; /*così prendo tutte le proprietà che ho definito per le trasformazioni*/ 
+    position: relative; /*questo perché ho definito btn::after che ha absolute */
+}
+
+.btn:hover{
+    transform: translateY(-3px); /*per farlo muovere in alto devo dargli dei valori negativi*/
+    box-shadow: 0 10px 20px rgba(0,0,0,.2); /*il primo parametro è se voglio l'ombra sulle X, il secondo sulle Y e il terzo la sfocatura, il quarto ovviamente il colore*/
+}
+
+.btn:active{
+    transform: translateY(-1px); /*questo fa scendere di un pò il bottone quando lo clicco, gli devo dare dei valori negativi perché sono già sull'hover a -3, quindi fino a -1 perché i valori crescono dall'alto verso il basso*/
+    box-shadow: 0 5px 10px rgba(0,0,0,.2); 
+}
+
+.btn-white{
+    background-color: #fff;
+    color:#777;
+}
+
+.btn::after{ /*lavora come un child*/
+    content: "";
+    display: inline-block; /*perché il bottone che abbiamo è esso stesso in inline-block*/
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1; /*così il sudo element sta sotto il bottone!!!*/
+    transition: all .4s;
+}
+
+.btn-white::after{
+    background-color: #fff;
+}
+
+.btn:hover::after{
+    transform: scaleX(1.2) scaleY(1.3); /*raddioppia o diminuisce le dimensioni dell'elemento*/
+    opacity: 0;
+}
+
+.btn-animated{
+    animation: moveInBottom 1s ease-out;
+    animation-fill-mode:backwards;
 }
