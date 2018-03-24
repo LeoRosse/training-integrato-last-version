@@ -26,7 +26,7 @@ const AppRouter = () => (
                 <PublicRoute path="/home-fitness" component={HomeFitness}  />
                 <PublicRoute path="/athletic-training" component={AthleticTraining} />
                 <PublicRoute path="/info" component={InfoPage} />
-                <PublicRoute path="/login" component={LoginPage} />
+                <PublicRoute path="/login" component={LoginPage} exact={true}/>
                 <PrivateRoute path="/dashboard" component={DashboardPage} />
                 <PrivateRoute path="/create" component={AddArticlePage} />
                 <PrivateRoute path="/edit/:id" component={EditArticlePage} />

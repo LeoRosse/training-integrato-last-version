@@ -1,40 +1,13 @@
-*{
-    // box-sizing: content-box;
+*,
+*::after,
+*::before {
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
-/* html{
-    font-size:62.5%;
-} */
-
-body {
-    // color:$dark-grey;
-    // font-family: "Lato", sans-serif;
-    // font-size: $m-size;
-    // line-height: 1.6;
-    // background-color: #d6d3f0;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size:16px;
-    line-height: 1.7;
-    color: #777;
-    // padding:30px;
+html{
+    /* font-size: 10px; invece di scrivere 10px facciamo 10/16 che il font default del browser e troviamo la percentuale per calcolare tutti i rem dopo*/
+    font-size: 62.5%;
 }
 
-h1{
-    font-size:2.2rem;
-}
-
-button{
-    cursor: pointer;
-}
-
-button:disabled{
-    cursor: default;
-}
-
-.is-active{
-    font-weight: bold;
-}
