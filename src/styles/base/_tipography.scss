@@ -22,7 +22,7 @@ body{
         letter-spacing: 3.5rem;
     
         animation-name: moveInLeft;
-        animation-duration: 1s; /*1 secondi*/
+        animation-duration: 1.5s; /*1 secondi*/
         animation-timing-function: ease-out;
         /*
         animation-delay: 3s; 3 secondi e parte la animazione
@@ -36,7 +36,7 @@ body{
         font-size: 2rem;
         font-weight: 700; /*la grandezza di ogni singolo carattere, come se gli mettessi bold*/
         letter-spacing: 1.75rem;
-        animation: moveInRight 1s ease-out; /*short-cut, capisce che quello è il nome dell'animazione quanto deve durare e il timing*/
+        animation: moveInRight 1.5s ease-out; /*short-cut, capisce che quello è il nome dell'animazione quanto deve durare e il timing*/
     }
 }
 
@@ -50,12 +50,12 @@ body{
     -webkit-background-clip: text; //così il background è visibile solo dove è scritto il testo! sarà solo sui caratteri!
     color:transparent;
     letter-spacing: 2px;
-    transition: all .2s;
+/*     transition: all .2s;
 
     &:hover{
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
-    }
+    } */
     
 }
 
