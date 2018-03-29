@@ -1,42 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navigation from './Navigation';
+import Footer from './Footer';
 
 export const LandingPage = () => (
     <div>
-        <div className="navigation">
-            <input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
-
-            <label for="navi-toggle" className="navigation__button">
-                <span className="navigation__icon">&nbsp;</span>
-            </label>
-
-            <div className="navigation__background">&nbsp;</div>
-
-            <nav className="navigation__nav">
-                <ul className="navigation__list">
-                    <li className="navigation__item">
-                        <a href="#" className="navigation__link">
-                            Chi siamo</a>
-                    </li>
-                    {/*                     <li className="navigation__item">
-                        <a href="#" className="navigation__link">
-                            <span>02</span>Your Benefits</a>
-                    </li>
-                    <li className="navigation__item">
-                        <a href="#" className="navigation__link">
-                            <span>03</span>Popular tours</a>
-                    </li>
-                    <li className="navigation__item">
-                        <a href="#" className="navigation__link">
-                            <span>04</span>Stories</a>
-                    </li>
-                    <li className="navigation__item">
-                        <a href="#" className="navigation__link">
-                            <span>05</span>Book now</a>
-                    </li> */}
-                </ul>
-            </nav>
-        </div>
+        <Navigation />
         <header className="header">
             <div className="header__text-box">
                 <h1 className="heading-primary">
@@ -44,7 +13,7 @@ export const LandingPage = () => (
                     <span className="heading-primary--sub">Alberto Santarato</span>
                 </h1>
 
-                {/*<Link className="btn btn--white btn--animated" to="/dashboard-public">Entra</Link>
+{/*                 <Link className="btn btn--white btn--animated" to="/dashboard-public">Entra</Link>
                 <Link className="btn btn--white btn--animated" to="/login">Login</Link> */}
 
             </div>
@@ -53,7 +22,7 @@ export const LandingPage = () => (
             <section className="section-about">
                 <div className="u-center-text u-margin-bottom-big">
                     <h2 className="heading-secondary">
-                        Sviluppo di allenamenti elaborati su misura
+                        Sviluppo di training elaborati su misura
                     </h2>
                 </div>
                 <div className="row">
@@ -68,7 +37,7 @@ export const LandingPage = () => (
                         <h3 className="heading-tertiary u-margin-bottom-small">
                             Il percorso prevede:
                         </h3>
-                        <p className="paragraph">
+                        <div className="paragraph">
                             <ul>
                                 <li>Colloquio iniziale e valutazione motoria</li>
                                 <li>Analisi Bioimpedenziometrica BIA</li>
@@ -77,7 +46,7 @@ export const LandingPage = () => (
                                 <li>Sviluppo dei programmi di preparazione atletica</li>
                                 <li>Incontri di follow up itineranti</li>
                             </ul>
-                        </p>
+                        </div>
 
                         <a href="" className="btn-text">Scopri di più &rarr;</a>
 
@@ -115,15 +84,15 @@ export const LandingPage = () => (
                     <div className="col-1-of-3">
                         <div className="feature-box">
                             <img className="feature-box__icon" src="/png/basic_target.png" />
-                            <h3 className="heading-tertiary u-margin-bottom-small">Allenamenti Personalizzati</h3>
+                            <h3 className="heading-tertiary u-margin-bottom-small">Training Personalizzati</h3>
                             <p className="feature-box__text">
-                                Trova il tuo allenamento
+                                Trova il tuo training
                         </p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="section-tours" id="section-tours">
+            {/* <section className="section-tours" id="section-tours">
                 <div className="u-center-text u-margin-bottom-big">
                     <h2 className="heading-secondary">
                         Programma il tuo allenamento
@@ -145,9 +114,6 @@ export const LandingPage = () => (
                                     <ul>
                                         <li>Colloquio iniziale a domicilio</li>
                                         <li>Invio del programma di allenamento e descrizione figurata degli esercizi</li>
-                                        {/*                                     <li>2 tours guides</li>
-                                    <li>Sleep in cozy hostels</li>
-                                    <li>Difficulty: easy</li> */}
                                     </ul>
                                 </div>
                             </div>
@@ -178,8 +144,6 @@ export const LandingPage = () => (
                                         <li>Colloquio iniziale a domicilio</li>
                                         <li>Invio del programma di allenamento e descrizione figurata degli esercizi</li>
                                         <li>Analisi della composizione corporea BIA</li>
-                                        {/*                                     <li>Sleep in provided tents</li>
-                                    <li>Difficulty: medium</li> */}
                                     </ul>
                                 </div>
                             </div>
@@ -211,7 +175,6 @@ export const LandingPage = () => (
                                         <li>Invio del programma di allenamento e descrizione figurata degli esercizi</li>
                                         <li>Analisi della composizione corporea BIA</li>
                                         <li>Sacca con materiale di allenamento</li>
-                                        {/* <li>Difficulty: hard</li> */}
                                     </ul>
                                 </div>
                             </div>
@@ -227,29 +190,116 @@ export const LandingPage = () => (
                         </div>
                     </div>
                 </div>
-
-                {/*             <div className="u-center-text u-margin-top-huge">
-                <a href="#" className="btn btn--green">Discover All Tours</a>
-            </div> */}
+            </section> */}
+            <section className="section-tours" id="section-tours">
+                <div className="u-center-text u-margin-bottom-big">
+                    <h2 className="heading-secondary">
+                        Scopri la tua necessità
+                </h2>
+                </div>
+                <div className="row">
+                    <div className="col-1-of-3">
+                        <div className="card">
+                            <div className="card__side card__side--front">
+                                <div className="card__picture card__picture--1">
+                                    &nbsp;
+                            </div>
+                                <h4 className="card__heading">
+                                    <span className="card__heading-span card__heading-span--1">
+                                        Sport
+                                </span>
+                                </h4>
+                                <div className="card__details">
+                                    <ul>
+                                        <li>Personal Training</li>
+                                        <li>Preparazione Atletica</li>
+                                        <li>Rieducazione Funzionale</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="card__side card__side--back card__side--back-1">
+                                <div className="card__cta">
+                                    <div className="card__price-box">
+                                        <p className="card__price-value">€50</p>
+                                    </div>
+                                    <a href="#popup" className="btn btn--white">Scopri di più</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-1-of-3">
+                        <div className="card">
+                            <div className="card__side card__side--front">
+                                <div className="card__picture card__picture--2">
+                                    &nbsp;
+                            </div>
+                                <h4 className="card__heading">
+                                    <span className="card__heading-span card__heading-span--2">
+                                        Relax
+                                </span>
+                                </h4>
+                                <div className="card__details">
+                                    <ul>
+                                        <li>Massaggio Olistico</li>
+                                        <li>Massaggio Bioenergetico</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="card__side card__side--back card__side--back-2">
+                                <div className="card__cta">
+                                    <div className="card__price-box">
+                                        <p className="card__price-value">€60</p>
+                                    </div>
+                                    <a href="#popup" className="btn btn--white">Scopri di più</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-1-of-3">
+                        <div className="card">
+                            <div className="card__side card__side--front">
+                                <div className="card__picture card__picture--3">
+                                    &nbsp;
+                            </div>
+                                <h4 className="card__heading">
+                                    <span className="card__heading-span card__heading-span--3">
+                                        Salute
+                                </span>
+                                </h4>
+                                <div className="card__details">
+                                    <ul>
+                                        <li>Training Integrato</li>
+                                        <li>Alimentazione Consapevole</li>
+                                        <li>Naturopatia</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="card__side card__side--back card__side--back-3">
+                                <div className="card__cta">
+                                    <div className="card__price-box">
+                                        <p className="card__price-value">€75</p>
+                                    </div>
+                                    <a href="#popup" className="btn btn--white">Scopri di più</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section className="section-stories">
                 <div className="bg-video">
-                    {/*                  <video className="bg-video__content" autoplay muted loop>
-                    <source src="img/video.mp4" type="video/mp4">
-                    <source src="img/video.webm" type="video/webm"> Your browser is not supported!
-                </video>  */}
                     <img src="images/people-writing.jpg" alt="People writing" className="bg-video__content" />
                 </div>
                 <div className="u-center-text u-margin-bottom-big">
                     <h2 className="heading-secondary">
-                        Allenamenti al passo con la ricerca
+                        Percorsi al passo con la ricerca
                 </h2>
                 </div>
                 <div className="row">
                     <div className="story">
                         <figure className="story__shape">
-                            <img src="img/nat-8.jpg" alt="Person on a tour" className="story__img" />
-                            <figcaption className="story__caption">
+{/*                             <img src="img/nat-8.jpg" alt="Person on a tour" className="story__img" />
+ */}                            <figcaption className="story__caption">
                                 Mary Smith
                         </figcaption>
                         </figure>
@@ -268,8 +318,8 @@ export const LandingPage = () => (
                 <div className="row">
                     <div className="story">
                         <figure className="story__shape">
-                            <img src="img/nat-9.jpg" alt="Person on a tour" className="story__img" />
-                            <figcaption className="story__caption">
+{/*                             <img src="img/nat-9.jpg" alt="Person on a tour" className="story__img" />
+ */}                            <figcaption className="story__caption">
                                 Jack Wilson
                         </figcaption>
                         </figure>
@@ -290,12 +340,11 @@ export const LandingPage = () => (
                 </div>
             </section>
         </main>
-
+        <Footer />
         <div className="popup" id="popup">
         <div className="popup__content">
             <div className="popup__left">
-{/*                 <img src="img/nat-8.jpg" alt="Tour photo" className="popup__img" />
-                <img src="img/nat-9.jpg" alt="Tour photo" className="popup__img" /> */}
+            
             </div>
             <div className="popup__right">
                 <a href="#section-tours" className="popup__close">&times;</a>
