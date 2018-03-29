@@ -62,7 +62,7 @@ export const LandingPage = () => (
                             Preparazione atletica
                         </h3>
                         <p className="paragraph">
-                            Preparazione atletica e studio del gesto tecnico sono la base per raggiungere obiettivi  per qualsiasi sport.
+                            La preparazione atletica e lo studio del gesto tecnico sono la base per raggiungere obiettivi per qualsiasi sport.
                             La struttura e la funzione del gesto tecnico possono cambiare il punto di vista del tuo sport.
                         </p>
                         <h3 className="heading-tertiary u-margin-bottom-small">
@@ -290,6 +290,30 @@ export const LandingPage = () => (
                 </div>
             </section>
         </main>
+
+        <div className="popup" id="popup">
+        <div className="popup__content">
+            <div className="popup__left">
+{/*                 <img src="img/nat-8.jpg" alt="Tour photo" className="popup__img" />
+                <img src="img/nat-9.jpg" alt="Tour photo" className="popup__img" /> */}
+            </div>
+            <div className="popup__right">
+                <a href="#section-tours" className="popup__close">&times;</a>
+                <h2 className="heading-secondary u-margin-bottom-medium">Start booking now</h2>
+                <h3 className="heading-teartiary u-margin-bottom-small">Important &ndash; Please read these terms before booking!</h3>
+                <p className="popup__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Nisi est sit amet facilisis. Arcu ac tortor dignissim convallis aenean et tortor. Ullamcorper sit amet
+                    risus nullam eget. Nec feugiat in fermentum posuere urna. Potenti nullam ac tortor vitae purus faucibus
+                    ornare suspendisse sed. Nisl rhoncus mattis rhoncus urna neque viverra. Sed nisi lacus sed viverra tellus
+                    in. Turpis egestas integer eget aliquet nibh praesent tristique magna sit. Diam donec adipiscing tristique
+                    risus nec feugiat in fermentum. Purus in massa tempor nec feugiat nisl pretium. Tortor vitae purus faucibus
+                    ornare.
+                </p>
+                <a href="#" className="btn btn--green">Book now</a>
+            </div>
+        </div>
+    </div>
     </div>
 );
 
