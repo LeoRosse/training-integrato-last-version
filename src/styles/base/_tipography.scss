@@ -7,7 +7,7 @@ body{
     padding:3rem;
     box-sizing: border-box;
 
-    @include respond(tab-port){
+    @include respond(tab-land){
         padding: 0;
     }
 }
