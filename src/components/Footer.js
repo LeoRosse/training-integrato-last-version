@@ -29,11 +29,10 @@ const Footer = () => (
             </div>
             <div className="col-1-of-2">
                 <p className="footer_copyright">
-                    Built my
-                    <a href="" className="footer__link">Leonardo Rosseti</a> for his site
+                    Built by <a href="" className="footer__link"> Leonardo Rosseti</a> {/* for his site
                     <a href="" className="footer__link">Advanced Site</a> Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for
                     both personal and commercial use, but NOT to claim it as your own design. A credit to the original author
-                    is of cours highly appreciated!
+                    is of cours highly appreciated! */}
                 </p>
             </div>
         </div>
