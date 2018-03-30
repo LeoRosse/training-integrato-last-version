@@ -2,6 +2,10 @@
     padding: 15rem 0;
     position: relative;
 
+    @include respond(tab-port){
+        padding: 10rem 0;
+    }
+
     &__content{
         box-shadow: 0 3rem 6rem rgba($color-black, .1);
         margin:0 auto;
@@ -11,6 +15,13 @@
         padding: 6rem;
         transform: skewX(-12deg);
         font-size: $default-font-size;
+
+        @media(max-width:1350px){
+            width: 100%;
+            padding: 4rem;
+            padding-left: 7rem;
+            transform: skewX(0);
+        }
 
         &__shape {
             height: 20rem;
@@ -22,6 +33,10 @@
             transform: translateX(-3rem) skewX(12deg);
             clip-path: circle(50% at 50% 50%);
             position: relative;
+
+            @media(max-width:1350px){
+                transform: translateX(-3rem) skewX(0);
+            }
     }
 
     &__img {
@@ -33,6 +48,10 @@
 
     &__text{
         transform: skewX(12deg);
+
+        @media(max-width:1350px){
+            transform: skewX(0);
+        }
     }
 
     &__caption {

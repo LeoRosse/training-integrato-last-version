@@ -14,7 +14,6 @@ const InfoPage = () => (
                     <figure className="info__content__shape">
                         <img src="images/alberto-1.jpeg" alt="Person on a tour" className="info__content__img" />
                     </figure>
-
                     <div className="info__content__text">
                         <h3 className="heading-tertiary u-margin-bottom-small">Alberto Santarato<br />Dottore in Scienze Motorie, Personal trainer, Naturopata</h3>
                         <p>
