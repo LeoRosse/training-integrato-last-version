@@ -6,12 +6,12 @@
     &:not(:last-child){ //tutti eccetto il last child
         margin-bottom: $gutter-vertical;
 
-        @include respond(tab-port){
+        @include respond(tab-land){
             margin-bottom: $gutter-vertical-small;
         }
     }
 
-    @include respond(tab-port){
+    @include respond(tab-land){
         max-width: 50rem;
         padding: 0 3rem;
     }
@@ -23,13 +23,13 @@
         float:left;
         &:not(:last-child){
             margin-right:  $gutter-horizontal;
-            @include respond(tab-port){
+            @include respond(tab-land){
                 margin-right: 0;
                 margin-bottom: $gutter-vertical-small;
             }
         }
 
-        @include respond(tab-port){
+        @include respond(tab-land){
             width: 100% !important;
         }
 

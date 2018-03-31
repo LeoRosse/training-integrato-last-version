@@ -22,29 +22,29 @@ export const LandingPage = () => (
             <section className="section-about">
                 <div className="u-center-text u-margin-bottom-big">
                     <h2 className="heading-secondary">
-                        Sviluppo di training elaborati su misura
+                        Specialista in Scienze Motorie, Personal Trainer, Naturopata
                     </h2>
                 </div>
                 <div className="row">
                     <div className="col-1-of-2">
-                        <h3 className="heading-tertiary u-margin-bottom-small">
+{/*                         <h3 className="heading-tertiary u-margin-bottom-small">
                             Preparazione atletica
                         </h3>
                         <p className="paragraph">
                             La preparazione atletica e lo studio del gesto tecnico sono la base per raggiungere obiettivi per qualsiasi sport.
                             La struttura e la funzione del gesto tecnico possono cambiare il punto di vista del tuo sport.
-                        </p>
+                        </p> */}
                         <h3 className="heading-tertiary u-margin-bottom-small">
-                            Il percorso prevede:
+                            Le mie attività:
                         </h3>
                         <div className="paragraph">
                             <ul>
-                                <li>Colloquio iniziale e valutazione motoria</li>
-                                <li>Analisi Bioimpedenziometrica BIA</li>
-                                <li>Test fisici sul campo (Vo2, forza, flessibilità, equilibrio)</li>
-                                <li>Consulenza e integrazione alimentare</li>
-                                <li>Sviluppo dei programmi di preparazione atletica</li>
-                                <li>Incontri di follow up itineranti</li>
+                                <li>Analisi della composizione corporea BIA</li>
+                                <li>Percorsi di Training integrato</li>
+                                <li>Personal Training</li>
+                                <li>Preparazione Atletica</li>
+                                <li>Rieducazione Funzionale</li>
+                                <li>Trattamento Olistico sportivo</li>
                             </ul>
                         </div>
 
@@ -222,7 +222,7 @@ export const LandingPage = () => (
                                     <div className="card__price-box">
                                         <p className="card__price-value">€50</p>
                                     </div>
-                                    <a href="#popup" className="btn btn--white">Scopri di più</a>
+                                    <a href="#popup_1" className="btn btn--white">Scopri di più</a>
                                 </div>
                             </div>
                         </div>
@@ -250,7 +250,7 @@ export const LandingPage = () => (
                                     <div className="card__price-box">
                                         <p className="card__price-value">€60</p>
                                     </div>
-                                    <a href="#popup" className="btn btn--white">Scopri di più</a>
+                                    <a href="#popup_2" className="btn btn--white">Scopri di più</a>
                                 </div>
                             </div>
                         </div>
@@ -279,7 +279,7 @@ export const LandingPage = () => (
                                     <div className="card__price-box">
                                         <p className="card__price-value">€75</p>
                                     </div>
-                                    <a href="#popup" className="btn btn--white">Scopri di più</a>
+                                    <a href="#popup_3" className="btn btn--white">Scopri di più</a>
                                 </div>
                             </div>
                         </div>
@@ -341,25 +341,71 @@ export const LandingPage = () => (
             </section>
         </main>
         <Footer />
-        <div className="popup" id="popup">
+        <div className="popup" id="popup_1">
         <div className="popup__content">
             <div className="popup__left">
-            
+            <img src="images/sport_popup.jpg" alt="Sport" className="popup__img" />
             </div>
             <div className="popup__right">
                 <a href="#section-tours" className="popup__close">&times;</a>
-                <h2 className="heading-secondary u-margin-bottom-medium">Start booking now</h2>
-                <h3 className="heading-teartiary u-margin-bottom-small">Important &ndash; Please read these terms before booking!</h3>
+                <h2 className="heading-secondary u-margin-bottom-medium">Sport</h2>
+                <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Personal Training</h2>
                 <p className="popup__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Nisi est sit amet facilisis. Arcu ac tortor dignissim convallis aenean et tortor. Ullamcorper sit amet
-                    risus nullam eget. Nec feugiat in fermentum posuere urna. Potenti nullam ac tortor vitae purus faucibus
-                    ornare suspendisse sed. Nisl rhoncus mattis rhoncus urna neque viverra. Sed nisi lacus sed viverra tellus
-                    in. Turpis egestas integer eget aliquet nibh praesent tristique magna sit. Diam donec adipiscing tristique
-                    risus nec feugiat in fermentum. Purus in massa tempor nec feugiat nisl pretium. Tortor vitae purus faucibus
-                    ornare.
+                    Sedute di allenamento individuali o a piccoli gruppi, eseguite sotto la supervisione del Trainer.
                 </p>
-                <a href="#" className="btn btn--green">Book now</a>
+                <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Preparazione Atletica</h2>
+                <p className="popup__text">
+                    Sedute di preparazione allo sport sia singolo che di squadra.
+                </p>
+                <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Rieducazione Funzionale</h2>
+                <p className="popup__text">
+                    Sedute di rieducazione post infortunio e recupero della capacità condizionali.
+                </p>
+                <a href="#" className="btn btn--green">Contatta</a>
+            </div>
+        </div>
+    </div>
+    <div className="popup" id="popup_2">
+        <div className="popup__content">
+            <div className="popup__left">
+            <img src="images/relax_popup.jpg" alt="Sport" className="popup__img" />
+            </div>
+            <div className="popup__right">
+                <a href="#section-tours" className="popup__close">&times;</a>
+                <h2 className="heading-secondary u-margin-bottom-medium">Relax</h2>
+                <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Massaggio Olistico</h2>
+                <p className="popup__text">
+                  Sedute di rilassamento e tonificazione miofasciale con tecniche di stretching assistito.
+                </p>
+                <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Massaggio Bioenergetico</h2>
+                <p className="popup__text">
+                  Trattamento eseguito con oli ed essenze essenziali.
+                </p>
+                <a href="#" className="btn btn--green">Contatta</a>
+            </div>
+        </div>
+    </div>
+    <div className="popup" id="popup_3">
+        <div className="popup__content">
+            <div className="popup__left">
+            <img src="images/salute_popup.jpg" alt="Sport" className="popup__img" />
+            </div>
+            <div className="popup__right">
+                <a href="#section-tours" className="popup__close">&times;</a>
+                <h2 className="heading-secondary u-margin-bottom-medium">Salute</h2>
+                <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Training Integrato</h2>
+                <p className="popup__text">
+                Percorsi finalizzati al raggiungimento e al mantenimento di un buon stato di salute e di forma fisica.
+                </p>
+                <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Alimentazione Consapevole</h2>
+                <p className="popup__text">
+                Indicazioni sulla alimentazione da seguire per un corretto stile di vita e attività sportiva.
+                </p>
+                <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Naturopatia</h2>
+                <p className="popup__text">
+                Sedute di ripristino e mantenimento dell'equilibrio energetico della persona.
+                </p>
+                <a href="#" className="btn btn--green">Contatta</a>
             </div>
         </div>
     </div>
