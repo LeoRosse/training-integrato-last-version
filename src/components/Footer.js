@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => (
     <footer className="footer">
         <div className="footer__logo-box">
-            <img src="images/logo-trasp.png" alt="Full logo" className="footer__logo" />
+            <img src="images/logo-trasparente.png" alt="Full Logo" className="footer__logo" />
         </div>
         <div className="row">
             <div className="col-1-of-2">
