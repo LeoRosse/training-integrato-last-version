@@ -1,6 +1,8 @@
 .contact {
     padding: 15rem 0;
     position: relative;
+    height: 70vh;
+    margin-top: -25vh;
 
     @include respond(tab-port){
         padding: 10rem 0;
@@ -9,7 +11,9 @@
     &__content{
         // background-image: radial-gradient($color-primary-light, $color-primary-dark);
         // box-shadow: 0 3rem 6rem rgba($color-black, .1);
+        text-align: center;
         margin:0 auto;
+        margin-top: 25vh;
         border-radius: 3px;
         // background-color: rgba($color-white, .6);
         padding-left: 9rem;
@@ -18,7 +22,7 @@
         position:relative;
 
         @media(max-width:1350px){
-            width: 100%;
+            // width: 100%;
             padding: 4rem;
             padding-left: 7rem;
         }
@@ -31,17 +35,20 @@
         transform: translate(-50%,-50%);
         list-style: none;
         text-align: center;
-        width: 100%;
+        // width: 100%;
     }
 
     &__item {
         margin: 1rem;
         display: inline-block;
         font-size: 3rem;
-        font-weight: 300;
+        font-weight: 500;
         padding: 1rem 2rem;
         color: $color-black;
         text-decoration: none;
         text-transform: uppercase;
+        @media(max-width:600px){
+            font-size:2.5rem;
+        }
     }
 }

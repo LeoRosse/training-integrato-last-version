@@ -361,7 +361,8 @@ export const LandingPage = () => (
                 <p className="popup__text">
                     Sedute di rieducazione post infortunio e recupero della capacità condizionali.
                 </p>
-                <a href="#" className="btn btn--green">Contatta</a>
+                <Link to="/contact" className="btn btn--green">Contatta</Link>
+
             </div>
         </div>
     </div>
@@ -381,7 +382,7 @@ export const LandingPage = () => (
                 <p className="popup__text">
                   Trattamento eseguito con oli ed essenze essenziali.
                 </p>
-                <a href="#" className="btn btn--green">Contatta</a>
+                <Link to="/contact" className="btn btn--green">Contatta</Link>
             </div>
         </div>
     </div>
@@ -405,7 +406,7 @@ export const LandingPage = () => (
                 <p className="popup__text">
                 Sedute di ripristino e mantenimento dell'equilibrio energetico della persona.
                 </p>
-                <a href="#" className="btn btn--green">Contatta</a>
+                <Link to="/contact" className="btn btn--green">Contatta</Link>
             </div>
         </div>
     </div>
