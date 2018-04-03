@@ -1,7 +1,7 @@
 import * as firebase from 'firebase';
 
 var config = {
-  apiKey: 'AIzaSyBkOh3VxQideB6jq3naWdBSV6QxLxeN6Uo',
+  apiKey: 'AIzaSyBASJBQd2OBRzcs43vgUl5l12otpdaaejQ',
   authDomain: 'training-integrato.firebaseapp.com',
   databaseURL: 'https://training-integrato.firebaseio.com',
   projectId: 'training-integrato',
