@@ -32,4 +32,27 @@
         transform: translate(-50%,-50%); /*è Y X */
         text-align: center;
     }
+
+
+}
+
+.header1{
+    height: 20vh; /*così gli dico che voglio il 95% dello schermo viewport height*/
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light,0.8),
+        rgba($color-primary-dark, 0.8));
+        position:relative;
+    -webkit-clip-path: polygon(0 0,100% 0,100% 0,0 100%);
+    clip-path: polygon(0 0,100% 0,100% 0,0 100%);
+
+    &__logo-box{
+        position:absolute; /*si aspetta che tu definisca le variabili top left right e bottom per posizionarlo!*/
+        top:2rem;
+        left:2rem;
+    }
+    &__logo{
+        height:10rem; /*la larghezza la gestisce automaticamente il browser*/
+    }
+        
 }
