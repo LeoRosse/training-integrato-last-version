@@ -1,10 +1,12 @@
 import React from 'react';
+import Header from './Header';
 import Navigation from './Navigation';
 import Footer from './Footer';
 
 const ContactPage = () => (
     <div>
         <Navigation />
+        <Header />
         <div className="contact">
                 <div className="bg-video">
                     <img src="images/contact.jpg" alt="contact" className="bg-video__content" />
