@@ -1,5 +1,5 @@
 .contact {
-    padding: 10rem 0;
+    padding: 15rem 0;
     position: relative;
     height: 80vh;
     // margin-top: -20vh;
@@ -9,13 +9,10 @@
     }
 
     &__content{
-        // background-image: radial-gradient($color-primary-light, $color-primary-dark);
-        // box-shadow: 0 3rem 6rem rgba($color-black, .1);
         text-align: center;
         margin:0 auto;
         margin-top: 25vh;
         border-radius: 3px;
-        // background-color: rgba($color-white, .6);
         padding-left: 9rem;
         padding: 6rem;
         font-size: $default-font-size;
@@ -62,6 +59,7 @@
 
         @media(max-width:600px){
             font-size:2.5rem;
+            padding: 1rem 0;
         }
     }
 }

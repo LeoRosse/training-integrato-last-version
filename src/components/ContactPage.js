@@ -19,7 +19,7 @@ const ContactPage = () => (
                             <li className="contact__item">+39 333 97 60 998</li>
                             <li className="contact__item">alberto.santarato@gmail.com</li>
                         </ul>
-                    </div>
+                    </div> 
                 </div>    
         </div>
         <Footer />
