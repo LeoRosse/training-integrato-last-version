@@ -4,10 +4,10 @@ import ArticleListItem from './ArticleListItem';
 import selectArticles from '../selectors/articles';
 
 export const ArticleList = (props) => (
-    <div className="content-container">
+    <div className="content-container-articles">
         <div className="list-header">
-            <div className="show-for-mobile">Articles</div>
-            <div className="show-for-desktop">Article</div>
+            <div className="show-for-mobile">Articolo</div>
+            <div className="show-for-desktop">Data</div>
         </div>
         <div className="list-body">
         {

@@ -9,8 +9,14 @@
         transition: all .2s; /*così prendo tutte le proprietà che ho definito per le trasformazioni*/ 
         position: relative; /*questo perché ho definito btn::after che ha absolute */
         font-size: 1.6rem;
+
+
     }
-    
+    &__hprivate{
+        position:absolute !important;
+        top: .5rem;
+        right: 1.5rem;
+    }
     &:hover{
         transform: translateY(-3px); /*per farlo muovere in alto devo dargli dei valori negativi*/
         box-shadow: 0 1rem 2rem rgba($color-black,.2); /*il primo parametro è se voglio l'ombra sulle X, il secondo sulle Y e il terzo la sfocatura, il quarto ovviamente il colore*/

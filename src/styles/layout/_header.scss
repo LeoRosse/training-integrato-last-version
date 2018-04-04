@@ -76,7 +76,6 @@
     &__container{
         margin: 0 auto;
         // padding: 0 1.6rem;
-        max-width: 80rem;
     }
 
     &__content{
@@ -90,5 +89,14 @@
         text-transform: uppercase;
         text-decoration: none;
         color:$color-white;
+        position: absolute;
+        top: .5rem;
+        left: 40%;
+        @media(max-width:600px){
+            left:30%;
+        }
+        @media(max-width:450px){
+            display: none;
+        }
     }
 }

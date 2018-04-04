@@ -13,7 +13,7 @@ export const HeaderPrivate = ({ startLogout }) => (
                 <Link className="header2__title" to="/dashboard">
                     <h1>Bentornato Alberto</h1>
                 </Link>
-                <Link to="#" className="btn btn--white" onClick={startLogout}>Logout</Link>
+                <Link to="#" className="btn btn__hprivate btn--white" onClick={startLogout}>Logout</Link>
             </div>
         </div>
     </header>

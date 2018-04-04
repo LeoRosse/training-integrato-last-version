@@ -5,14 +5,12 @@ import numeral from 'numeral';
 import selectArticles from '../selectors/articles';
 
 export const ArticlesSummary = ({ articleCount, articlesTotal }) => {
-    const articleWord = articleCount === 1 ? 'Article' : 'Articles';
+    const articleWord = articleCount === 1 ? 'Articolo' : 'Articoli';
     return (
-        <div className="page-header">
-            <div className="content-container">
-                <h1 className="page-header__title">Viewing <span>{articleCount}</span> {articleWord}</h1>
-                <div className="page-header__actions">
-                    <Link className="button" to="/create">Create Article</Link>
-                </div>
+        <div className="content-container-summary">
+            <h1 className="article-summary__title">Stai visualizzando <span>{articleCount}</span> {articleWord}</h1>
+            <div className="article-summary__actions">
+                <Link className="btn btn--white" to="/create">Crea Articolo</Link>
             </div>
         </div>
     )
