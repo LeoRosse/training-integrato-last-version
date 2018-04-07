@@ -2,7 +2,7 @@
     padding: 15rem 0;
     position: relative;
     height: 80vh;
-    // margin-top: -20vh;
+    margin-top: -20vh;
 
     @include respond(tab-port){
         padding: 10rem 0;
@@ -27,7 +27,7 @@
 
     &__list {
         position: absolute;
-        top: 50%;
+        top: 0%;
         left: 50%;
         transform: translate(-50%,-50%);
         list-style: none;

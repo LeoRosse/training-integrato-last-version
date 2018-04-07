@@ -34,6 +34,10 @@ const Navigation = () => (
                         Studio Corporeo</a>
                 </li>
                 <li>
+                    <a href="#" className="navigation__link">
+                        Alimentazione</a>
+                </li>
+                <li>
                     <Link to="/contact" className="navigation__link">
                         Contatta</Link>
                 </li>

@@ -13,7 +13,7 @@ export const LandingPage = () => (
                     <span className="heading-primary--sub">Alberto Santarato</span>
                 </h1>
 
-{/*                 <Link className="btn btn--white btn--animated" to="/dashboard-public">Entra</Link>
+                {/*                 <Link className="btn btn--white btn--animated" to="/dashboard-public">Entra</Link>
                 <Link className="btn btn--white btn--animated" to="/login">Login</Link> */}
 
             </div>
@@ -27,7 +27,7 @@ export const LandingPage = () => (
                 </div>
                 <div className="row">
                     <div className="col-1-of-2">
-{/*                         <h3 className="heading-tertiary u-margin-bottom-small">
+                        {/*                         <h3 className="heading-tertiary u-margin-bottom-small">
                             Preparazione atletica
                         </h3>
                         <p className="paragraph">
@@ -241,7 +241,7 @@ export const LandingPage = () => (
                                 <div className="card__details">
                                     <ul>
                                         <li>Massaggio Olistico</li>
-                                        <li>Massaggio Bioenergetico</li>
+                                        <li>Trattamento Energetico</li>
                                     </ul>
                                 </div>
                             </div>
@@ -298,7 +298,7 @@ export const LandingPage = () => (
                 <div className="row">
                     <div className="story">
                         <figure className="story__shape">
-{/*                             <img src="img/nat-8.jpg" alt="Person on a tour" className="story__img" />
+                            {/*                             <img src="img/nat-8.jpg" alt="Person on a tour" className="story__img" />
  */}                            <figcaption className="story__caption">
                                 Mary Smith
                         </figcaption>
@@ -318,7 +318,7 @@ export const LandingPage = () => (
                 <div className="row">
                     <div className="story">
                         <figure className="story__shape">
-{/*                             <img src="img/nat-9.jpg" alt="Person on a tour" className="story__img" />
+                            {/*                             <img src="img/nat-9.jpg" alt="Person on a tour" className="story__img" />
  */}                            <figcaption className="story__caption">
                                 Jack Wilson
                         </figcaption>
@@ -340,76 +340,109 @@ export const LandingPage = () => (
                 </div>
             </section>
         </main>
-        <Footer />
+        <footer className="footer">
+            <div className="footer__logo-box">
+                <img src="images/logo-trasparente.png" alt="Full Logo" className="footer__logo" />
+            </div>
+            <div className="row">
+                <div className="col-1-of-2">
+                    <div className="footer__navigation">
+                        <ul className="footer__list">
+                            <li className="footer__item">
+                                <a href="#" className="footer__link">Partner</a>
+                            </li>
+                            <li className="footer__item">
+                                <Link to="/contact" className="footer__link">
+                                    Contattaci</Link>
+                            </li>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link">Curriculum</a>
+                            </li>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link">Termini e privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="col-1-of-2">
+                    <p className="footer_copyright">
+                        Built by <a href="" className="footer__link"> Leonardo Rosseti</a> {/* for his site
+                    <a href="" className="footer__link">Advanced Site</a> Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for
+                    both personal and commercial use, but NOT to claim it as your own design. A credit to the original author
+                    is of cours highly appreciated! */}
+                    </p>
+                </div>
+            </div>
+        </footer>        
         <div className="popup" id="popup_1">
-        <div className="popup__content">
-            <div className="popup__left">
-            <img src="images/sport_popup.jpg" alt="Sport" className="popup__img" />
-            </div>
-            <div className="popup__right">
-                <a href="#section-tours" className="popup__close">&times;</a>
-                <h2 className="heading-secondary u-margin-bottom-medium">Sport</h2>
-                <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Personal Training</h2>
-                <p className="popup__text">
-                    Sedute di allenamento individuali o a piccoli gruppi, eseguite sotto la supervisione del Trainer.
+            <div className="popup__content">
+                <div className="popup__left">
+                    <img src="images/sport_popup.jpg" alt="Sport" className="popup__img" />
+                </div>
+                <div className="popup__right">
+                    <a href="#section-tours" className="popup__close">&times;</a>
+                    <h2 className="heading-secondary u-margin-bottom-medium">Sport</h2>
+                    <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Personal Training</h2>
+                    <p className="popup__text">
+                        Sedute di allenamento individuali o a piccoli gruppi, eseguite sotto la supervisione del Trainer.
                 </p>
-                <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Preparazione Atletica</h2>
-                <p className="popup__text">
-                    Sedute di preparazione allo sport sia singolo che di squadra.
+                    <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Preparazione Atletica</h2>
+                    <p className="popup__text">
+                        Sedute di preparazione allo sport sia singolo che di squadra.
                 </p>
-                <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Rieducazione Funzionale</h2>
-                <p className="popup__text">
-                    Sedute di rieducazione post infortunio e recupero della capacità condizionali.
+                    <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Rieducazione Funzionale</h2>
+                    <p className="popup__text">
+                        Sedute di rieducazione post infortunio e recupero della capacità condizionali.
                 </p>
-                <Link to="/contact" className="btn btn--green">Contatta</Link>
+                    <Link to="/contact" className="btn btn--green">Contatta</Link>
 
+                </div>
             </div>
         </div>
-    </div>
-    <div className="popup" id="popup_2">
-        <div className="popup__content">
-            <div className="popup__left">
-            <img src="images/relax_popup.jpg" alt="Sport" className="popup__img" />
-            </div>
-            <div className="popup__right">
-                <a href="#section-tours" className="popup__close">&times;</a>
-                <h2 className="heading-secondary u-margin-bottom-medium">Relax</h2>
-                <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Massaggio Olistico</h2>
-                <p className="popup__text">
-                  Sedute di rilassamento e tonificazione miofasciale con tecniche di stretching assistito.
+        <div className="popup" id="popup_2">
+            <div className="popup__content">
+                <div className="popup__left">
+                    <img src="images/relax_popup.jpg" alt="Sport" className="popup__img" />
+                </div>
+                <div className="popup__right">
+                    <a href="#section-tours" className="popup__close">&times;</a>
+                    <h2 className="heading-secondary u-margin-bottom-medium">Relax</h2>
+                    <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Massaggio Olistico</h2>
+                    <p className="popup__text">
+                        Sedute di rilassamento e tonificazione miofasciale con tecniche di stretching assistito.
                 </p>
-                <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Massaggio Bioenergetico</h2>
-                <p className="popup__text">
-                  Trattamento eseguito con oli ed essenze essenziali.
+                    <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Massaggio Bioenergetico</h2>
+                    <p className="popup__text">
+                        Trattamento eseguito con oli ed essenze essenziali.
                 </p>
-                <Link to="/contact" className="btn btn--green">Contatta</Link>
-            </div>
-        </div>
-    </div>
-    <div className="popup" id="popup_3">
-        <div className="popup__content">
-            <div className="popup__left">
-            <img src="images/salute_popup.jpg" alt="Sport" className="popup__img" />
-            </div>
-            <div className="popup__right">
-                <a href="#section-tours" className="popup__close">&times;</a>
-                <h2 className="heading-secondary u-margin-bottom-medium">Salute</h2>
-                <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Training Integrato</h2>
-                <p className="popup__text">
-                Percorsi finalizzati al raggiungimento e al mantenimento di un buon stato di salute e di forma fisica.
-                </p>
-                <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Alimentazione Consapevole</h2>
-                <p className="popup__text">
-                Indicazioni sulla alimentazione da seguire per un corretto stile di vita e attività sportiva.
-                </p>
-                <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Naturopatia</h2>
-                <p className="popup__text">
-                Sedute di ripristino e mantenimento dell'equilibrio energetico della persona.
-                </p>
-                <Link to="/contact" className="btn btn--green">Contatta</Link>
+                    <Link to="/contact" className="btn btn--green">Contatta</Link>
+                </div>
             </div>
         </div>
-    </div>
+        <div className="popup" id="popup_3">
+            <div className="popup__content">
+                <div className="popup__left">
+                    <img src="images/salute_popup.jpg" alt="Sport" className="popup__img" />
+                </div>
+                <div className="popup__right">
+                    <a href="#section-tours" className="popup__close">&times;</a>
+                    <h2 className="heading-secondary u-margin-bottom-medium">Salute</h2>
+                    <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Training Integrato</h2>
+                    <p className="popup__text">
+                        Percorsi finalizzati al raggiungimento e al mantenimento di un buon stato di salute e di forma fisica.
+                </p>
+                    <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Alimentazione Consapevole</h2>
+                    <p className="popup__text">
+                        Indicazioni sulla alimentazione da seguire per un corretto stile di vita e attività sportiva.
+                </p>
+                    <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Naturopatia</h2>
+                    <p className="popup__text">
+                        Sedute di ripristino e mantenimento dell'equilibrio energetico della persona.
+                </p>
+                    <Link to="/contact" className="btn btn--green">Contatta</Link>
+                </div>
+            </div>
+        </div>
     </div>
 );
 

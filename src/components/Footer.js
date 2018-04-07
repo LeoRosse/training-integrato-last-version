@@ -1,28 +1,28 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => (
-    <footer className="footer">
+    <footer className="footer__2">
         <div className="footer__logo-box">
-            <img src="images/logo-trasparente.png" alt="Full Logo" className="footer__logo" />
+            {/* <img src="images/logo-trasparente.png" alt="Full Logo" className="footer__logo" /> */}
         </div>
         <div className="row">
             <div className="col-1-of-2">
                 <div className="footer__navigation">
                     <ul className="footer__list">
                         <li className="footer__item">
-                            <a href="#" className="footer__link">Company</a>
+                            <a href="#" className="footer__link">Partner</a>
                         </li>
                         <li className="footer__item">
-                            <a href="#" className="footer__link">Contact us</a>
+                            <Link to="/contact" className="footer__link">
+                                Contattaci</Link>
                         </li>
                         <li className="footer__item">
-                            <a href="#" className="footer__link">Carrers</a>
+                            <Link to="/info" className="footer__link">
+                                Curriculum</Link>
                         </li>
                         <li className="footer__item">
-                            <a href="#" className="footer__link">Privacy policy</a>
-                        </li>
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Terms</a>
+                            <a href="#" className="footer__link">Termini e privacy</a>
                         </li>
                     </ul>
                 </div>
