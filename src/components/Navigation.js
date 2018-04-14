@@ -22,8 +22,8 @@ const Navigation = () => (
                         Chi siamo</Link>
                 </li>
                 <li>
-                    <a href="#" className="navigation__link">
-                        Sport</a>
+                    <Link to="/sport" className="navigation__link">
+                        Sport</Link>
                 </li>
                 <li>
                     <a href="#" className="navigation__link">
