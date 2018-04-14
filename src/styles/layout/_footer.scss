@@ -29,6 +29,20 @@
     &__logo {
         width: 15rem;
         height: auto;
+        &--box{
+            display: inline;
+            margin-left:8rem;
+        }
+        &__cnm{
+            height: 7rem;
+        }
+        &__unifi{
+            height: 7rem;
+            margin-left: 2.5rem;
+        }
+        &__vergata{
+            height: 7rem;
+        }
     }
 
     &__navigation {
@@ -78,8 +92,8 @@
         border-top: 1px solid $color-grey-light-2;
         padding-top: 2rem;
         width: 80%;
-        float:right;
-
+        // float:right;
+        margin-left:8rem;
         @include respond(tab-port){
             width: 100%;
             float:none;

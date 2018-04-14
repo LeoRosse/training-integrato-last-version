@@ -27,15 +27,15 @@ const Navigation = () => (
                 </li>
                 <li>
                     <a href="#" className="navigation__link">
+                        Relax</a>
+                </li>
+                <li>
+                    <a href="#" className="navigation__link">
                         Salute</a>
                 </li>
                 <li>
                     <a href="#" className="navigation__link">
                         Studio Corporeo</a>
-                </li>
-                <li>
-                    <a href="#" className="navigation__link">
-                        Alimentazione</a>
                 </li>
                 <li>
                     <Link to="/contact" className="navigation__link">

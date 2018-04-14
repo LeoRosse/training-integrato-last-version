@@ -263,7 +263,12 @@ export const LandingPage = () => (
                     </div>
                 </div>
                 <div className="col-1-of-2">
-                    <p className="footer_copyright">
+                    <div className="footer__logo--box">
+                        <img src="images/CNM-Logo.png" alt="CNM Logo" className="footer__logo__cnm" />
+                        <img src="images/logo-unifi.png" alt="Unifi Logo" className="footer__logo__unifi" />
+                        <img src="images/logo-TorVergata.png" alt="CNM Logo" className="footer__logo__vergata" />
+                    </div>
+                    <p className="footer__copyright">
                         Built by <a href="" className="footer__link"> Leonardo Rosseti</a> {/* for his site
                     <a href="" className="footer__link">Advanced Site</a> Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for
                     both personal and commercial use, but NOT to claim it as your own design. A credit to the original author
