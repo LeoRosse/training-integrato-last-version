@@ -88,7 +88,16 @@ body{
 
 .paragraph{
     font-size: $default-font-size;
-
+    &__list{
+        list-style:none;
+    }
+    &__item{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        margin-left: -1rem;
+    }
     &:not(:last-child){
         margin-bottom: 3rem;
         padding-left: 1.5rem;

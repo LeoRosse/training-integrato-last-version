@@ -22,7 +22,7 @@ export const LandingPage = () => (
             <section className="section-about">
                 <div className="u-center-text u-margin-bottom-big">
                     <h2 className="heading-secondary">
-                        Specialista in Scienze Motorie, Personal Trainer, Naturopata
+                        Scienze Motorie - Personal Training - Naturopatia
                     </h2>
                 </div>
                 <div className="row">
@@ -35,20 +35,17 @@ export const LandingPage = () => (
                             La struttura e la funzione del gesto tecnico possono cambiare il punto di vista del tuo sport.
                         </p> */}
                         <h3 className="heading-tertiary u-margin-bottom-small">
-                            Le mie attività:
+                            Attività:
                         </h3>
                         <div className="paragraph">
-                            <ul>
-                                <li>Analisi della composizione corporea BIA</li>
-                                <li>Percorsi di Training integrato</li>
-                                <li>Personal Training</li>
-                                <li>Preparazione Atletica</li>
-                                <li>Rieducazione Funzionale</li>
-                                <li>Trattamento Olistico sportivo</li>
+                            <ul className="paragraph__list">
+                                <li className="paragraph__item">Percorsi di Training integrato</li>
+                                <li className="paragraph__item">Trattamenti Olistici</li>
+                                <li className="paragraph__item">Consulenza Nutrizionale</li>
                             </ul>
                         </div>
 
-                        <a href="" className="btn-text">Scopri di più &rarr;</a>
+                        <a href="#section-tours" className="btn-text">Scopri di più &rarr;</a>
 
                     </div>
                     <div className="col-1-of-2">
@@ -219,9 +216,9 @@ export const LandingPage = () => (
                             </div>
                             <div className="card__side card__side--back card__side--back-1">
                                 <div className="card__cta">
-                                    <div className="card__price-box">
+{/*                                     <div className="card__price-box">
                                         <p className="card__price-value">€50</p>
-                                    </div>
+                                    </div> */}
                                     <a href="#popup_1" className="btn btn--white">Scopri di più</a>
                                 </div>
                             </div>
@@ -247,9 +244,9 @@ export const LandingPage = () => (
                             </div>
                             <div className="card__side card__side--back card__side--back-2">
                                 <div className="card__cta">
-                                    <div className="card__price-box">
+{/*                                     <div className="card__price-box">
                                         <p className="card__price-value">€60</p>
-                                    </div>
+                                    </div> */}
                                     <a href="#popup_2" className="btn btn--white">Scopri di più</a>
                                 </div>
                             </div>
@@ -276,9 +273,9 @@ export const LandingPage = () => (
                             </div>
                             <div className="card__side card__side--back card__side--back-3">
                                 <div className="card__cta">
-                                    <div className="card__price-box">
-                                        <p className="card__price-value">€75</p>
-                                    </div>
+    {/*                                     <div className="card__price-box">
+                                            <p className="card__price-value">€75</p>
+                                        </div> */}
                                     <a href="#popup_3" className="btn btn--white">Scopri di più</a>
                                 </div>
                             </div>

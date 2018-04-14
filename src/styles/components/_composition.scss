@@ -50,10 +50,10 @@
         }
 
         &:hover{
-            outline: 1.5rem solid $color-primary; //per fare il bordo!
-            transform: scale(1.05) translateY(-.5rem);
-            box-shadow:0 2.5rem 4rem rgba($color-black, .5);
-            z-index: 20;
+        /* outline: 1.5rem solid #55c57a; */
+        transform: scale(2) translateY(-0.5rem);
+        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+        z-index: 20;
         }
     }
 
