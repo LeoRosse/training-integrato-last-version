@@ -133,3 +133,36 @@
      }
  
 }
+
+.header__relax{
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary-light,0.8),
+        rgba($color-tertiary-dark, 0.8)),
+        url('/images/relax-frontale.jpg');
+     //prova parallax
+     background-attachment: fixed;
+     background-position: center -5px;;
+     background-repeat: no-repeat;
+     background-size: cover;
+     
+     position:relative; /*se uso per i figli la position absolute a lui gli devo dare position relative*/
+     -webkit-clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+     clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+ 
+     
+     @include respond(phone){
+         -webkit-clip-path: polygon(0 0,100% 0,100% 85vh,0 100%);
+         clip-path: polygon(0 0,100% 0,100% 85vh,0 100%);
+     }
+ 
+     &__text-box{
+         position: absolute;
+         top:40%;
+         left:50%; /*questo come il top è il 50% del parent element in questo caso dell'header */
+         transform: translate(-50%,-50%); /*è Y X */
+         text-align: center;
+     }
+ 
+}

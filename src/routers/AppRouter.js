@@ -15,6 +15,7 @@ import AddArticlePage from '../components/AddArticlePage';
 import EditArticlePage from '../components/EditArticlePage';
 import ContactPage from '../components/ContactPage';
 import Sport from '../components/Sport';
+import Relax from '../components/Relax';
 
 
 export const history = createHistory();
@@ -30,6 +31,7 @@ const AppRouter = () => (
                 <PublicRoute path="/info" component={InfoPage} />
                 <PublicRoute path="/login" component={LoginPage} exact={true}/>
                 <PublicRoute path="/sport" component={Sport} />
+                <PublicRoute path="/relax" component={Relax} />
                 <PublicRoute path="/contact" component={ContactPage} />
                 <PrivateRoute path="/dashboard" component={DashboardPage} />
                 <PrivateRoute path="/create" component={AddArticlePage} />

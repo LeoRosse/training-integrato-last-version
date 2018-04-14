@@ -310,3 +310,121 @@
     
         }
 }
+
+.card--relax{
+    //Functionality
+    perspective: 150rem;
+    -moz-perspective: 150rem; //per farlo lavorare anche in firefox
+    position: relative;
+    height: 50rem;
+
+    &__side {
+        height: 50rem;
+        transition: all .8s ease;
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        backface-visibility: hidden; //nasconde il dietro di un elemento!
+        border-radius: 3px;
+        overflow: hidden; //perché c'ho messo una foto!
+        box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
+
+        &--front{
+            background-color: $color-white;
+        }
+
+    }
+    
+    &:hover &__side--front {
+        transform: scale(1.05) translateY(-0.5rem);
+        //dobbiamo definire la prospettiva sul parente!
+    }
+
+    //Front side styling
+    &__picture{
+        background-size: cover;
+        background-position: center;
+        height: 23rem;
+        background-blend-mode: screen; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
+        clip-path: polygon(0 0,100% 0, 100% 85%,0  100%);
+        -webkit-clip-path: polygon(0 0,100% 0, 100% 85%,0  100%); //per farlo lavorare sui browser
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        
+         &--1{
+            background-image: linear-gradient(to right bottom, $color-secondary-light,$color-secondary-dark),url("/images/sport-frontale.jpg")
+        }
+
+        &--2{
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-violet-medium,0.5),
+                rgba($color-violet-dark, 0.5)),url('/images/preparazione-atletica-1.jpg')
+        }
+
+        &--3{
+            background-image: linear-gradient(to right bottom, $color-tertiary-light,$color-tertiary-dark),url('/images/propriocettiva.jpg')
+        } 
+    }
+
+    &__heading{
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 10rem;
+        right: 2rem;
+        width:75%;
+        z-index:100;
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+/*             -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        &--1{
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85),rgba($color-secondary-dark, .85))
+        }
+
+        &--2{
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85),rgba($color-tertiary-dark, .85))
+        }
+
+        &--3{
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85),rgba($color-primary-dark, .85))
+        } */
+    }
+
+    &__details{
+        p{
+            width: 80%;
+            margin: 0 auto; //per centrare un blocco dentro un altro blocco! TRICK INCREDIBILE
+            text-align: left;
+            font-size: 1.3rem;
+            padding: 1.3rem;
+            }
+    }
+
+    //Back side styling
+
+    @include respond(tab-land){
+        height: auto;
+        border-radius: 3px;
+        background-color: $color-white;
+        box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
+
+        &__side {
+            height: auto;
+            position: relative;
+            box-shadow: none;
+        }
+
+        &__details {
+            padding: 1rem 3rem;
+        }
+
+    }
+}

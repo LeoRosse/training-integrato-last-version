@@ -139,7 +139,7 @@ export const LandingPage = () => (
                                 <div className="card__details">
                                     <ul>
                                         <li>Massaggio Olistico</li>
-                                        <li>Trattamento Energetico</li>
+                                        <li>Trattamento Riequilibrante</li>
                                     </ul>
                                 </div>
                             </div>
@@ -184,7 +184,7 @@ export const LandingPage = () => (
                     </div>
                 </div>
             </section>
-            <section className="section-stories">
+{/*             <section className="section-stories">
                 <div className="bg-video">
                     <img src="images/people-writing.jpg" alt="People writing" className="bg-video__content" />
                 </div>
@@ -196,8 +196,7 @@ export const LandingPage = () => (
                 <div className="row">
                     <div className="story">
                         <figure className="story__shape">
-                            {/*                             <img src="img/nat-8.jpg" alt="Person on a tour" className="story__img" />
- */}                            <figcaption className="story__caption">
+                         <figcaption className="story__caption">
                                 Mary Smith
                         </figcaption>
                         </figure>
@@ -216,8 +215,7 @@ export const LandingPage = () => (
                 <div className="row">
                     <div className="story">
                         <figure className="story__shape">
-                            {/*                             <img src="img/nat-9.jpg" alt="Person on a tour" className="story__img" />
- */}                            <figcaption className="story__caption">
+                         <figcaption className="story__caption">
                                 Jack Wilson
                         </figcaption>
                         </figure>
@@ -236,7 +234,7 @@ export const LandingPage = () => (
                 <div className="u-center-text u-margin-top-huge">
                     <a href="#" className="btn-text">Vai agli articoli &rarr;</a>
                 </div>
-            </section>
+            </section> */}
         </main>
         <footer className="footer">
             <div className="footer__logo-box">

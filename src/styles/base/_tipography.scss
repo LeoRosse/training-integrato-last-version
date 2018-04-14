@@ -105,6 +105,32 @@ body{
     }    
 }
 
+.heading-secondary--relax{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark);
+    -webkit-background-clip: text; //così il background è visibile solo dove è scritto il testo! sarà solo sui caratteri!
+    color:transparent;
+    letter-spacing: 2px;
+/*     transition: all .2s;
+
+    &:hover{
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    } */
+
+    
+    @include respond(tab-port){
+        font-size: 3rem;
+    }
+
+    @include respond(phone){
+        font-size: 2.5rem;
+    }    
+}
+
 .heading-tertiary{
     font-size: $default-font-size;
     font-weight: 700;

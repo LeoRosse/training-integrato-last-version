@@ -95,7 +95,7 @@
         // float:right;
         margin-left:8rem;
         @include respond(tab-port){
-            width: 100%;
+            // width: 100%;
             float:none;
         }
     }
