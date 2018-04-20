@@ -117,7 +117,7 @@ export const LandingPage = () => (
                             </div>
                             <div className="card__side card__side--back card__side--back-1">
                                 <div className="card__cta">
-{/*                                     <div className="card__price-box">
+                                    {/*                                     <div className="card__price-box">
                                         <p className="card__price-value">€50</p>
                                     </div> */}
                                     <a href="#popup_1" className="btn btn--white">Scopri di più</a>
@@ -145,7 +145,7 @@ export const LandingPage = () => (
                             </div>
                             <div className="card__side card__side--back card__side--back-2">
                                 <div className="card__cta">
-{/*                                     <div className="card__price-box">
+                                    {/*                                     <div className="card__price-box">
                                         <p className="card__price-value">€60</p>
                                     </div> */}
                                     <a href="#popup_2" className="btn btn--white">Scopri di più</a>
@@ -174,7 +174,7 @@ export const LandingPage = () => (
                             </div>
                             <div className="card__side card__side--back card__side--back-3">
                                 <div className="card__cta">
-    {/*                                     <div className="card__price-box">
+                                    {/*                                     <div className="card__price-box">
                                             <p className="card__price-value">€75</p>
                                         </div> */}
                                     <a href="#popup_3" className="btn btn--white">Scopri di più</a>
@@ -184,7 +184,7 @@ export const LandingPage = () => (
                     </div>
                 </div>
             </section>
-{/*             <section className="section-stories">
+            {/*             <section className="section-stories">
                 <div className="bg-video">
                     <img src="images/people-writing.jpg" alt="People writing" className="bg-video__content" />
                 </div>
@@ -262,9 +262,9 @@ export const LandingPage = () => (
                 </div>
                 <div className="col-1-of-2">
                     <div className="footer__logo--box">
-                        <img src="images/CNM-Logo.png" alt="CNM Logo" className="footer__logo__cnm" />
+                        <a href="http://www.cnmitalia.com/"><img src="images/CNM-Logo.png" alt="CNM Logo" className="footer__logo__cnm" /></a>
                         <a href="https://www.unifi.it"><img src="images/logo-unifi.png" alt="Unifi Logo" className="footer__logo__unifi" /></a>
-                        <img src="images/logo-TorVergata.png" alt="CNM Logo" className="footer__logo__vergata" />
+                        <a href="https://web.uniroma2.it/"><img src="images/logo-TorVergata.png" alt="CNM Logo" className="footer__logo__vergata" /></a>
                     </div>
                     <p className="footer__copyright">
                         Built by <a href="" className="footer__link"> Leonardo Rosseti</a> {/* for his site
