@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from './Navigation';
+import Footer from './Footer';
 
 const sport = () => (
     <div>
@@ -36,7 +37,7 @@ const sport = () => (
                             </h4>
                             <div className="card--sport__details">
                                 <p>
-                                    Sedute di allemento <bold>individuali</bold> o a <bold>piccoli gruppi</bold>, eseguite sotto la supervisione del Trainer.
+                                    Sedute di allemento <b>individuali</b> o a <b>piccoli gruppi</b>, eseguite sotto la supervisione del Trainer.
                                     Ogni singolo movimento viene curato dal punto di vista della postura e della respirazione. Esercizi mirati e un piano di allenamento
                                     adeguato permettono di raggiungere in maniera pianificata e graduale uno stato di forma e di efficienza fisica, in modo da ottenere
                                     il miglior risultato nel rispetto del proprio corpo.
@@ -89,45 +90,7 @@ const sport = () => (
                 </div>
             </div>
         </section>
-        <footer className="footer">
-            <div className="footer__logo-box">
-                <img src="images/logo-trasparente.png" alt="Full Logo" className="footer__logo" />
-            </div>
-            <div className="row">
-                <div className="col-1-of-2">
-                    <div className="footer__navigation">
-                        <ul className="footer__list">
-                            <li className="footer__item">
-                                <a href="#" className="footer__link">Partner</a>
-                            </li>
-                            <li className="footer__item">
-                                <Link to="/contact" className="footer__link">
-                                    Contattaci</Link>
-                            </li>
-                            <li className="footer__item">
-                                <a href="#" className="footer__link">Curriculum</a>
-                            </li>
-                            <li className="footer__item">
-                                <a href="#" className="footer__link">Termini e privacy</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="col-1-of-2">
-                    <div className="footer__logo--box">
-                        <img src="images/CNM-Logo.png" alt="CNM Logo" className="footer__logo__cnm" />
-                        <img src="images/logo-unifi.png" alt="Unifi Logo" className="footer__logo__unifi" />
-                        <img src="images/logo-TorVergata.png" alt="CNM Logo" className="footer__logo__vergata" />
-                    </div>
-                    <p className="footer__copyright">
-                        Built by <a href="" className="footer__link"> Leonardo Rosseti</a> {/* for his site
-                    <a href="" className="footer__link">Advanced Site</a> Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for
-                    both personal and commercial use, but NOT to claim it as your own design. A credit to the original author
-                    is of cours highly appreciated! */}
-                    </p>
-                </div>
-            </div>
-        </footer>
+        <Footer />
     </div>
 
 );

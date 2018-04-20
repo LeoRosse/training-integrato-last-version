@@ -263,7 +263,7 @@ export const LandingPage = () => (
                 <div className="col-1-of-2">
                     <div className="footer__logo--box">
                         <img src="images/CNM-Logo.png" alt="CNM Logo" className="footer__logo__cnm" />
-                        <img src="images/logo-unifi.png" alt="Unifi Logo" className="footer__logo__unifi" />
+                        <a href="https://www.unifi.it"><img src="images/logo-unifi.png" alt="Unifi Logo" className="footer__logo__unifi" /></a>
                         <img src="images/logo-TorVergata.png" alt="CNM Logo" className="footer__logo__vergata" />
                     </div>
                     <p className="footer__copyright">
@@ -274,7 +274,11 @@ export const LandingPage = () => (
                     </p>
                 </div>
             </div>
-        </footer>        
+        </footer>
+
+
+
+
         <div className="popup" id="popup_1">
             <div className="popup__content">
                 <div className="popup__left">
