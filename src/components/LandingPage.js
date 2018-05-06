@@ -103,7 +103,7 @@ export const LandingPage = () => (
                                     &nbsp;
                             </div>
                                 <h4 className="card__heading">
-                                    <span className="card__heading-span card__heading-span--1">
+                                    <span className="card__heading-span">
                                         Sport
                                 </span>
                                 </h4>
@@ -132,7 +132,7 @@ export const LandingPage = () => (
                                     &nbsp;
                             </div>
                                 <h4 className="card__heading">
-                                    <span className="card__heading-span card__heading-span--2">
+                                    <span className="card__heading-span">
                                         Relax
                                 </span>
                                 </h4>
@@ -160,7 +160,7 @@ export const LandingPage = () => (
                                     &nbsp;
                             </div>
                                 <h4 className="card__heading">
-                                    <span className="card__heading-span card__heading-span--3">
+                                    <span className="card__heading-span">
                                         Salute
                                 </span>
                                 </h4>

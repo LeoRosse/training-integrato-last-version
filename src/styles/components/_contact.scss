@@ -38,12 +38,15 @@
     &__item {
         margin: 1rem;
         display: inline-block;
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: 500;
         padding: 1rem 2rem;
         color: $color-black;
         text-decoration: none;
         text-transform: uppercase;
+        &--email{
+            text-transform: none;
+        }
 
         &__top{
             font-size: 4rem;        
