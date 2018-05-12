@@ -30,11 +30,11 @@ const Navigation = () => (
                         Relax</Link>
                 </li>
                 <li>
-                    <a href="#" className="navigation__link">
-                        Salute</a>
+                    <Link to="/salute" className="navigation__link">
+                        Salute</Link>
                 </li>
                 <li>
-                    <a href="#" className="navigation__link">
+                    <a href="/composizionecorporea" className="navigation__link">
                         Studio Corporeo</a>
                 </li>
                 <li>

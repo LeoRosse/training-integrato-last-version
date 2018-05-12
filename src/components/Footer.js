@@ -14,14 +14,14 @@ const Footer = () => (
                                 <a href="#" className="footer__link">Partner</a>
                             </li>
                             <li className="footer__item">
-                                <Link to="/contact" className="footer__link">
-                                    Contattaci</Link>
+                                <a href="/contact" className="footer__link">
+                                    Contattaci</a>
                             </li>
                             <li className="footer__item">
-                                <a href="#" className="footer__link">Curriculum</a>
+                                <a href="/info" className="footer__link">Curriculum</a>
                             </li>
                             <li className="footer__item">
-                                <a href="#" className="footer__link">Termini e privacy</a>
+                                <a href="/info" className="footer__link">Termini e privacy</a>
                             </li>
                         </ul>
                     </div>

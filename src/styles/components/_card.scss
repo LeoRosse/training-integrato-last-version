@@ -247,6 +247,13 @@
     
             &--3{
                 background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark),url('/images/propriocettiva.jpg')
+            }
+            &--4{
+                background-image: linear-gradient(to right bottom, $color-secondary-light,$color-secondary-dark),url('/images/alimentazione-consapevole-2.jpg');
+                background-blend-mode: multiply; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
+            }
+            &--5{
+                background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark),url('/images/naturopatia-2.jpg')
             } 
         }
     
@@ -346,7 +353,7 @@
         background-size: cover;
         background-position: center;
         height: 23rem;
-        background-blend-mode: screen; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
+        // background-blend-mode: screen; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
         clip-path: polygon(0 0,100% 0, 100% 85%,0  100%);
         -webkit-clip-path: polygon(0 0,100% 0, 100% 85%,0  100%); //per farlo lavorare sui browser
         border-top-left-radius: 3px;
@@ -360,11 +367,14 @@
             background-image: linear-gradient(
                 to right bottom,
                 rgba($color-violet-medium,0.5),
-                rgba($color-violet-dark, 0.5)),url('/images/preparazione-atletica-1.jpg')
+                rgba($color-violet-dark, 0.5)),url('/images/massaggio-olistico.jpg');
+                background-blend-mode: soft-light; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
+
         }
 
         &--3{
-            background-image: linear-gradient(to right bottom, $color-tertiary-light,$color-tertiary-dark),url('/images/propriocettiva.jpg')
+            background-image: linear-gradient(to right bottom, $color-tertiary-light,$color-tertiary-dark),url('/images/trattamento-energetico-2.jpg');
+            background-blend-mode: overlay; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
         } 
     }
 

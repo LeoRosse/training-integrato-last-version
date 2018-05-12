@@ -139,7 +139,7 @@ export const LandingPage = () => (
                                 <div className="card__details">
                                     <ul>
                                         <li>Massaggio Olistico</li>
-                                        <li>Trattamento Riequilibrante</li>
+                                        <li>Trattamento Energetico</li>
                                     </ul>
                                 </div>
                             </div>
@@ -166,9 +166,8 @@ export const LandingPage = () => (
                                 </h4>
                                 <div className="card__details">
                                     <ul>
-                                        <li>Training Integrato</li>
-                                        <li>Alimentazione Consapevole</li>
                                         <li>Naturopatia</li>
+                                        <li>Alimentazione Consapevole</li>
                                     </ul>
                                 </div>
                             </div>
@@ -252,7 +251,7 @@ export const LandingPage = () => (
                                     Contattaci</Link>
                             </li>
                             <li className="footer__item">
-                                <a href="#" className="footer__link">Curriculum</a>
+                                <Link to="/info" className="footer__link">Curriculum</Link>
                             </li>
                             <li className="footer__item">
                                 <a href="#" className="footer__link">Termini e privacy</a>
@@ -299,7 +298,7 @@ export const LandingPage = () => (
                     <p className="popup__text">
                         Sedute di rieducazione post infortunio e recupero della capacità condizionali.
                 </p>
-                    <Link to="/contact" className="btn btn--green">Contatta</Link>
+                    <a href="/contact" className="btn btn--green">Contatta</a>
 
                 </div>
             </div>
@@ -316,11 +315,11 @@ export const LandingPage = () => (
                     <p className="popup__text">
                         Sedute di rilassamento e tonificazione miofasciale con tecniche di stretching assistito.
                 </p>
-                    <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Massaggio Bioenergetico</h2>
+                    <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Massaggio Energetico</h2>
                     <p className="popup__text">
                         Trattamento eseguito con oli ed essenze essenziali.
                 </p>
-                    <Link to="/contact" className="btn btn--green">Contatta</Link>
+                    <a href="/contact" className="btn btn--green">Contatta</a>
                 </div>
             </div>
         </div>
@@ -344,7 +343,7 @@ export const LandingPage = () => (
                     <p className="popup__text">
                         Sedute di ripristino e mantenimento dell'equilibrio energetico della persona.
                 </p>
-                    <Link to="/contact" className="btn btn--green">Contatta</Link>
+                    <a href="/contact" className="btn btn--green">Contatta</a>
                 </div>
             </div>
         </div>

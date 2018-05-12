@@ -55,7 +55,7 @@ const relax = () => (
                             </div>
                             <h4 className="card--relax__heading">
                                 <span className="card--relax__heading-span card--relax__heading-span--3">
-                                    Trattamento Riequilibrante
+                                    Trattamento Energetico
                                 </span>
                             </h4>
                             <div className="card--relax__details">
