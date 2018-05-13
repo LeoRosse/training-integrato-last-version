@@ -221,10 +221,21 @@
             }
     
         }
+
+        &--compocorporea{
+            height: 100rem;
+            @include respond(tab-land){
+                height: auto;
+        
+            }
+        }
         
         &:hover &__side--front {
             transform: scale(1.2) translateY(-0.5rem);
             //dobbiamo definire la prospettiva sul parente!
+        }
+        &:hover &--compocorporea {
+            transform: none
         }
     
         //Front side styling
@@ -253,7 +264,10 @@
                 background-blend-mode: multiply; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
             }
             &--5{
-                background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark),url('/images/naturopatia-2.jpg')
+                background-image: url('/images/naturopatia-2.jpg')
+            } 
+            &--6{
+                background-image: linear-gradient(to right bottom, $color-tertiary-light,$color-tertiary-dark),url('/images/statistiche-2.jpg')
             } 
         }
     
@@ -268,6 +282,9 @@
             right: 2rem;
             width:75%;
             z-index:100;
+            &--black{
+                color: black;
+            }
         }
     
         &__heading-span {
@@ -288,7 +305,7 @@
         }
     
         &__details{
-            p{
+            p,ul{
                 width: 80%;
                 margin: 0 auto; //per centrare un blocco dentro un altro blocco! TRICK INCREDIBILE
                 text-align: left;
@@ -436,5 +453,12 @@
             padding: 1rem 3rem;
         }
 
+    }
+}
+
+.card--compocorporea{
+    height: 90rem;
+    @include respond(tab-land){
+        height: 180rem;
     }
 }

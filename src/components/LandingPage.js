@@ -60,33 +60,24 @@ export const LandingPage = () => (
 
             <section className="section-features">
                 <div className="row">
-                    <div className="col-1-of-3">
                         <div className="feature-box">
-                            <img className="feature-box__icon" src="/png/basic_heart.png" />
                             <h3 className="heading-tertiary u-margin-bottom-small">Composizione Corporea</h3>
-                            <p className="feature-box__text">
-                                Cos'è la Bioimpedenza
-                        </p>
+                            <span className="feature-box__text">
+                            Conoscere la <b>composizione corporea</b> non vuol dire solo conoscere il proprio peso, ma significa capire in modo oggettivo ed analitico da cosa è composto e come le componenti cambiano nel tempo.                       
+                            <br/>
+                            <br/>
+                            Attraverso la <b>metodica BIA</b> siamo in grado di analizzare:
+                            <ul className="feature-box__list">
+                                <li>lo stato di idratazione</li>
+                                <li>valutare la quantità di muscolo e grasso corporeo</li>
+                                <li>stimare il metabolismo basale</li>
+                                <li>analizzare lo stato di stress cellulare</li>
+                            </ul>
+                            </span>
+                            <a href="/composizionecorporea" className="btn-text">Scopri di più &rarr;</a>
+
                         </div>
-                    </div>
-                    <div className="col-1-of-3">
-                        <div className="feature-box">
-                            <img className="feature-box__icon" src="/png/basic_accelerator.png" />
-                            <h3 className="heading-tertiary u-margin-bottom-small">Test Fisici</h3>
-                            <p className="feature-box__text">
-                                Come vengono effettuati
-                        </p>
-                        </div>
-                    </div>
-                    <div className="col-1-of-3">
-                        <div className="feature-box">
-                            <img className="feature-box__icon" src="/png/basic_target.png" />
-                            <h3 className="heading-tertiary u-margin-bottom-small">Training Personalizzati</h3>
-                            <p className="feature-box__text">
-                                Trova il tuo training
-                        </p>
-                        </div>
-                    </div>
+
                 </div>
             </section>
             <section className="section-tours" id="section-tours">

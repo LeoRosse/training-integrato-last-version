@@ -30,18 +30,21 @@ const Salute = () => (
                             <div className="card--sport__picture card--sport__picture--5">
                                 &nbsp;
                             </div>
-                            <h4 className="card--sport__heading">
+                            <h4 className="card--sport__heading card--sport__heading--black">
                                 <span className="card--sport__heading-span card--sport__heading-span--1">
                                     Naturopatia
                                 </span>
                             </h4>
                             <div className="card--sport__details">
                                 <p>
-                                    Sedute di allemento <b>individuali</b> o a <b>piccoli gruppi</b>, eseguite sotto la supervisione del Trainer.
-                                    Ogni singolo movimento viene curato dal punto di vista della postura e della respirazione. Esercizi mirati e un piano di allenamento
-                                    adeguato permettono di raggiungere in maniera pianificata e graduale uno stato di forma e di efficienza fisica, in modo da ottenere
-                                    il miglior risultato nel rispetto del proprio corpo.
+                                    Dopo una prima presentazione libera da parte del cliente, il colloquio verrà indirizzato in modo mirato per conoscere le peculiarità dell’individuo, attraverso domande specifiche si affronteranno sintomi e caratteristiche psico-fisiche, per valutarne la costituzione ed intervenire di conseguenza.
+                                Si integra poi il colloquio con una valutazione della composizione corporea (BIA)
+                                <br />
+                                    Al termine della Consulenza Naturopatica  verranno indicati:
                                 </p>
+                                <ul className="feature-box__list">
+                                    <li>Consigli per un sano stile di vita, Regole generali per una corretta alimentazione, Suggerimenti di tecniche da praticare in casa, Indicazioni per una adeguata attività fisica</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -59,10 +62,14 @@ const Salute = () => (
                             </h4>
                             <div className="card--sport__details">
                                 <p>
-                                    Sedute di preparazione allo Sport sia singolo che di squadra, test fisici, periodizzazione dei cicli di carico/scarico, educazione al gesto
-                                    tecnico, riequilibrio muscolare e prevenzione dagli infortuni. Per una performance di livello o semplicemente per affrontare al meglio
-                                    ogni tipo di attività sia amatoriale che agonistica.
+                                    Il Percorso di Alimentazione Integrata non è una dieta, ma una serie di consigli alimentari che suggeriscono una sana e corretta alimentazione finalizzata al benessere psico-fisico e alla salute della persona.
+                                    <br />
+                                    Il Piano Personalizzato risponde alle diverse esigenze individuali in base a:
                                 </p>
+                                <ul className="feature-box__list">
+                                    <li>costituzione, composizione corporea, attività fisica, ritmi di vita, gusti e preferenze</li>
+                                </ul>
+                                <p>un’attenta analisi costituzionale della persona, permette di individuare un programma mirato per arrivare ad una alimentazione consapevole</p>
                             </div>
                         </div>
                     </div>

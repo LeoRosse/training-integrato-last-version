@@ -27,5 +27,7 @@
     &:hover{
         transform: translateY(-1.5rem) scale(1.03)
     }
-
+    &__list{
+        list-style: none;
+    }
 }
