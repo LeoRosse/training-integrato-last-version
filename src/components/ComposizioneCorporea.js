@@ -17,7 +17,7 @@ const ComposizioneCorporea = () => (
 
             </div>
         </header>
-        <section className="section-home-fitness" id="section-relax">
+        <section className="section-home-fitness section-home-fitness--studio-corporeo" id="section-relax">
             <div className="u-center-text u-margin-bottom-big">
                 <h2 className="heading-secondary--relax">
                     Conosci i tuoi valori

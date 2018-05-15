@@ -55,4 +55,9 @@
     @include respond(tab-port){
         padding: 20rem 0 10rem 0;
     }
+    &--studio-corporeo{
+        @include respond(tab-port){
+            height: 240rem;
+        }
+    }
 }
