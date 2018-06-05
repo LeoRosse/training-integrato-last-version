@@ -320,10 +320,6 @@ export const LandingPage = () => (
                 <div className="popup__right">
                     <a href="#section-tours" className="popup__close">&times;</a>
                     <h2 className="heading-secondary u-margin-bottom-medium">Salute</h2>
-                    <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Training Integrato</h2>
-                    <p className="popup__text">
-                        Percorsi finalizzati al raggiungimento e al mantenimento di un buon stato di salute e di forma fisica.
-                </p>
                     <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Alimentazione Consapevole</h2>
                     <p className="popup__text">
                         Indicazioni sulla alimentazione da seguire per un corretto stile di vita e attività sportiva.
