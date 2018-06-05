@@ -18,3 +18,10 @@
 .u-margin-top-big {margin-top: 8rem !important;}
 
 .u-margin-top-huge {margin-top: 10rem !important;}
+
+.video{
+    width: 50rem;
+    @media (max-width:420px){
+        width: 38rem;
+    }
+}

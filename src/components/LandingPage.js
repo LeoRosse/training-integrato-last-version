@@ -50,9 +50,7 @@ export const LandingPage = () => (
                     </div>
                     <div className="col-1-of-2">
                         <div className="composition">
-                            <img src="images/movimento.jpg" alt="Movimento" className="composition__photo composition__photo--p1" />
-                            <img src="images/preparazione-atletica.jpg" alt="Preparazione Atletica" className="composition__photo composition__photo--p2" />
-                            <img src="images/recupero-funzionale.jpg" alt="Recupero Funzionale" className="composition__photo composition__photo--p3" />
+                            <video src="video/intro.mov" controls className="video"/>
                         </div>
                     </div>
                 </div>
@@ -60,12 +58,12 @@ export const LandingPage = () => (
 
             <section className="section-features">
                 <div className="row">
-                        <div className="feature-box">
-                            <h3 className="heading-tertiary u-margin-bottom-small">Composizione Corporea</h3>
-                            <span className="feature-box__text">
-                            Conoscere la <b>composizione corporea</b> non vuol dire solo conoscere il proprio peso, ma significa capire in modo oggettivo ed analitico da cosa è composto e come le componenti cambiano nel tempo.                       
-                            <br/>
-                            <br/>
+                    <div className="feature-box">
+                        <h3 className="heading-tertiary u-margin-bottom-small">Composizione Corporea</h3>
+                        <span className="feature-box__text">
+                            Conoscere la <b>composizione corporea</b> non vuol dire solo conoscere il proprio peso, ma significa capire in modo oggettivo ed analitico da cosa è composto e come le componenti cambiano nel tempo.
+                            <br />
+                            <br />
                             Attraverso la <b>metodica BIA</b> siamo in grado di analizzare:
                             <ul className="feature-box__list">
                                 <li>lo stato di idratazione</li>
@@ -73,10 +71,10 @@ export const LandingPage = () => (
                                 <li>stimare il metabolismo basale</li>
                                 <li>analizzare lo stato di stress cellulare</li>
                             </ul>
-                            </span>
-                            <a href="/composizionecorporea" className="btn-text">Scopri di più &rarr;</a>
+                        </span>
+                        <a href="/composizionecorporea" className="btn-text">Scopri di più &rarr;</a>
 
-                        </div>
+                    </div>
 
                 </div>
             </section>
@@ -343,3 +341,8 @@ export const LandingPage = () => (
 
 
 export default LandingPage;
+
+
+/* <img src="images/movimento.jpg" alt="Movimento" className="composition__photo composition__photo--p1" />
+        <img src="images/preparazione-atletica.jpg" alt="Preparazione Atletica" className="composition__photo composition__photo--p2" />
+        <img src="images/recupero-funzionale.jpg" alt="Recupero Funzionale" className="composition__photo composition__photo--p3" /> */

@@ -7,10 +7,7 @@ import LoginPage from '../components/LoginPage';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
 import LandingPage from '../components/LandingPage';
-import DashboardPublicPage from '../components/DashboardPublicPage';
 import InfoPage from '../components/InfoPage';
-import HomeFitness from '../components/HomeFitness';
-import AthleticTraining from '../components/AthleticTraining';
 import AddArticlePage from '../components/AddArticlePage';
 import EditArticlePage from '../components/EditArticlePage';
 import ContactPage from '../components/ContactPage';
@@ -27,9 +24,6 @@ const AppRouter = () => (
         <div>
             <Switch>
                 <PublicRoute path="/" component={LandingPage} exact={true} />
-                <PublicRoute path="/dashboard-public" component={DashboardPublicPage}  />
-                <PublicRoute path="/home-fitness" component={HomeFitness}  />
-                <PublicRoute path="/athletic-training" component={AthleticTraining} />
                 <PublicRoute path="/info" component={InfoPage} />
                 <PublicRoute path="/login" component={LoginPage} exact={true}/>
                 <PublicRoute path="/sport" component={Sport} />

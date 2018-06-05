@@ -69,7 +69,7 @@ const Salute = () => (
                                 <ul className="feature-box__list">
                                     <li>costituzione, composizione corporea, attività fisica, ritmi di vita, gusti e preferenze</li>
                                 </ul>
-                                <p>un’attenta analisi costituzionale della persona, permette di individuare un programma mirato per arrivare ad una alimentazione consapevole</p>
+                                <p>Un’attenta analisi costituzionale della persona, permette di individuare un programma mirato per arrivare ad una alimentazione consapevole</p>
                             </div>
                         </div>
                     </div>

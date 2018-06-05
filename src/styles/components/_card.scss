@@ -260,7 +260,7 @@
                 background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark),url('/images/recupero-funzionale-2.jpg')
             }
             &--4{
-                background-image: linear-gradient(to right bottom, $color-secondary-light,$color-secondary-dark),url('/images/alimentazione-consapevole-2.jpg');
+                background-image: url('/images/alimentazione-consapevole-3.jpg');
                 background-blend-mode: multiply; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
             }
             &--5{
