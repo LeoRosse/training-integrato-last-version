@@ -26,14 +26,14 @@ export const LandingPage = () => (
                     </h2>
                 </div>
                 <div className="row">
-                    <div className="col-1-of-2">
-                        {/*                         <h3 className="heading-tertiary u-margin-bottom-small">
+                    {/*                    <div className="col-1-of-2">
+                        <h3 className="heading-tertiary u-margin-bottom-small">
                             Preparazione atletica
                         </h3>
                         <p className="paragraph">
                             La preparazione atletica e lo studio del gesto tecnico sono la base per raggiungere obiettivi per qualsiasi sport.
                             La struttura e la funzione del gesto tecnico possono cambiare il punto di vista del tuo sport.
-                        </p> */}
+                        </p>
                         <h3 className="heading-tertiary u-margin-bottom-small">
                             Attività:
                         </h3>
@@ -47,11 +47,11 @@ export const LandingPage = () => (
 
                         <a href="#section-tours" className="btn-text">Scopri di più &rarr;</a>
 
-                    </div>
-                    <div className="col-1-of-2">
-                        <div className="composition">
-                            <video src="video/intro.mov" controls className="video"/>
-                        </div>
+            </div>*/}
+                    <div className="composition">
+                        <video muted loop autoPlay className="video">
+                            <source src="video/videoNuovo.mov" />
+                        </video>
                     </div>
                 </div>
             </section>
@@ -226,7 +226,7 @@ export const LandingPage = () => (
         </main>
         <footer className="footer">
             <div className="footer__logo-box">
-                <img src="images/logo-trasparente.png" alt="Full Logo" className="footer__logo" />
+                <img src="images/Logo3dtrasp.png" alt="Full Logo" className="footer__logo" />
             </div>
             <div className="row">
                 <div className="col-1-of-2">

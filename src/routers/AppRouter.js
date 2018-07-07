@@ -15,13 +15,14 @@ import Sport from '../components/Sport';
 import Relax from '../components/Relax';
 import Salute from '../components/Salute';
 import ComposizioneCorporea from '../components/ComposizioneCorporea';
+import ScrollToTop from './ScrollToTop/ScrollToTop';
 
 
 export const history = createHistory();
 
 const AppRouter = () => (
     <Router history={history} >
-        <div>
+        <ScrollToTop>
             <Switch>
                 <PublicRoute path="/" component={LandingPage} exact={true} />
                 <PublicRoute path="/info" component={InfoPage} />
@@ -37,7 +38,7 @@ const AppRouter = () => (
                 <PrivateRoute path="/edit/:id" component={EditArticlePage} />
                 <PublicRoute component={NotFoundPage} />
             </Switch>
-        </div>
+        </ScrollToTop>
     </Router>
 )
 

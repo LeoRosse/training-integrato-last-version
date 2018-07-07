@@ -20,7 +20,14 @@
 .u-margin-top-huge {margin-top: 10rem !important;}
 
 .video{
-    width: 50rem;
+    width: 100rem;
+    box-shadow:0 1.5rem 3rem rgba($color-black, .2);
+    @media(width:768px){
+        width: 43rem;
+    }
+    @media(width:1024px){
+        width: 43rem;
+    }
     @media (max-width:420px){
         width: 38rem;
     }
