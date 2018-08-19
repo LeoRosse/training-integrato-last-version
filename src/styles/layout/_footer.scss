@@ -32,6 +32,9 @@
         &--box{
             display: inline;
             margin-left:8rem;
+            @include respond(phone){
+                margin-left:10rem;
+            }
         }
         &__cnm{
             height: 7rem;

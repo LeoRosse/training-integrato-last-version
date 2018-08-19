@@ -26,9 +26,9 @@ const ComposizioneCorporea = () => (
             <div className="row">
                 <div className="card--sport card--compocorporea">
                     <div className="card--sport__side card--sport__side--front card--sport--compocorporea">
-                        <div className="card--sport__picture card--sport__picture--6">
+ {/*                       <div className="card--sport__picture card--sport__picture--6">
                             &nbsp;
-                            </div>
+            </div>*/}
                         <div className="card--sport__details">
                             <p>
                                 Mediante controlli periodici si facilita la comprensione dei cambiamenti della composizione corporea, valutando, al di là del peso, la reale modificazione dei tessuti.</p>

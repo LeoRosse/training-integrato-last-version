@@ -55,16 +55,14 @@ const relax = () => (
                             </div>
                             <h4 className="card--relax__heading">
                                 <span className="card--relax__heading-span card--relax__heading-span--3">
-                                    Trattamento Energetico
+                                    Trattamento Riequilibrante
                                 </span>
                             </h4>
                             <div className="card--relax__details">
                                 <p>
-                                    Sedute di rimuscolazione post infortunio e recupero delle capacità condizionali per la ripresa dell'attività fisica e atletica.
-                                    Viene strutturato un'allenamento specifico a corpo libero e con l'uso di sovraccarichi, coadiuvato da esercizi propriocettivi per
-                                    migliorare equilibrio, tono muscolare e stabilità articolare.
+                                    Sedute di rilassamento e tonificazione miofasciale, con tecniche di stretching assistito, per ritrovare armonia del proprio corpo dopo una gara, uno sforzo fisico o per semplice benessere. Il trattamento consiste nel riequilibrare la postura mediante allungamento di alcuni distretti muscolari e tendinei, utilizzando digitopressioni nei punti chiave per ripristinare la mobilità articolare, migliorare l'elasticità e sciolere tensioni.
                                 </p>
-                            </div>
+                            </div> 
                         </div>
                     </div>
                 </div>

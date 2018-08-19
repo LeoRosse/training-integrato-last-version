@@ -75,9 +75,9 @@ export const LandingPage = () => (
                     <div className="col-1-of-3">
                         <div className="card">
                             <div className="card__side card__side--front">
-                                <div className="card__picture card__picture--1">
+                                <a href="/sport"><div className="card__picture card__picture--1">
                                     &nbsp;
-                            </div>
+                            </div></a>
                                 <h4 className="card__heading">
                                     <span className="card__heading-span">
                                         Sport
@@ -104,9 +104,9 @@ export const LandingPage = () => (
                     <div className="col-1-of-3">
                         <div className="card">
                             <div className="card__side card__side--front">
-                                <div className="card__picture card__picture--2">
+                                <a href="/relax"><div className="card__picture card__picture--2">
                                     &nbsp;
-                            </div>
+                            </div></a>
                                 <h4 className="card__heading">
                                     <span className="card__heading-span">
                                         Relax
@@ -115,7 +115,7 @@ export const LandingPage = () => (
                                 <div className="card__details">
                                     <ul>
                                         <li>Massaggio Olistico</li>
-                                        <li>Trattamento Energetico</li>
+                                        <li>Trattamento Riequilibrante</li>
                                     </ul>
                                 </div>
                             </div>
@@ -132,9 +132,9 @@ export const LandingPage = () => (
                     <div className="col-1-of-3">
                         <div className="card">
                             <div className="card__side card__side--front">
-                                <div className="card__picture card__picture--3">
+                                <a href="/salute"><div className="card__picture card__picture--3">
                                     &nbsp;
-                            </div>
+                            </div></a>
                                 <h4 className="card__heading">
                                     <span className="card__heading-span">
                                         Salute
@@ -143,6 +143,7 @@ export const LandingPage = () => (
                                 <div className="card__details">
                                     <ul>
                                         <li>Training Integrato</li>
+                                        <li>Alimentazione Consapevole</li>
                                     </ul>
                                 </div>
                             </div>
@@ -216,7 +217,12 @@ export const LandingPage = () => (
             </div>
             <div className="row">
                 <div className="col-1-of-2">
-                    <div className="footer__navigation">
+                    <div className="footer__logo--box">
+                        <a href="http://www.facebook.com/trainingintegrato.it" target="blank"><i className="fab fa-facebook-square icon"></i></a>
+                        <a href="https://www.youtube.com/user/albertosantarato" target="blank"><i className="fab fa-youtube icon"></i></a>
+                        <a href="https://www.instagram.com/trainingintegrato/" target="blank"><i className="fab fa-instagram icon"></i></a>
+                    </div>
+                    <div className="footer__copyright">
                         <ul className="footer__list">
                             <li className="footer__item">
                                 <a href="#" className="footer__link">Partner</a>

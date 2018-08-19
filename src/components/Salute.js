@@ -30,11 +30,11 @@ const Salute = () => (
                             <div className="card--sport__picture card--sport__picture--5">
                                 &nbsp;
                             </div>
-                            <h4 className="card--sport__heading card--sport__heading--black">
+{/*                            <h4 className="card--sport__heading card--sport__heading--black">
                                 <span className="card--sport__heading-span card--sport__heading-span--1">
-                                    Naturopatia
+                                    Training Integrato
                                 </span>
-                            </h4>
+            </h4>*/}
                             <div className="card--sport__details">
                                 <p>
                                     Dopo una prima presentazione libera da parte del cliente, il colloquio verrà indirizzato in modo mirato per conoscere le peculiarità dell’individuo, attraverso domande specifiche si affronteranno sintomi e caratteristiche psico-fisiche, per valutarne la costituzione ed intervenire di conseguenza.

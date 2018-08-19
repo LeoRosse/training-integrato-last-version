@@ -266,7 +266,7 @@
                 background-blend-mode: multiply; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
             }
             &--5{
-                background-image: url('/images/naturopatia-2.jpg')
+                background-image: url('/images/training_integrato.jpg')
             } 
             &--6{
                 background-image: linear-gradient(to right bottom, $color-tertiary-light,$color-tertiary-dark),url('/images/bia-card-1.jpg')
@@ -383,6 +383,7 @@
         }
 
         &--2{
+            background-position: bottom;
             background-image: linear-gradient(
                 to right bottom,
                 rgba($color-violet-medium,0.5),
@@ -392,7 +393,7 @@
         }
 
         &--3{
-            background-image: linear-gradient(to right bottom, $color-tertiary-light,$color-tertiary-dark),url('/images/trattamento-energetico-2.jpg');
+            background-image: url('/images/trattamento-riequilibrante.jpg');
             background-blend-mode: overlay; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
         } 
     }
