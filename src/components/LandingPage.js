@@ -26,40 +26,27 @@ export const LandingPage = () => (
                     </h2>
                 </div>
                 <div className="row">
-                    {/*                    <div className="col-1-of-2">
+                    <div className="col-1-of-2">
                         <h3 className="heading-tertiary u-margin-bottom-small">
-                            Preparazione atletica
+                            Training Integrato
                         </h3>
                         <p className="paragraph">
-                            La preparazione atletica e lo studio del gesto tecnico sono la base per raggiungere obiettivi per qualsiasi sport.
-                            La struttura e la funzione del gesto tecnico possono cambiare il punto di vista del tuo sport.
+                            Percorso mirato al raggiungimento e mantenimento di un buono stato di salute e di forma fisica. Si basa su un corretto stile di vita, su una alimentazione consapevole e su una attività fisica mirata.
                         </p>
-                        <h3 className="heading-tertiary u-margin-bottom-small">
-                            Attività:
-                        </h3>
-                        <div className="paragraph">
-                            <ul className="paragraph__list">
-                                <li className="paragraph__item">Percorsi di Training integrato</li>
-                                <li className="paragraph__item">Trattamenti Olistici</li>
-                                <li className="paragraph__item">Consulenza Nutrizionale</li>
-                            </ul>
-                        </div>
-
-                        <a href="#section-tours" className="btn-text">Scopri di più &rarr;</a>
-
-            </div>*/}
-                    <div className="composition">
+                        <a href="#popup_1" className="btn-text">Scopri di più &rarr;</a>
+                    </div>
+                    {/*                 <div className="composition">
                         <video muted loop autoPlay className="video">
                             <source src="video/videoNuovoSmall.mov" />
                         </video>
-                    </div>
+        </div>*/}
                 </div>
             </section>
 
             <section className="section-features">
                 <div className="row">
                     <div className="feature-box">
-                        <h3 className="heading-tertiary u-margin-bottom-small">Training Integrato</h3>
+                        <h3 className="heading-tertiary u-margin-bottom-small">Composizione Corporea</h3>
                         <span className="feature-box__text">
                             Conoscere la <b>composizione corporea</b> non vuol dire solo conoscere il proprio peso, ma significa capire in modo oggettivo ed analitico da cosa è composto e come le componenti cambiano nel tempo.
                             <br />
@@ -155,8 +142,7 @@ export const LandingPage = () => (
                                 </h4>
                                 <div className="card__details">
                                     <ul>
-                                        <li>Naturopatia</li>
-                                        <li>Alimentazione Consapevole</li>
+                                        <li>Training Integrato</li>
                                     </ul>
                                 </div>
                             </div>
@@ -273,20 +259,28 @@ export const LandingPage = () => (
                     <img src="images/sport_popup.jpg" alt="Sport" className="popup__img" />
                 </div>
                 <div className="popup__right">
-                    <a href="#section-tours" className="popup__close">&times;</a>
-                    <h2 className="heading-secondary u-margin-bottom-medium">Sport</h2>
-                    <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Personal Training</h2>
-                    <p className="popup__text">
-                        Sedute di allenamento individuali o a piccoli gruppi, eseguite sotto la supervisione del Trainer.
-                </p>
-                    <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Preparazione Atletica</h2>
-                    <p className="popup__text">
-                        Sedute di preparazione allo sport sia singolo che di squadra.
-                </p>
-                    <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Rieducazione Funzionale</h2>
-                    <p className="popup__text">
-                        Sedute di rieducazione post infortunio e recupero della capacità condizionali.
-                </p>
+                    <h3 className="heading-tertiary u-margin-bottom-small">
+                        Percorso:
+                    </h3>
+                    <div className="paragraph">
+                        <ul className="paragraph__list">
+                            <li className="paragraph__item">Colloquio Iniziale</li>
+                            <li className="paragraph__item">Studio della costituzione</li>
+                            <li className="paragraph__item">Analisi BIA</li>
+                            <li className="paragraph__item">Educazione Alimentare</li>
+                        </ul>
+                    </div>
+                    <h3 className="heading-tertiary u-margin-bottom-small">
+                        Al termine della consulenza vengono indicati:
+                    </h3>
+                    <div className="paragraph">
+                        <ul className="paragraph__list">
+                            <li className="paragraph__item">Consigli per un sano stile di vita</li>
+                            <li className="paragraph__item">Regole generali per una corretta alimentazione</li>
+                            <li className="paragraph__item">Suggerimenti di tecniche da praticare a casa</li>
+                            <li className="paragraph__item">Indicazione per una adeguata attività fisica</li>
+                        </ul>
+                    </div>
                     <a href="/contact" className="btn btn--green">Contatta</a>
 
                 </div>
