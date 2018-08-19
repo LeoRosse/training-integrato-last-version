@@ -30,7 +30,8 @@
             }
 
             &-2{
-                background-image: linear-gradient(to right bottom, $color-tertiary-light,$color-tertiary-dark)
+                background-image: linear-gradient(to right bottom, rgba($color-violet-medium,0.8),
+                rgba($color-violet-dark, 0.8))
             }
 
             &-3{
@@ -39,13 +40,13 @@
         }
     }
     
-    &:hover &__side--front {
+/*     &:hover &__side--front {
         transform: rotateY(-180deg); //dobbiamo definire la prospettiva sul parente!
     }
 
     &:hover &__side--back {
         transform: rotateY(0); //dobbiamo definire la prospettiva sul parente!
-    }
+    } */
 
     //Front side styling
     &__picture{
@@ -62,7 +63,8 @@
         }
 
         &--2{
-            background-image: linear-gradient(to right bottom, $color-tertiary-light,$color-tertiary-dark),url('/images/relax-frontale.jpg')
+            background-image: linear-gradient(to right bottom, rgba($color-violet-medium,0.8),
+            rgba($color-violet-dark, 0.8)),url('/images/relax-frontale.jpg')
         }
 
         &--3{

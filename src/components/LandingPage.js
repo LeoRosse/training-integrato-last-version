@@ -50,7 +50,7 @@ export const LandingPage = () => (
             </div>*/}
                     <div className="composition">
                         <video muted loop autoPlay className="video">
-                            <source src="video/videoNuovo.mov" />
+                            <source src="video/videoNuovoSmall.mov" />
                         </video>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ export const LandingPage = () => (
             <section className="section-features">
                 <div className="row">
                     <div className="feature-box">
-                        <h3 className="heading-tertiary u-margin-bottom-small">Composizione Corporea</h3>
+                        <h3 className="heading-tertiary u-margin-bottom-small">Training Integrato</h3>
                         <span className="feature-box__text">
                             Conoscere la <b>composizione corporea</b> non vuol dire solo conoscere il proprio peso, ma significa capire in modo oggettivo ed analitico da cosa è composto e come le componenti cambiano nel tempo.
                             <br />
@@ -109,7 +109,7 @@ export const LandingPage = () => (
                                     {/*                                     <div className="card__price-box">
                                         <p className="card__price-value">€50</p>
                                     </div> */}
-                                    <a href="#popup_1" className="btn btn--white">Scopri di più</a>
+                                    {/*<a href="#popup_2" className="btn btn--white">Scopri di più</a>*/}
                                 </div>
                             </div>
                         </div>
@@ -137,7 +137,7 @@ export const LandingPage = () => (
                                     {/*                                     <div className="card__price-box">
                                         <p className="card__price-value">€60</p>
                                     </div> */}
-                                    <a href="#popup_2" className="btn btn--white">Scopri di più</a>
+                                    {/*<a href="#popup_2" className="btn btn--white">Scopri di più</a>*/}
                                 </div>
                             </div>
                         </div>
@@ -165,7 +165,7 @@ export const LandingPage = () => (
                                     {/*                                     <div className="card__price-box">
                                             <p className="card__price-value">€75</p>
                                         </div> */}
-                                    <a href="#popup_3" className="btn btn--white">Scopri di più</a>
+                                    {/*<a href="#popup_2" className="btn btn--white">Scopri di più</a>*/}
                                 </div>
                             </div>
                         </div>
