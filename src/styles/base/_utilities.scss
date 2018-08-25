@@ -41,5 +41,8 @@
 }
 
 .buttonPopup{
-        margin-left: 29rem
+        margin-left: 40rem;
+        @include respond(tab-land){
+            margin-left: 26rem;
+        }
 }
