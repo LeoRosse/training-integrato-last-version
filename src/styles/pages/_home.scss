@@ -4,7 +4,7 @@
     margin-top: -25vh; //questo perché vuole portare sotto la triangolo vuoto dell'header il colore di background grigio;
 
     @include respond(tab-port){
-        padding: 32rem 0;
+        padding: 32rem 0 18rem 0;
     }
 }
 

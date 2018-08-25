@@ -1,0 +1,15 @@
+.modal {
+    position: fixed;
+    z-index: 500;
+    background-color: white;
+    width: auto;
+    height: auto;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    max-width: calc(100% - 100px);
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+}
+

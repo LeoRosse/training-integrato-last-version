@@ -33,7 +33,7 @@ export const LandingPage = () => (
                         <p className="paragraph">
                             Percorso mirato al raggiungimento e mantenimento di un buono stato di salute e di forma fisica. Si basa su un corretto stile di vita, su una alimentazione consapevole e su una attività fisica mirata.
                         </p>
-                        <a href="#popup_1" className="btn-text">Scopri di più &rarr;</a>
+                        <a href="#popup_1" className="btn-text buttonPopup">Scopri di più &rarr;</a>
                     </div>
                     {/*                 <div className="composition">
                         <video muted loop autoPlay className="video">
@@ -255,7 +255,10 @@ export const LandingPage = () => (
                 </div>
             </div>
         </footer>
-        
+
+
+
+
         <div className="popup" id="popup_1">
             <div className="popup__content">
                 <div className="popup__left">
@@ -294,8 +297,3 @@ export const LandingPage = () => (
 
 
 export default LandingPage;
-
-
-/* <img src="images/movimento.jpg" alt="Movimento" className="composition__photo composition__photo--p1" />
-        <img src="images/preparazione-atletica.jpg" alt="Preparazione Atletica" className="composition__photo composition__photo--p2" />
-        <img src="images/recupero-funzionale.jpg" alt="Recupero Funzionale" className="composition__photo composition__photo--p3" /> */
