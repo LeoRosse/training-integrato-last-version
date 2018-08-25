@@ -7,7 +7,7 @@ const ContactPage = () => (
         <Navigation />
         <div className="contact">
                 <div className="bg-video">
-                    <img src="images/contact.jpg" alt="contact" className="bg-video__content" />
+                    <img src="images/contact-web.jpg" alt="contact" className="bg-video__content" />
                 </div>
                 <div className="row">
                     <div className="contact__content">

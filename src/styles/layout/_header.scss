@@ -4,7 +4,7 @@
         to right bottom,
         rgba($color-primary-light,0.8),
         rgba($color-primary-dark, 0.8)),
-        url('/images/landing.jpg'); /*così il gradiente va da sinistra a destra, inoltre con rgba ho settato l'opacità se no non si vedeva l'immagine sotto*/
+        url('/images/landing-web.jpg'); /*così il gradiente va da sinistra a destra, inoltre con rgba ho settato l'opacità se no non si vedeva l'immagine sotto*/
     /*    
     background-size: cover; così copre la zona dove deve stare senza spanarsi
     background-position: top; così rimarrà sempre fissato al top della pagina anche se viene ridimensionata */
@@ -107,7 +107,7 @@
         to right bottom,
         rgba($color-secondary-light,0.8),
         rgba($color-secondary-dark, 0.8)),
-        url('/images/sport-frontale.jpg');
+        url('/images/sport-frontale-web.jpg');
      //prova parallax
      background-attachment: fixed;
      background-position: center -5px;;
@@ -140,7 +140,7 @@
         to right bottom,
         rgba($color-violet-medium,0.8),
         rgba($color-violet-dark, 0.8)),
-        url('/images/relax-frontale.jpg');
+        url('/images/relax-frontale-web.jpg');
      //prova parallax
      background-attachment: fixed;
      background-position: center -5px;;
@@ -169,7 +169,7 @@
 
 .header__salute{
     height: 95vh;
-    background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8),rgba($color-primary-dark,.8)),url('/images/salute-frontale.jpg');
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8),rgba($color-primary-dark,.8)),url('/images/salute-frontale-web.jpg');
      //prova parallax
      background-attachment: fixed;
      background-position: center -5px;;

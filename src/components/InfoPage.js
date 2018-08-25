@@ -8,7 +8,7 @@ const InfoPage = () => (
         <Navigation />
         <div className="info">
             <div className="bg-video">
-                <img src="images/earth.jpg" alt="People writing" className="bg-video__content" />
+                <img src="images/earth-web.jpg" alt="People writing" className="bg-video__content" />
             </div>
             <div className="row">
                 <div className="info__content">

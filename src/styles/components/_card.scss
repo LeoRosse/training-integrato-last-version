@@ -59,16 +59,16 @@
         border-top-right-radius: 3px;
         
          &--1{
-            background-image: linear-gradient(to right bottom, $color-secondary-light,$color-secondary-dark),url("/images/sport-frontale.jpg")
+            background-image: linear-gradient(to right bottom, $color-secondary-light,$color-secondary-dark),url("/images/sport-frontale-web.jpg")
         }
 
         &--2{
             background-image: linear-gradient(to right bottom, rgba($color-violet-medium,0.8),
-            rgba($color-violet-dark, 0.8)),url('/images/relax-frontale.jpg')
+            rgba($color-violet-dark, 0.8)),url('/images/relax-frontale-web.jpg')
         }
 
         &--3{
-            background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark),url('/images/salute-frontale.jpg')
+            background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark),url('/images/salute-frontale-web.jpg')
         } 
     }
 
@@ -225,7 +225,7 @@
         }
 
         &--compocorporea{
-            height: 100rem;
+            height: 85rem;
             @include respond(tab-land){
                 height: auto;
         
@@ -251,7 +251,7 @@
             border-top-right-radius: 3px;
             
              &--1{
-                background-image: linear-gradient(to right bottom, $color-secondary-light,$color-secondary-dark),url("/images/sport-frontale-1.jpg")
+                background-image: linear-gradient(to right bottom, $color-secondary-light,$color-secondary-dark),url("/images/sport-frontale-1-web.jpg")
             }
     
             &--2{
@@ -266,7 +266,7 @@
                 background-blend-mode: multiply; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
             }
             &--5{
-                background-image: url('/images/training_integrato.jpg')
+                background-image: url('/images/training_integrato-web.jpg')
             } 
             &--6{
                 background-image: linear-gradient(to right bottom, $color-tertiary-light,$color-tertiary-dark),url('/images/bia-card-1.jpg')
@@ -313,6 +313,9 @@
                 text-align: left;
                 font-size: 1.3rem;
                 padding: 1.3rem;
+                }
+                &--compocorporea{
+                    padding: 2rem
                 }
         }
     
@@ -379,7 +382,7 @@
         border-top-right-radius: 3px;
         
          &--1{
-            background-image: linear-gradient(to right bottom, $color-secondary-light,$color-secondary-dark),url("/images/sport-frontale.jpg")
+            background-image: linear-gradient(to right bottom, $color-secondary-light,$color-secondary-dark),url("/images/sport-frontale-web.jpg")
         }
 
         &--2{
@@ -387,7 +390,7 @@
             background-image: linear-gradient(
                 to right bottom,
                 rgba($color-violet-medium,0.5),
-                rgba($color-violet-dark, 0.5)),url('/images/massaggio-olistico.jpg');
+                rgba($color-violet-dark, 0.5)),url('/images/massaggio-olistico-web.jpg');
                 background-blend-mode: soft-light; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
 
         }
@@ -463,7 +466,7 @@
 }
 
 .card--compocorporea{
-    height: 90rem;
+    height: 80rem;
     @include respond(tab-land){
         height: 180rem;
     }

@@ -255,14 +255,11 @@ export const LandingPage = () => (
                 </div>
             </div>
         </footer>
-
-
-
-
+        
         <div className="popup" id="popup_1">
             <div className="popup__content">
                 <div className="popup__left">
-                    <img src="images/sport_popup.jpg" alt="Sport" className="popup__img" />
+                    <img src="images/sport_popup-web.jpg" alt="Sport" className="popup__img" />
                 </div>
                 <div className="popup__right">
                     <h3 className="heading-tertiary u-margin-bottom-small">
@@ -289,46 +286,6 @@ export const LandingPage = () => (
                     </div>
                     <a href="/contact" className="btn btn--green">Contatta</a>
 
-                </div>
-            </div>
-        </div>
-        <div className="popup" id="popup_2">
-            <div className="popup__content">
-                <div className="popup__left">
-                    <img src="images/relax_popup.jpg" alt="Sport" className="popup__img" />
-                </div>
-                <div className="popup__right">
-                    <a href="#section-tours" className="popup__close">&times;</a>
-                    <h2 className="heading-secondary u-margin-bottom-medium">Relax</h2>
-                    <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Massaggio Olistico</h2>
-                    <p className="popup__text">
-                        Sedute di rilassamento e tonificazione miofasciale con tecniche di stretching assistito.
-                </p>
-                    <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Massaggio Energetico</h2>
-                    <p className="popup__text">
-                        Trattamento eseguito con oli ed essenze essenziali.
-                </p>
-                    <a href="/contact" className="btn btn--green">Contatta</a>
-                </div>
-            </div>
-        </div>
-        <div className="popup" id="popup_3">
-            <div className="popup__content">
-                <div className="popup__left">
-                    <img src="images/salute_popup.jpg" alt="Sport" className="popup__img" />
-                </div>
-                <div className="popup__right">
-                    <a href="#section-tours" className="popup__close">&times;</a>
-                    <h2 className="heading-secondary u-margin-bottom-medium">Salute</h2>
-                    <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Alimentazione Consapevole</h2>
-                    <p className="popup__text">
-                        Indicazioni sulla alimentazione da seguire per un corretto stile di vita e attività sportiva.
-                </p>
-                    <h2 className="heading-teartiary u-margin-bottom-small">&ndash; Naturopatia</h2>
-                    <p className="popup__text">
-                        Sedute di ripristino e mantenimento dell'equilibrio energetico della persona.
-                </p>
-                    <a href="/contact" className="btn btn--green">Contatta</a>
                 </div>
             </div>
         </div>
