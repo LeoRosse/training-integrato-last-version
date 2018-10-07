@@ -22,7 +22,7 @@ export const LandingPage = () => (
             <section className="section-about">
                 <div className="u-center-text u-margin-bottom-big">
                     <h2 className="heading-secondary">
-                        Scienze Motorie - Personal Training - Naturopatia
+                        Scienze Motorie - Naturopatia
                     </h2>
                 </div>
                 <div className="row">
@@ -75,9 +75,9 @@ export const LandingPage = () => (
                     <div className="col-1-of-3">
                         <div className="card">
                             <div className="card__side card__side--front">
-                                <a href="/sport"><div className="card__picture card__picture--1">
+                                <a href="/sport" className="card__side card__side--link"><div className="card__picture card__picture--1">
                                     &nbsp;
-                            </div></a>
+                            </div>
                                 <h4 className="card__heading">
                                     <span className="card__heading-span">
                                         Sport
@@ -89,7 +89,7 @@ export const LandingPage = () => (
                                         <li>Preparazione Atletica</li>
                                         <li>Rieducazione Funzionale</li>
                                     </ul>
-                                </div>
+                                </div></a>
                             </div>
                             <div className="card__side card__side--back card__side--back-1">
                                 <div className="card__cta">
@@ -104,9 +104,9 @@ export const LandingPage = () => (
                     <div className="col-1-of-3">
                         <div className="card">
                             <div className="card__side card__side--front">
-                                <a href="/relax"><div className="card__picture card__picture--2">
+                                <a href="/relax" className="card__side card__side--link"><div className="card__picture card__picture--2">
                                     &nbsp;
-                            </div></a>
+                            </div>
                                 <h4 className="card__heading">
                                     <span className="card__heading-span">
                                         Relax
@@ -117,7 +117,7 @@ export const LandingPage = () => (
                                         <li>Massaggio Olistico</li>
                                         <li>Trattamento Riequilibrante</li>
                                     </ul>
-                                </div>
+                                </div></a>
                             </div>
                             <div className="card__side card__side--back card__side--back-2">
                                 <div className="card__cta">
@@ -132,9 +132,9 @@ export const LandingPage = () => (
                     <div className="col-1-of-3">
                         <div className="card">
                             <div className="card__side card__side--front">
-                                <a href="/salute"><div className="card__picture card__picture--3">
+                                <a href="/salute" className="card__side card__side--link" ><div className="card__picture card__picture--3">
                                     &nbsp;
-                            </div></a>
+                            </div>
                                 <h4 className="card__heading">
                                     <span className="card__heading-span">
                                         Salute
@@ -145,7 +145,7 @@ export const LandingPage = () => (
                                         <li>Training Integrato</li>
                                         <li>Alimentazione Consapevole</li>
                                     </ul>
-                                </div>
+                                </div></a>
                             </div>
                             <div className="card__side card__side--back card__side--back-3">
                                 <div className="card__cta">

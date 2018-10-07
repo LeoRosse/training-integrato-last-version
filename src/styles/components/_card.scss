@@ -38,6 +38,10 @@
                 background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark)
             }
         }
+        &--link{
+            text-decoration: none;
+            color:#777;
+        }
     }
     
 /*     &:hover &__side--front {
