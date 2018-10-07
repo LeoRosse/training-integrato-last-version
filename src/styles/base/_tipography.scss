@@ -1,157 +1,182 @@
-body{
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    /* font-size:16px; */
-    line-height: 1.7;
-    color: $color-grey-dark;
-    padding:3rem;
-    box-sizing: border-box;
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /* font-size:16px; */
+  line-height: 1.7;
+  color: $color-grey-dark;
+  padding: 3rem;
+  box-sizing: border-box;
 
-    @include respond(tab-land){
-        padding: 0;
-    }
+  @include respond(tab-land) {
+    padding: 0;
+  }
 }
 
-.heading-primary{
-    color:$color-white;
-    text-transform: uppercase; /*mette al testo tutte maiuscole*/
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase; /*mette al testo tutte maiuscole*/
 
-    backface-visibility: hidden; /*per rimuovere l'effetto shake dei caratteri dal background*/
-    margin-bottom: 6rem;
-    &--main{
-        display: block; /*così prendono tutta la larghezza a disposizione e gesticono le righe prima e dopo*/
-        font-size: 6rem;
-        font-weight: 400;
-        letter-spacing: 3.5rem;
-    
-        animation-name: moveInLeft;
-        animation-duration: 1.5s; /*1 secondi*/
-        animation-timing-function: ease-out;
-        /*
+  backface-visibility: hidden; /*per rimuovere l'effetto shake dei caratteri dal background*/
+  margin-bottom: 6rem;
+  &--main {
+    display: block; /*così prendono tutta la larghezza a disposizione e gesticono le righe prima e dopo*/
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+
+    animation-name: moveInLeft;
+    animation-duration: 1.5s; /*1 secondi*/
+    animation-timing-function: ease-out;
+    /*
         animation-delay: 3s; 3 secondi e parte la animazione
         animation-iteration-count:3; l'animazione avverrà tre volte, conta il numero di iterazioni dell'animazione
         animation-timing-funcion:ease-in;comincia l'animazione piano e poi va accellerando!
         */
 
-        @include respond(phone){
-            letter-spacing: 1rem;
-            font-family: 5rem;
-            font-size: 3.5rem;
-        }
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-family: 5rem;
+      font-size: 3.5rem;
     }
-    
-    &--sub{
-        display: block;
-        font-size: 2rem;
-        font-weight: 700; /*la grandezza di ogni singolo carattere, come se gli mettessi bold*/
-        letter-spacing: 1.75rem;
-        animation: moveInRight 1.5s ease-out; /*short-cut, capisce che quello è il nome dell'animazione quanto deve durare e il timing*/
+  }
 
-        @include respond(phone){
-            letter-spacing: .5rem;
-        }
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700; /*la grandezza di ogni singolo carattere, come se gli mettessi bold*/
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1.5s ease-out; /*short-cut, capisce che quello è il nome dell'animazione quanto deve durare e il timing*/
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
     }
+  }
 }
 
-
-.heading-secondary{
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    display: inline-block;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-    -webkit-background-clip: text; //così il background è visibile solo dove è scritto il testo! sarà solo sui caratteri!
-    color:transparent;
-    letter-spacing: 2px;
-/*     transition: all .2s;
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text; // così il background è visibile solo dove è scritto il testo! sarà solo sui caratteri!
+  color: transparent;
+  letter-spacing: 2px;
+  /* transition: all .2s;
 
     &:hover{
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
     } */
-
-    
-    @include respond(tab-port){
-        font-size: 3rem;
-    }
-
-    @include respond(phone){
-        font-size: 2.5rem;
-    }    
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 }
-
-.heading-secondary--home-fitness{
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    display: inline-block;
-    background-image: linear-gradient(to right, $color-secondary-light, $color-secondary-dark);
-    -webkit-background-clip: text; //così il background è visibile solo dove è scritto il testo! sarà solo sui caratteri!
-    color:transparent;
-    letter-spacing: 2px;
-/*     transition: all .2s;
+.heading-secondary--home-fitness {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-secondary-light,
+    $color-secondary-dark
+  );
+  -webkit-background-clip: text; // così il background è visibile solo dove è scritto il testo! sarà solo sui caratteri!
+  color: transparent;
+  letter-spacing: 2px;
+  /* transition: all .2s;
 
     &:hover{
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
     } */
-
-    
-    @include respond(tab-port){
-        font-size: 3rem;
-    }
-
-    @include respond(phone){
-        font-size: 2.5rem;
-    }    
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 }
+.heading-secondary--composizione {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-tertiary-light,
+    $color-tertiary-dark
+  );
 
-.heading-secondary--relax{
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    display: inline-block;
-    background-image: linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark);
-    -webkit-background-clip: text; //così il background è visibile solo dove è scritto il testo! sarà solo sui caratteri!
-    color:transparent;
-    letter-spacing: 2px;
-/*     transition: all .2s;
+  -webkit-background-clip: text; // così il background è visibile solo dove è scritto il testo! sarà solo sui caratteri!
+  color: transparent;
+  letter-spacing: 2px;
+  /* transition: all .2s;
 
     &:hover{
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
     } */
-
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+}
+.heading-secondary--relax {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    rgba($color-violet-medium, 0.8),
+    rgba($color-violet-dark, 0.8)
+  );
+  -webkit-background-clip: text; // così il background è visibile solo dove è scritto il testo! sarà solo sui caratteri!
+  color: transparent;
+  letter-spacing: 2px;
+  /* transition: all .2s;
     
-    @include respond(tab-port){
-        font-size: 3rem;
-    }
-
-    @include respond(phone){
-        font-size: 2.5rem;
-    }    
+        &:hover{
+            transform: skewY(2deg) skewX(15deg) scale(1.1);
+            text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+        } */
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 }
-
-.heading-tertiary{
-    font-size: $default-font-size;
-    font-weight: 700;
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.paragraph {
+  font-size: $default-font-size;
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    font-size: 1.5rem;
     text-transform: uppercase;
-}
-
-.paragraph{
-    font-size: $default-font-size;
-    &__list{
-        list-style:none;
-    }
-    &__item{
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        font-weight: bold;
-        margin-bottom: 1rem;
-        margin-left: -1rem;
-    }
-    &:not(:last-child){
-        margin-bottom: 3rem;
-        padding-left: 1.5rem;
-    }
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-left: -1rem;
+  }
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+    padding-left: 1.5rem;
+  }
 }

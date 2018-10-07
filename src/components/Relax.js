@@ -37,11 +37,14 @@ const relax = () => (
                             </h4>
                             <div className="card--relax__details">
                                 <p>
-                                    Il massaggio Olistico è particolarmente utile per sciogliere tensioni fisiche ed emotive. Migliora la capacità di rilassamento e di ascolto corporeo.
-                                    Favorisce la circolazione e l'ossigenazione dei tessuti, migliorando di conseguenza il drenaggio e la depurazione.
-                                    Privilegiando tecniche specifiche, eseguite con ritmo più rapido e con utilizzo di olii sinergici che hanno un effetto tonificante sui tessuti e
-                                    sull'umore. Nell'olio da massaggio è possibile solubilizzare facilmente olii essenziali che arricchiscono il ventaglio di principi attivi per ottenere 
-                                    un prodotto finale più specifico per l'esigenze individuali. E' possibile creare anche misceli emulsionando Fiori di Bach utili per il bisogno della persona.
+                                Il massaggio olistico è specifico per sciogliere tensioni 
+                                fisiche ed emotive.
+                                Tramite le tecniche vengono migliorate la capacità di 
+                                rilassamento e di ascolto corporeo;si favorisce la 
+                                circolazione, l'ossigenazione dei tessuti e la depurazione 
+                                dell’ organismo.
+                                Il trattamento è valorizzato dalla miscelazione con 
+                                oli essenziali secondo le esigenze individuali.
                                 </p>
                             </div>
                         </div>
@@ -60,9 +63,16 @@ const relax = () => (
                             </h4>
                             <div className="card--relax__details">
                                 <p>
-                                    Sedute di rilassamento e tonificazione miofasciale, con tecniche di stretching assistito, per ritrovare armonia del proprio corpo dopo una gara, uno sforzo fisico o per semplice benessere. Il trattamento consiste nel riequilibrare la postura mediante allungamento di alcuni distretti muscolari e tendinei, utilizzando digitopressioni nei punti chiave per ripristinare la mobilità articolare, migliorare l'elasticità e sciolere tensioni.
+                                    Incontro di tecniche di rilassamento e tonificazione
+                                    miofasciale, tramite stretching assistito e digitopressioni
+                                    per trovare l’ armonia del proprio corpo dopo una gara,
+                                    per uno sforzo fisico e per il benessere della persona.
+                                    Il trattamento finalizza il riequilibrio della postura e
+                                    l‘ allungamento di alcuni distretti muscolari e tendinei.
+                                    I punti chiave del corpo stimolati, ripristinano
+                                    la mobilità articolare e migliorano l’elasticità muscolare.
                                 </p>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                 </div>

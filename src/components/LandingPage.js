@@ -26,15 +26,28 @@ export const LandingPage = () => (
                     </h2>
                 </div>
                 <div className="row">
-                    <div className="col-1-of-2">
                         <h3 className="heading-tertiary u-margin-bottom-small">
                             Training Integrato
                         </h3>
                         <p className="paragraph">
-                            Percorso mirato al raggiungimento e mantenimento di un buono stato di salute e di forma fisica. Si basa su un corretto stile di vita, su una alimentazione consapevole e su una attività fisica mirata.
+                        E’ un percorso dedicato al raggiungimento e al
+                        mantenimento di un buono stato di salute e di forma fisica.
+                        Le fondamenta si basano su un corretto stile di vita, su una
+                        alimentazione consapevole e su una attività fisica mirata.
+                        Lo stato di salute è fusione, equilibrio e armonia tra le varie
+                        componenti essenziali del corpo.
+                        Il colloquio con la persona viene indirizzato in modo mirato
+                        per conoscere le peculiarità dell’individuo, anche attraverso 
+                        domande specifiche che vanno ad evidenziare alcuni 
+                        sintomi e le sue caratteristiche psico-fisiche, per valutarne 
+                        la costituzione ed individuare le tipologie di intervento.
+                        Il colloquio viene integrato con una valutazione della 
+                        composizione corporea (BIA) che permette di valutare 
+                        lo stato nutrizionale della persona per modulare
+                        eventuali squilibri alimentari e sviluppare un programma
+                        di attività fisica mirata.
                         </p>
                         <a href="#popup_1" className="btn-text buttonPopup">Scopri di più &rarr;</a>
-                    </div>
                     {/*                 <div className="composition">
                         <video muted loop autoPlay className="video">
                             <source src="video/videoNuovoSmall.mov" />

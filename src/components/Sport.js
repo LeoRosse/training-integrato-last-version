@@ -37,10 +37,14 @@ const sport = () => (
                             </h4>
                             <div className="card--sport__details">
                                 <p>
-                                    Sedute di allemento <b>individuali</b> o a <b>piccoli gruppi</b>, eseguite sotto la supervisione del Trainer.
-                                    Ogni singolo movimento viene curato dal punto di vista della postura e della respirazione. Esercizi mirati e un piano di allenamento
-                                    adeguato permettono di raggiungere in maniera pianificata e graduale uno stato di forma e di efficienza fisica, in modo da ottenere
-                                    il miglior risultato nel rispetto del proprio corpo.
+                                    Sedute di allenamento individuali o a piccoli gruppi, eseguite
+                                    sotto la supervisione del Trainer.
+                                    Ogni singolo movimento viene curato dal punto di vista della
+                                    postura e della respirazione.
+                                    Esercizi mirati e un piano di allenamento adeguato
+                                    permettono di raggiungere in maniera pianificata e graduale
+                                    uno stato di forma ed efficienza fisica, in modo da ottenere il
+                                    migliore risultato nel rispetto del proprio corpo.
                                 </p>
                             </div>
                         </div>
@@ -59,9 +63,12 @@ const sport = () => (
                             </h4>
                             <div className="card--sport__details">
                                 <p>
-                                    Sedute di preparazione allo Sport sia singolo che di squadra, test fisici, periodizzazione dei cicli di carico/scarico, educazione al gesto
-                                    tecnico, riequilibrio muscolare e prevenzione dagli infortuni. Per una performance di livello o semplicemente per affrontare al meglio
-                                    ogni tipo di attività sia amatoriale che agonistica.
+                                    Sedute di preparazione allo sport sia singolo che di squadra,
+                                    test fisici, pianificazione dei cicli di carico / scarico,
+                                    educazione al gesto tecnico, riequilibrio muscolare e
+                                    prevenzione dagli infortuni.
+                                    Per una performance di livello o semplicemente per affrontare
+                                    al meglio ogni tipo di attività sia amatoriale che agonistica.
                                 </p>
                             </div>
                         </div>
@@ -80,8 +87,10 @@ const sport = () => (
                             </h4>
                             <div className="card--sport__details">
                                 <p>
-                                    Sedute di rimuscolazione post infortunio e recupero delle capacità condizionali per la ripresa dell'attività fisica e atletica.
-                                    Viene strutturato un'allenamento specifico a corpo libero e con l'uso di sovraccarichi, coadiuvato da esercizi propriocettivi per
+                                    Sedute di rimuscolazione post infortunio e recupero delle
+                                    capacità condizionali per la ripresa dell’ attività fisica e atletica.
+                                    Viene strutturato un allenamento specifico a corpo libero e con
+                                    l’ uso di sovraccarichi, coadiuvato da esercizi propriocettivi per
                                     migliorare equilibrio, tono muscolare e stabilità articolare.
                                 </p>
                             </div>
