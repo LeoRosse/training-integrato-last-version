@@ -14,6 +14,7 @@ const ContactPage = () => (
                         <ul className="contact__list">
                             <li className="contact__item__top">Puoi contattarmi qui:</li>
                             <li className="contact__item mobilesOnly" href="tel:393339760998">+39 333 97 60 998</li>
+                            <li className="contact__item desktopOnly">+39 333 97 60 998</li>
                             <li className="contact__item contact__item--email">alberto.santarato@gmail.com</li>
                         </ul>
                     </div> 

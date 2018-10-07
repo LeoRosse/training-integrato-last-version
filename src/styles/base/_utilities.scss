@@ -48,5 +48,13 @@
 }
 
 .mobilesOnly{
-    visibility: hidden;
+    @media(min-width:757px){
+        display: none !important;
+    }
+}
+
+.desktopOnly{
+    @media(max-width:750px){
+        display: none !important;
+    }
 }
