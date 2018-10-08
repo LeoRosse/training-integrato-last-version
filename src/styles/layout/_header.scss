@@ -21,8 +21,9 @@
 
     
     @include respond(phone){
-        -webkit-clip-path: polygon(0 0,100% 0,100% 85vh,0 100%);
-        clip-path: polygon(0 0,100% 0,100% 85vh,0 100%);
+        background-attachment:scroll;
+        -webkit-clip-path: polygon(0 0,100% 0,100% 85vh,0 99%);
+        clip-path: polygon(0 0,100% 0,100% 85vh,0 99%);
     }
 
     &__text-box{
