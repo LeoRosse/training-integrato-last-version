@@ -47,7 +47,7 @@ export const LandingPage = () => (
                         eventuali squilibri alimentari e sviluppare un programma
                         di attività fisica mirata.
                         </p>
-                        <a href="#popup_1" className="btn-text buttonPopup">Scopri di più &rarr;</a>
+                        <a href="/#popup_1" className="btn-text buttonPopup">Scopri di più &rarr;</a>
                     {/*                 <div className="composition">
                         <video muted loop autoPlay className="video">
                             <source src="video/videoNuovoSmall.mov" />
