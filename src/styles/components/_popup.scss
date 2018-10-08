@@ -43,8 +43,13 @@
       display: inherit;
       padding: 0;
     }
+    @media(min-width:760px )and (max-width:780px){
+        display: inherit;
+        padding: 0;
+        width: 100%;
+    };
   }
-
+1
   &__img {
     display: block;
     width: 100%;

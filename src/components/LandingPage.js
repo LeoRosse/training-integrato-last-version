@@ -48,7 +48,7 @@ class LandingPage extends Component {
                                 <li className="paragraph__item">Indicazione per una adeguata attività fisica</li>
                             </ul>
                         </div>
-                        <a href="/contact" className="btn btn--green">Contatta</a>
+                        <a href="/contact" className="btn btn--green" style={{float:'right'}}>Contatta</a>
                     </div>
                 </div>
             </Modal>
