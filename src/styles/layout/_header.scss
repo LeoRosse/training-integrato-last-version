@@ -123,8 +123,8 @@
   @include respond(tab-land) {
     background-attachment: scroll; //necessario mobile se no sgrana tutta l'immagine con background-attachment fixed
 
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);
   }
 
   &__text-box {
@@ -157,8 +157,8 @@
   @include respond(tab-land) {
     background-attachment: scroll; //necessario mobile se no sgrana tutta l'immagine con background-attachment fixed
 
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0  99%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);
   }
 
   &__text-box {
@@ -191,8 +191,8 @@
   @include respond(tab-land) {
     background-attachment: scroll; //necessario mobile se no sgrana tutta l'immagine con background-attachment fixed
 
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);
   }
 
   &__text-box {
@@ -225,8 +225,8 @@
   @include respond(tab-land) {
     background-attachment: scroll; //necessario mobile se no sgrana tutta l'immagine con background-attachment fixed
 
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);
   }
 
   &__text-box {
