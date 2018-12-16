@@ -303,7 +303,7 @@ class LandingPage extends Component {
                                 <a href="https://web.uniroma2.it/"><img src="images/logo-TorVergata.png" alt="CNM Logo" className="footer__logo__vergata" /></a>
                             </div>
                             <p className="footer__copyright">
-                                Built by <a href="" className="footer__link"> Leonardo Rosseti</a>, Design by  <a href="http://codingheroes.io/resources/" className="footer__link">Jonas Schmedtmann</a>
+                                Built by <a href="" className="footer__link"> Leonardo Rosseti</a>,<br className="mobilesOnly" /> Design by  <a href="http://codingheroes.io/resources/" className="footer__link">Jonas Schmedtmann</a>
                             </p>
                         </div>
                     </div>
