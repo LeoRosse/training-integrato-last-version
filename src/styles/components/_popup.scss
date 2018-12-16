@@ -1,0 +1,100 @@
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba($color-black, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden; //con opacity e visibility hidden faccio la stessa cosa di display none solo che posso animarlo così
+  transition: all 0.3s;
+
+  //open states
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__content {
+    width: 90rem;
+    @include respond(tab-port) {
+      width: 75rem;
+    }
+    @media (max-width: 376px) {
+      width: 65rem !important;
+    }
+  }
+
+  &__left {
+    width: 33.333333%;
+    display: table-cell;
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__right {
+    width: 45.666667%;
+    display: table-cell;
+    vertical-align: middle; //per posizionarla nella tabella!
+    padding: 3rem 5rem;
+    @include respond(tab-port) {
+      display: inherit;
+      padding: 0;
+    }
+    @media(min-width:760px )and (max-width:780px){
+        display: inherit;
+        padding: 0;
+        width: 100%;
+    };
+  }
+1
+  &__img {
+    display: block;
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+
+    -moz-column-count: 1;
+    -moz-column-gap: 4rem; //per la distanza tra una colonna e l'altra
+    -moz-column-rule: 1px solid $color-grey-light-2;
+
+    column-count: 1;
+    column-gap: 4rem; //per la distanza tra una colonna e l'altra
+    column-rule: 1px solid $color-grey-light-2;
+
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+  &:target &__content {
+    //quando il target diventa il popup
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      color: $color-grey-dark;
+      position: absolute;
+      top: 2.5rem;
+      right: 2.5rem;
+      font-size: 3rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+      line-height: 1;
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

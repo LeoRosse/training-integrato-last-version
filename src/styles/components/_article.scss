@@ -1,0 +1,43 @@
+.content-container{
+    &-summary {
+        background: #364051;
+        width: 100%;
+        display: flex;
+    }
+
+    &-articles{
+        margin: 20px auto;
+        width: 60%;
+        box-sizing: border-box;
+    }
+
+    &-filters{
+        margin: 20px auto;
+        width: 60%;
+    }
+
+}
+
+.article-summary{
+
+    &__title{
+        margin: 30px auto;
+        max-width: 80rem;
+        text-transform: uppercase;
+        font-size:2rem;
+        color:$color-white;
+        @media(max-width:450px){
+            display: none;
+        }
+    }
+
+    &__actions{
+        margin: 20px auto;
+        max-width: 80rem;
+    }
+}
+
+.article-list-title{
+    color:white;
+    font-size: 2rem;
+}

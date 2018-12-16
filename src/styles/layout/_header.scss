@@ -1,0 +1,243 @@
+.header {
+  height: 95vh; /*così gli dico che voglio il 95% dello schermo viewport height*/
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url("/images/logo_con_cerchi_traspa.jpg"); /*così il gradiente va da sinistra a destra, inoltre con rgba ho settato l'opacità se no non si vedeva l'immagine sotto*/
+  /*    
+    background-size: cover; così copre la zona dove deve stare senza spanarsi
+    background-position: top; così rimarrà sempre fissato al top della pagina anche se viene ridimensionata */
+
+  //prova parallax
+  background-attachment: fixed;
+  background-position: center -5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  position: relative; /*se uso per i figli la position absolute a lui gli devo dare position relative*/
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  @include respond(tab-land) {
+    background-attachment: scroll; //necessario mobile se no sgrana tutta l'immagine con background-attachment fixed
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);
+  }
+
+  @include respond(phone) {
+    height: 55vh;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%; /*questo come il top è il 50% del parent element in questo caso dell'header */
+    transform: translate(-50%, -50%); /*è Y X */
+    text-align: center;
+  }
+}
+
+.header1 {
+  height: 20vh; /*così gli dico che voglio il 95% dello schermo viewport height*/
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary-light, 0.8),
+    rgba($color-primary-dark, 0.8)
+  );
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 45%);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 45%);
+
+  &__logo-box {
+    position: absolute;
+    top: 0.5rem;
+    left: 1.5rem;
+  }
+  &__logo {
+    height: 5.5rem; /*la larghezza la gestisce automaticamente il browser*/
+  }
+}
+
+.header2 {
+  height: 9vh; /*così gli dico che voglio il 95% dello schermo viewport height*/
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary-light, 0.8),
+    rgba($color-primary-dark, 0.8)
+  );
+  position: relative;
+
+  &__logo-box {
+    position: absolute; /*si aspetta che tu definisca le variabili top left right e bottom per posizionarlo!*/
+    top: 0.5rem;
+    left: 1.5rem;
+  }
+  &__logo {
+    height: 6rem; /*la larghezza la gestisce automaticamente il browser*/
+  }
+
+  &__container {
+    margin: 0 auto;
+    // padding: 0 1.6rem;
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    // padding: 1.2rem 0;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-white;
+    position: absolute;
+    top: 0.5rem;
+    left: 40%;
+    @media (max-width: 600px) {
+      left: 30%;
+    }
+    @media (max-width: 450px) {
+      display: none;
+    }
+  }
+}
+
+.header__sport {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-secondary-light, 0.8),
+      rgba($color-secondary-dark, 0.8)
+    ),
+    url("/images/sport-frontale-web.jpg");
+  //prova parallax
+  background-attachment: fixed;
+  background-position: center -5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative; /*se uso per i figli la position absolute a lui gli devo dare position relative*/
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  @include respond(tab-land) {
+    background-attachment: scroll; //necessario mobile se no sgrana tutta l'immagine con background-attachment fixed
+
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%; /*questo come il top è il 50% del parent element in questo caso dell'header */
+    transform: translate(-50%, -50%); /*è Y X */
+    text-align: center;
+  }
+}
+
+.header__relax {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-tertiary-light, 0.8),
+      rgba($color-tertiary-dark, 0.8)
+    ),
+    url("/images/relax-frontale-web.jpg");
+  //prova parallax
+  background-attachment: fixed;
+  background-position: center -5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative; /*se uso per i figli la position absolute a lui gli devo dare position relative*/
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  @include respond(tab-land) {
+    background-attachment: scroll; //necessario mobile se no sgrana tutta l'immagine con background-attachment fixed
+
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0  99%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%; /*questo come il top è il 50% del parent element in questo caso dell'header */
+    transform: translate(-50%, -50%); /*è Y X */
+    text-align: center;
+  }
+}
+
+.header__salute {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url("/images/salute-frontale-web.jpg");
+  //prova parallax
+  background-attachment: fixed;
+  background-position: center -5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative; /*se uso per i figli la position absolute a lui gli devo dare position relative*/
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  @include respond(tab-land) {
+    background-attachment: scroll; //necessario mobile se no sgrana tutta l'immagine con background-attachment fixed
+
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%; /*questo come il top è il 50% del parent element in questo caso dell'header */
+    transform: translate(-50%, -50%); /*è Y X */
+    text-align: center;
+  }
+}
+
+.header__bia {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-violet-medium, 0.8),
+      rgba($color-violet-dark, 0.8)
+    ),
+    url("/images/ppg.jpg");
+  //prova parallax
+  background-attachment: fixed;
+  background-position: center -5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative; /*se uso per i figli la position absolute a lui gli devo dare position relative*/
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  @include respond(tab-land) {
+    background-attachment: scroll; //necessario mobile se no sgrana tutta l'immagine con background-attachment fixed
+
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%; /*questo come il top è il 50% del parent element in questo caso dell'header */
+    transform: translate(-50%, -50%); /*è Y X */
+    text-align: center;
+  }
+}

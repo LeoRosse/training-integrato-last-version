@@ -1,0 +1,63 @@
+.section-about{
+    background-color: $color-grey-light-1;
+    padding: 25rem 0;
+    margin-top: -25vh; //questo perché vuole portare sotto la triangolo vuoto dell'header il colore di background grigio;
+
+    @include respond(tab-port){
+        padding: 32rem 0 18rem 0;
+    }
+}
+
+.section-features{
+    padding:20rem 0;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark,0.8)),url('/images/landing-web.jpg');
+    background-size: cover;
+    background-position: center;
+
+    transform: skewY(-7deg);
+    margin-top: -10rem;
+
+    & > * {
+        transform: skewY(7deg);
+
+    }
+    //.sections-features > * all direct child
+
+    @include respond(tab-port){
+        padding: 10rem 0;
+    }
+}
+
+.section-tours{
+    background-color: $color-grey-light-1;
+    padding: 25rem 0 15rem 0;
+    margin-top: -10rem;
+
+    @include respond(tab-port){
+        padding: 20rem 0 10rem 0;
+    }
+}
+
+.section-stories {
+    padding: 15rem 0;
+    position: relative;
+
+    @include respond(tab-port){
+        padding: 10rem 0;
+    }
+}
+
+.section-home-fitness{
+    background-color: $color-grey-light-1;
+    padding: 25rem 0 15rem 0;
+    margin-top: -20rem;
+
+    @include respond(tab-port){
+        padding: 20rem 0 10rem 0;
+    }
+    &--studio-corporeo{
+        @include respond(tab-port){
+            height: 240rem;
+        }
+    }
+}
