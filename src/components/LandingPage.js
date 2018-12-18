@@ -93,7 +93,7 @@ class LandingPage extends Component {
                                 eventuali squilibri alimentari e sviluppare un programma
                                 di attività fisica mirata.
         </p>*/}
-                            <p className="paragraph"><i>Il metodo Training Integrato ci permette di pianificare in maniera approfondita la strategia di intervento da 
+                            <p className="paragraph"><i>Il metodo Training Integrato partendo da un accurato studio corporeo ci permette di pianificare in maniera approfondita la strategia di intervento da
                             adottare per raggiungere uno stile di vita che esprima le proprie potenzialità a 360 gradi.</i></p>
                             <Link to="/salute" className="buttonText buttonPopup">Scopri di più &rarr;</Link>
                         </div>
@@ -102,10 +102,12 @@ class LandingPage extends Component {
                     <section className="section-features">
                         <div className="row">
                             <div className="feature-box">
-                                <h3 className="heading-tertiary u-margin-bottom-small">Composizione Corporea</h3>
+                                <h3 className="heading-tertiary u-margin-bottom-small" style={{fontSize:'2rem'}}>Studio Corporeo</h3>
                                 <span className="feature-box__text">
-                                    Conoscere la <b>composizione corporea</b> non vuol dire solo conoscere il proprio peso, ma significa capire in modo oggettivo ed analitico da cosa è composto e come le componenti cambiano nel tempo.
-                                <br />
+                                    Effettuare lo studio analitico del corpo nelle sue componenti regolatorie e metaboliche è di primaria importanza e ci 
+                                    aiuta a capire in modo scientifico come cambiano nel tempo, per avere chiare indicazioni su come raggiungere i propri obbiettivi
+                                    di salute e di performance.
+{/*                                <br />
                                     <br />
                                     Attraverso la <b>metodica BIA</b> siamo in grado di analizzare:
                                 <ul className="feature-box__list">
@@ -113,8 +115,10 @@ class LandingPage extends Component {
                                         <li>valutare la quantità di muscolo e grasso corporeo</li>
                                         <li>stimare il metabolismo basale</li>
                                         <li>analizzare lo stato di stress cellulare</li>
-                                    </ul>
+</ul>*/}
                                 </span>
+                                <br/>
+                                <br/>
                                 <a href="/composizionecorporea" className="btn-text">Scopri di più &rarr;</a>
 
                             </div>
@@ -128,6 +132,34 @@ class LandingPage extends Component {
                     </h2>
                         </div>
                         <div className="row">
+                            <div className="col-1-of-3">
+                                <div className="card">
+                                    <Link to="/salute" className="card__side card__side--link" ><div className="card__side card__side--front">
+                                        <div className="card__picture card__picture--3">
+                                            &nbsp;
+                                </div>
+                                        <h4 className="card__heading">
+                                            <span className="card__heading-span">
+                                                Salute
+                                    </span>
+                                        </h4>
+                                        <div className="card__details">
+                                            <ul>
+                                                <li>Training Integrato</li>
+                                                <li>Alimentazione Consapevole</li>
+                                            </ul>
+                                        </div>
+                                    </div></Link>
+                                    <div className="card__side card__side--back card__side--back-3">
+                                        <div className="card__cta">
+                                            {/*                                     <div className="card__price-box">
+                                                <p className="card__price-value">€75</p>
+                                            </div> */}
+                                            {/*<a href="#popup_2" className="btn btn--white">Scopri di più</a>*/}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div className="col-1-of-3">
                                 <div className="card">
                                     <div className="card__side card__side--front">
@@ -165,7 +197,7 @@ class LandingPage extends Component {
                                 </div>
                                             <h4 className="card__heading">
                                                 <span className="card__heading-span">
-                                                    Relax
+                                                    Recupero
                                     </span>
                                             </h4>
                                             <div className="card__details">
@@ -185,34 +217,7 @@ class LandingPage extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-1-of-3">
-                                <div className="card">
-                                    <Link to="/salute" className="card__side card__side--link" ><div className="card__side card__side--front">
-                                        <div className="card__picture card__picture--3">
-                                            &nbsp;
-                                </div>
-                                        <h4 className="card__heading">
-                                            <span className="card__heading-span">
-                                                Salute
-                                    </span>
-                                        </h4>
-                                        <div className="card__details">
-                                            <ul>
-                                                <li>Training Integrato</li>
-                                                <li>Alimentazione Consapevole</li>
-                                            </ul>
-                                        </div>
-                                    </div></Link>
-                                    <div className="card__side card__side--back card__side--back-3">
-                                        <div className="card__cta">
-                                            {/*                                     <div className="card__price-box">
-                                                <p className="card__price-value">€75</p>
-                                            </div> */}
-                                            {/*<a href="#popup_2" className="btn btn--white">Scopri di più</a>*/}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </section>
                     {/*             <section className="section-stories">
@@ -290,9 +295,6 @@ class LandingPage extends Component {
                                     <li className="footer__item">
                                         <Link to="/chi-sono" className="footer__link">Curriculum</Link>
                                     </li>
-                                    <li className="footer__item">
-                                        <a href="#" className="footer__link">Termini e privacy</a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -304,6 +306,9 @@ class LandingPage extends Component {
                             </div>
                             <p className="footer__copyright">
                                 Built by <a href="" className="footer__link"> Leonardo Rosseti</a>,<br className="mobilesOnly" /> Design by  <a href="http://codingheroes.io/resources/" className="footer__link">Jonas Schmedtmann</a>
+                            </p>
+                            <p className="footer__copyright footer__copyright--noborder">
+                                <a href="#" className="footer__link">Copyright © Training Integrato 2018</a> All rights reserved.
                             </p>
                         </div>
                     </div>

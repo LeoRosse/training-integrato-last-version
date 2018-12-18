@@ -31,7 +31,6 @@
           $color-secondary-dark
         );
       }
-
       &-2 {
         background-image: linear-gradient(
           to right bottom,
@@ -39,7 +38,6 @@
           rgba($color-tertiary-dark, 0.8)
         );
       }
-
       &-3 {
         background-image: linear-gradient(
           to right bottom,
@@ -53,8 +51,7 @@
       color: #777;
     }
   }
-
-  /*     &:hover &__side--front {
+  /* &:hover &__side--front {
         transform: rotateY(-180deg); //dobbiamo definire la prospettiva sul parente!
     }
 
@@ -62,21 +59,21 @@
         transform: rotateY(0); //dobbiamo definire la prospettiva sul parente!
     } */
 
-  //Front side styling
+  // Front side styling
   &__picture {
     background-size: cover;
     height: 23rem;
-    background-blend-mode: screen; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
+    background-blend-mode: screen;
+    // non funziona in explorer... cmq pazzesco! provare tutti i filtri!
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     -webkit-clip-path: polygon(
       0 0,
       100% 0,
       100% 85%,
       0 100%
-    ); //per farlo lavorare sui browser
+    ); // per farlo lavorare sui browser
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-
     &--1 {
       background-image: linear-gradient(
           to right bottom,
@@ -85,7 +82,6 @@
         ),
         url("/images/sport-frontale-web.jpg");
     }
-
     &--2 {
       background-image: linear-gradient(
           to right bottom,
@@ -94,7 +90,6 @@
         ),
         url("/images/relax-frontale-web.jpg");
     }
-
     &--3 {
       background-image: linear-gradient(
           to right bottom,
@@ -104,7 +99,6 @@
         url("/images/salute-frontale-web.jpg");
     }
   }
-
   &__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -121,12 +115,10 @@
       right: -25rem;
     }
   }
-
   &__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-
     &--1 {
       background-image: linear-gradient(
         to right bottom,
@@ -134,7 +126,6 @@
         rgba($color-secondary-dark, 0.85)
       );
     }
-
     &--2 {
       background-image: linear-gradient(
         to right bottom,
@@ -142,7 +133,6 @@
         rgba($color-tertiary-dark, 0.85)
       );
     }
-
     &--3 {
       background-image: linear-gradient(
         to right bottom,
@@ -151,25 +141,22 @@
       );
     }
   }
-
   &__details {
     ul {
       list-style: none;
       width: 80%;
-      margin: 0 auto; //per centrare un blocco dentro un altro blocco! TRICK INCREDIBILE
+      margin: 0 auto; // per centrare un blocco dentro un altro blocco! TRICK INCREDIBILE
       li {
         text-align: center;
         font-size: 1.5rem;
         padding: 1rem;
-
         &:not(:last-child) {
           border-bottom: 1px solid $color-grey-light-2;
         }
       }
     }
   }
-
-  //Back side styling
+  // Back side styling
 
   &__cta {
     position: absolute;
@@ -179,13 +166,12 @@
     width: 90%;
     text-align: center;
   }
-
   &__price-box {
     text-align: center;
+
     color: $color-white;
     margin-bottom: 8rem;
   }
-
   &__price-only {
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -195,35 +181,28 @@
     font-size: 6rem;
     font-weight: 100;
   }
-
   @include respond(tab-land) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-
     &__side {
       height: auto;
       position: relative;
       box-shadow: none;
-
       &--back {
         transform: rotateY(0);
         clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
         -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
       }
     }
-
     &:hover &__side--front {
       transform: rotateY(0);
     }
-
     &__details {
       padding: 1rem 3rem;
     }
-
-    //Back side styling
-
+    // Back side styling
     &__cta {
       position: relative;
       top: 0;
@@ -232,29 +211,24 @@
       width: 100%;
       padding: 7rem 4rem 4rem 4rem;
     }
-
     &__price-box {
       margin-bottom: 3rem;
     }
-
     &__price-value {
       font-size: 4rem;
     }
   }
 }
-
-//.card:hover .card__side{
-
+// .card:hover .card__side{
 .card--sport {
-  //Functionality
+  // Functionality
   perspective: 150rem;
-  -moz-perspective: 150rem; //per farlo lavorare anche in firefox
+  -moz-perspective: 150rem; // per farlo lavorare anche in firefox
   position: relative;
   height: 50rem;
-  &__salute{
+  &__salute {
     height: 60rem;
   }
-
   &__side {
     height: 50rem;
     transition: all 0.8s ease;
@@ -262,55 +236,49 @@
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: hidden; //nasconde il dietro di un elemento!
-    border-radius: 3px;
-    overflow: hidden; //perché c'ho messo una foto!
-    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    backface-visibility: hidden;
 
+    // nasconde il dietro di un elemento!
+    border-radius: 3px;
+    overflow: hidden; // perché c'ho messo una foto!
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
     &--front {
       background-color: $color-white;
     }
-    &__salute{
+    &__salute {
       height: 68rem;
     }
-    &__BIA{
+    &__BIA {
       height: 62rem;
     }
   }
-
   &--compocorporea {
     height: 85rem;
     @include respond(tab-land) {
       height: auto;
     }
   }
-
-  &:hover &__side--front {
+  /* &:hover &__side--front {
     transform: scale(1.2) translateY(-0.5rem);
     //dobbiamo definire la prospettiva sul parente!
   }
   &:hover &--compocorporea {
     transform: none;
-  }
-
-  //Front side styling
+  } */
+  // Front side styling
   &__picture {
     background-size: cover;
     height: 23rem;
-    background-blend-mode: screen; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
+    background-blend-mode: screen; // non funziona in explorer... cmq pazzesco! provare tutti i filtri!
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    -webkit-clip-path: polygon(
-      0 0,
-      100% 0,
-      100% 85%,
-      0 100%
-    ); //per farlo lavorare sui browser
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    // per farlo lavorare sui browser
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    &__compCorp{
-      background-blend-mode: color; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
-      &--2{
-        background-blend-mode: hard-light; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
+    &__compCorp {
+      background-blend-mode: color; // non funziona in explorer... cmq pazzesco! provare tutti i filtri!
+      &--2 {
+        background-blend-mode: hard-light; // non funziona in explorer... cmq pazzesco! provare tutti i filtri!
       }
     }
     &--1 {
@@ -318,38 +286,41 @@
           to right bottom,
           $color-secondary-light,
           $color-secondary-dark
-        ), */
-        url("/images/sport_arancio_3.jpg");
-
+        ), */ url("/images/sport_arancio_3.jpg");
     }
-
     &--2 {
       background-image: /* linear-gradient(
           to right bottom,
           $color-tertiary-light,
           $color-tertiary-dark
-        ), */
-        url("/images/preparazione_atletica_arancio.jpg");
+        ), */ url("/images/preparazione_atletica_arancio.jpg");
     }
-
     &--3 {
       background-image: /* linear-gradient(
           to right bottom,
           $color-primary-light,
           $color-primary-dark
-        ), */
-        url("/images/recupero-funzionale-arancio.jpg");
+        ), */ url("/images/recupero-funzionale-arancio.jpg");
     }
     &--4 {
       background-image: linear-gradient(
-        to right bottom,
-        $color-primary-light,
-        $color-primary-dark
-      ),url("/images/alimentazione-consapevole-3.jpg");
-      background-blend-mode: multiply; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        ),
+        url("/images/alimentazione-consapevole-3.jpg");
+      background-blend-mode: hard-light;
+      // non funziona in explorer... cmq pazzesco! provare tutti i filtri!
     }
     &--5 {
-      background-image: url("/images/training integrato_verde.jpg");
+      background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        ),
+        url("/images/training_integrato-web.jpg");
+        background-blend-mode: hard-light;
+
     }
     &--6 {
       background-image: linear-gradient(
@@ -373,10 +344,9 @@
           $color-violet-medium,
           $color-violet-dark
         ),
-        url("/images/ppg_buono.jpg");
+        url("/images/ppg_ok.jpg");
     }
   }
-
   &__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -392,10 +362,9 @@
       color: black;
     }
   }
-
   &__heading-span {
     padding: 1rem 1.5rem;
-    /*             -webkit-box-decoration-break: clone;
+    /* -webkit-box-decoration-break: clone;
             box-decoration-break: clone;
             &--1{
                 background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85),rgba($color-secondary-dark, .85))
@@ -409,12 +378,11 @@
                 background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85),rgba($color-primary-dark, .85))
             } */
   }
-
   &__details {
     p,
     ul {
       width: 80%;
-      margin: 0 auto; //per centrare un blocco dentro un altro blocco! TRICK INCREDIBILE
+      margin: 0 auto; // per centrare un blocco dentro un altro blocco! TRICK INCREDIBILE
       text-align: left;
       font-size: 1.3rem;
       padding: 1.3rem;
@@ -423,34 +391,29 @@
       padding: 2rem;
     }
   }
-
-  //Back side styling
-
+  // Back side styling
   @include respond(tab-land) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-
     &__side {
       height: auto;
       position: relative;
       box-shadow: none;
     }
-
     &__details {
       padding: 1rem 3rem;
     }
   }
 }
-
 .card--relax {
-  //Functionality
+  // Functionality
   perspective: 150rem;
-  -moz-perspective: 150rem; //per farlo lavorare anche in firefox
+  -moz-perspective: 150rem;
+  // per farlo lavorare anche in firefox
   position: relative;
   height: 50rem;
-
   &__side {
     height: 50rem;
     transition: all 0.8s ease;
@@ -458,22 +421,20 @@
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: hidden; //nasconde il dietro di un elemento!
+    backface-visibility: hidden;
+    // nasconde il dietro di un elemento!
     border-radius: 3px;
-    overflow: hidden; //perché c'ho messo una foto!
+    overflow: hidden; // perché c'ho messo una foto!
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-
     &--front {
       background-color: $color-white;
     }
   }
-
-  &:hover &__side--front {
+  /* &:hover &__side--front {
     transform: scale(1.05) translateY(-0.5rem);
     //dobbiamo definire la prospettiva sul parente!
-  }
-
-  //Front side styling
+  } */
+  // Front side styling
   &__picture {
     background-size: cover;
     background-position: center;
@@ -485,10 +446,9 @@
       100% 0,
       100% 85%,
       0 100%
-    ); //per farlo lavorare sui browser
+    ); // per farlo lavorare sui browser
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-
     &--1 {
       background-image: linear-gradient(
           to right bottom,
@@ -497,7 +457,6 @@
         ),
         url("/images/sport-frontale-web.jpg");
     }
-
     &--2 {
       background-position: bottom;
       background-image: linear-gradient(
@@ -506,9 +465,8 @@
           rgba($color-tertiary-dark, 0.5)
         ),
         url("/images/massaggio-olistico-web.jpg");
-      background-blend-mode: soft-light; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
+      background-blend-mode: soft-light; // non funziona in explorer... cmq pazzesco! provare tutti i filtri!
     }
-
     &--3 {
       background-image: linear-gradient(
           to right bottom,
@@ -516,10 +474,9 @@
           rgba($color-tertiary-dark, 0.5)
         ),
         url("/images/massaggio.jpg");
-      background-blend-mode: overlay; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
+      background-blend-mode: overlay; // non funziona in explorer... cmq pazzesco! provare tutti i filtri!
     }
   }
-
   &__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -532,10 +489,9 @@
     width: 75%;
     z-index: 100;
   }
-
   &__heading-span {
     padding: 1rem 1.5rem;
-    /*             -webkit-box-decoration-break: clone;
+    /* -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
         &--1{
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85),rgba($color-secondary-dark, .85))
@@ -549,37 +505,31 @@
             background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85),rgba($color-primary-dark, .85))
         } */
   }
-
   &__details {
     p {
       width: 80%;
-      margin: 0 auto; //per centrare un blocco dentro un altro blocco! TRICK INCREDIBILE
+      margin: 0 auto; // per centrare un blocco dentro un altro blocco! TRICK INCREDIBILE
       text-align: left;
       font-size: 1.3rem;
       padding: 1.3rem;
     }
   }
-
-  //Back side styling
-
+  // Back side styling
   @include respond(tab-land) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-
     &__side {
       height: auto;
       position: relative;
       box-shadow: none;
     }
-
     &__details {
       padding: 1rem 3rem;
     }
   }
 }
-
 .card--compocorporea {
   height: 80rem;
   @include respond(tab-land) {

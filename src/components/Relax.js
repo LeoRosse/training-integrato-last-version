@@ -9,7 +9,7 @@ const relax = () => (
         <header className="header__relax">
             <div className="header__text-box">
                 <h1 className="heading-primary">
-                    <span className="heading-primary--main">Relax</span>
+                    <span className="heading-primary--main">Recupero</span>
                 </h1>
 
                 {/*                 <Link className="btn btn--white btn--animated" to="/dashboard-public">Entra</Link>

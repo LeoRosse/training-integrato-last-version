@@ -230,7 +230,8 @@ body {
     margin-left: -1rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem;
-    padding-left: 1.5rem; }
+    padding-left: 1.5rem;
+    text-align: center; }
 
 .u-center-text {
   text-align: center !important; }
@@ -440,7 +441,7 @@ body {
   -moz-perspective: 150rem;
   position: relative;
   height: 50rem;
-  /*     &:hover &__side--front {
+  /* &:hover &__side--front {
         transform: rotateY(-180deg); //dobbiamo definire la prospettiva sul parente!
     }
 
@@ -571,7 +572,14 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 50rem;
+  /* &:hover &__side--front {
+    transform: scale(1.2) translateY(-0.5rem);
+    //dobbiamo definire la prospettiva sul parente!
+  }
+  &:hover &--compocorporea {
+    transform: none;
+  } */ }
   .card--sport__salute {
     height: 60rem; }
   .card--sport__side {
@@ -596,10 +604,6 @@ body {
     @media (max-width: 75em) {
       .card--sport--compocorporea {
         height: auto; } }
-  .card--sport:hover .card--sport__side--front {
-    transform: scale(1.2) translateY(-0.5rem); }
-  .card--sport:hover .card--sport--compocorporea {
-    transform: none; }
   .card--sport__picture {
     background-size: cover;
     height: 23rem;
@@ -620,15 +624,16 @@ body {
       background-image: url("/images/recupero-funzionale-arancio.jpg"); }
     .card--sport__picture--4 {
       background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("/images/alimentazione-consapevole-3.jpg");
-      background-blend-mode: multiply; }
+      background-blend-mode: hard-light; }
     .card--sport__picture--5 {
-      background-image: url("/images/training integrato_verde.jpg"); }
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("/images/training_integrato-web.jpg");
+      background-blend-mode: hard-light; }
     .card--sport__picture--6 {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("/images/bia-card-1.jpg"); }
     .card--sport__picture--7 {
       background-image: linear-gradient(to right bottom, #df57bc, #a03e99), url("/images/composizionecorporea.jpg"); }
     .card--sport__picture--8 {
-      background-image: linear-gradient(to right bottom, #df57bc, #a03e99), url("/images/ppg_buono.jpg"); }
+      background-image: linear-gradient(to right bottom, #df57bc, #a03e99), url("/images/ppg_ok.jpg"); }
   .card--sport__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -644,7 +649,7 @@ body {
       color: black; }
   .card--sport__heading-span {
     padding: 1rem 1.5rem;
-    /*             -webkit-box-decoration-break: clone;
+    /* -webkit-box-decoration-break: clone;
             box-decoration-break: clone;
             &--1{
                 background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85),rgba($color-secondary-dark, .85))
@@ -683,7 +688,11 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 50rem;
+  /* &:hover &__side--front {
+    transform: scale(1.05) translateY(-0.5rem);
+    //dobbiamo definire la prospettiva sul parente!
+  } */ }
   .card--relax__side {
     height: 50rem;
     transition: all 0.8s ease;
@@ -697,8 +706,6 @@ body {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card--relax__side--front {
       background-color: #fff; }
-  .card--relax:hover .card--relax__side--front {
-    transform: scale(1.05) translateY(-0.5rem); }
   .card--relax__picture {
     background-size: cover;
     background-position: center;
@@ -729,7 +736,7 @@ body {
     z-index: 100; }
   .card--relax__heading-span {
     padding: 1rem 1.5rem;
-    /*             -webkit-box-decoration-break: clone;
+    /* -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
         &--1{
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85),rgba($color-secondary-dark, .85))
@@ -904,15 +911,14 @@ body {
     margin: 0 auto;
     border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.6);
-    padding-left: 9rem;
-    padding: 6rem;
+    padding: 11rem;
     transform: skewX(-12deg);
     font-size: 1.6rem; }
     @media (max-width: 1350px) {
       .info__content {
         width: 100%;
         padding: 4rem;
-        padding-left: 7rem;
+        padding-left: 5rem;
         transform: skewX(0); } }
     .info__content__shape {
       height: 20rem;
@@ -926,7 +932,16 @@ body {
       position: relative; }
       @media (max-width: 1350px) {
         .info__content__shape {
-          transform: translateX(-3rem) skewX(0); } }
+          transform: translateX(-3rem) skewX(0);
+          float: inherit;
+          margin-left: 8.5rem;
+          margin-bottom: 2rem; } }
+      @media (max-width: 321px) {
+        .info__content__shape {
+          transform: translateX(-3rem) skewX(0);
+          float: inherit;
+          margin-left: 4.5rem;
+          margin-bottom: 2rem; } }
     .info__content__img {
       height: 100%;
       transform: translateX(-1rem);
@@ -1574,7 +1589,7 @@ body {
       margin-left: 8rem; }
       @media (max-width: 37.5em) {
         .footer__logo--box {
-          margin-left: 10rem; } }
+          margin-left: 8.7rem; } }
     .footer__logo__cnm {
       height: 7rem; }
     .footer__logo__unifi {
@@ -1620,6 +1635,8 @@ body {
         width: 100%;
         margin-left: 0;
         text-align: center; } }
+    .footer__copyright--noborder {
+      border-top: none; }
 
 .section-about {
   background-color: #f7f7f7;

@@ -28,7 +28,7 @@ const AppRouter = () => (
                 <PublicRoute path="/chi-sono" component={InfoPage} />
                 <PublicRoute path="/login" component={LoginPage} exact={true} />
                 <PublicRoute path="/sport" component={Sport} />
-                <PublicRoute path="/relax" component={Relax} />
+                <PublicRoute path="/recupero" component={Relax} />
                 <PublicRoute path="/salute" component={Salute} />
                 <PublicRoute path="/composizionecorporea" component={ComposizioneCorporea} />
                 <PublicRoute path="/contact" component={ContactPage} />

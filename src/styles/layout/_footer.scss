@@ -33,7 +33,7 @@
             display: inline;
             margin-left:8rem;
             @include respond(phone){
-                margin-left:10rem;
+                margin-left:8.7rem;
             }
         }
         &__cnm{
@@ -107,6 +107,9 @@
             width: 100%;
             margin-left:0;
             text-align: center;
+        }
+        &--noborder{
+            border-top:none;
         }
     }
 }
