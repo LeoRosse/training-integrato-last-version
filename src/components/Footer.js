@@ -38,7 +38,7 @@ const Footer = () => (
                 Built by <a href="" className="footer__link"> Leonardo Rosseti</a>,<br className="mobilesOnly" /> Design by  <a href="http://codingheroes.io/resources/" className="footer__link">Jonas Schmedtmann</a>
             </p>
             <p className="footer__copyright footer__copyright--noborder">
-                <a href="#" className="footer__link">Copyright © Training Integrato 2018</a> <br className="mobilesOnly" />All rights reserved.
+            Copyright<a href="#" className="footer__link"> © Training Integrato 2018</a> <br className="mobilesOnly" />All rights reserved.
             </p>
         </div>
     </div>

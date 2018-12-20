@@ -26,8 +26,8 @@ const Navigation = () => (
                         Sport</Link>
                 </li>
                 <li>
-                    <Link to="/recupero" className="navigation__link">
-                        Recupero</Link>
+                    <Link to="/riequilibrio" className="navigation__link">
+                        Riequilibrio</Link>
                 </li>
                 <li>
                     <Link to="/salute" className="navigation__link">

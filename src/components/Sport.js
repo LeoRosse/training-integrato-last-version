@@ -37,7 +37,7 @@ const sport = () => (
                             </h4>
                             <div className="card--sport__details">
                                 <p>
-                                    Sedute di allenamento individuali o a piccoli gruppi, eseguite
+                                    Allenamenti individuali o a piccoli gruppi, eseguiti
                                     sotto la supervisione del Trainer.
                                     Ogni singolo movimento viene curato dal punto di vista della
                                     postura e della respirazione.
@@ -63,7 +63,7 @@ const sport = () => (
                             </h4>
                             <div className="card--sport__details">
                                 <p>
-                                    Sedute di preparazione allo sport sia singolo che di squadra,
+                                    Preparazione allo sport sia singolo che di squadra,
                                     test fisici, pianificazione dei cicli di carico / scarico,
                                     educazione al gesto tecnico, riequilibrio muscolare e
                                     prevenzione dagli infortuni.
@@ -87,7 +87,7 @@ const sport = () => (
                             </h4>
                             <div className="card--sport__details">
                                 <p>
-                                    Sedute di rimuscolazione post infortunio e recupero delle
+                                    Rimuscolazione post infortunio e recupero delle
                                     capacità condizionali per la ripresa dell’ attività fisica e atletica.
                                     Viene strutturato un allenamento specifico a corpo libero e con
                                     l’ uso di sovraccarichi, coadiuvato da esercizi propriocettivi per

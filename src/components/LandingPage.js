@@ -93,7 +93,7 @@ class LandingPage extends Component {
                                 eventuali squilibri alimentari e sviluppare un programma
                                 di attività fisica mirata.
         </p>*/}
-                            <p className="paragraph"><i>Il metodo Training Integrato partendo da un accurato studio corporeo ci permette di pianificare in maniera approfondita la strategia di intervento da
+                            <p className="paragraph"><i>Il metodo Training Integrato inizia da un accurato studio corporeo e permette di pianificare in maniera approfondita la strategia di intervento da
                             adottare per raggiungere uno stile di vita che esprima le proprie potenzialità a 360 gradi.</i></p>
                             <Link to="/salute" className="buttonText buttonPopup">Scopri di più &rarr;</Link>
                         </div>
@@ -163,6 +163,7 @@ class LandingPage extends Component {
                                         <Link to="/sport" className="card__side card__side--link"><div className="card__picture card__picture--1">
                                             &nbsp;
                                 </div>
+                                
                                             <h4 className="card__heading card__heading--sport">
                                                 <span className="card__heading-span">
                                                     Sport
@@ -189,12 +190,12 @@ class LandingPage extends Component {
                             <div className="col-1-of-3">
                                 <div className="card">
                                     <div className="card__side card__side--front">
-                                        <Link to="/relax" className="card__side card__side--link"><div className="card__picture card__picture--2">
+                                        <Link to="/riequilibrio" className="card__side card__side--link"><div className="card__picture card__picture--2">
                                             &nbsp;
                                 </div>
                                             <h4 className="card__heading card__heading--recupero">
                                                 <span className="card__heading-span">
-                                                    Recupero
+                                                    Riequilibrio
                                     </span>
                                             </h4>
                                             <div className="card__details">
@@ -305,7 +306,7 @@ class LandingPage extends Component {
                                 Built by <a href="" className="footer__link"> Leonardo Rosseti</a>,<br className="mobilesOnly" /> Design by  <a href="http://codingheroes.io/resources/" className="footer__link">Jonas Schmedtmann</a>
                             </p>
                             <p className="footer__copyright footer__copyright--noborder">
-                                <a href="#" className="footer__link">Copyright © Training Integrato 2018</a> All rights reserved.
+                            Copyright<a href="#" className="footer__link"> © Training Integrato 2018</a>  <br className="mobilesOnly" />All rights reserved.
                             </p>
                         </div>
                     </div>

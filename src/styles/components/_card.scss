@@ -117,7 +117,7 @@
     &--sport{
       @include respond(tab-port) {
         top: -10rem;
-        right: -28rem;
+        right: -22rem;
       }
       @media(min-width:900px )and (max-width:1200px){
         top: -10rem;
@@ -127,7 +127,7 @@
     &--recupero{
       @include respond(tab-port) {
         top: -10rem;
-        right: -23rem;
+        right: -16rem;
       }
       @media(min-width:900px )and (max-width:1200px){
         top: -10rem;
