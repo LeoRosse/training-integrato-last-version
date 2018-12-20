@@ -102,9 +102,9 @@ class LandingPage extends Component {
                     <section className="section-features">
                         <div className="row">
                             <div className="feature-box">
-                                <h3 className="heading-tertiary u-margin-bottom-small" style={{fontSize:'2rem'}}>Studio Corporeo</h3>
+                                <h3 className="heading-tertiary u-margin-bottom-small" style={{ fontSize: '2rem' }}>Studio Corporeo</h3>
                                 <span className="feature-box__text">
-                                    Effettuare lo studio analitico del corpo nelle sue componenti regolatorie e metaboliche è di primaria importanza e ci 
+                                    Effettuare lo studio analitico del corpo nelle sue componenti regolatorie e metaboliche è di primaria importanza e ci
                                     aiuta a capire in modo scientifico come cambiano nel tempo, per avere chiare indicazioni su come raggiungere i propri obbiettivi
                                     di salute e di performance.
 {/*                                <br />
@@ -117,8 +117,8 @@ class LandingPage extends Component {
                                         <li>analizzare lo stato di stress cellulare</li>
 </ul>*/}
                                 </span>
-                                <br/>
-                                <br/>
+                                <br />
+                                <br />
                                 <a href="/composizionecorporea" className="btn-text">Scopri di più &rarr;</a>
 
                             </div>
@@ -138,11 +138,8 @@ class LandingPage extends Component {
                                         <div className="card__picture card__picture--3">
                                             &nbsp;
                                 </div>
-                                        <h4 className="card__heading">
-                                            <span className="card__heading-span">
-                                                Salute
-                                    </span>
-                                        </h4>
+                                        <h4 className="card__heading__salute"><span>Salute</span></h4>
+
                                         <div className="card__details">
                                             <ul>
                                                 <li>Training Integrato</li>
@@ -166,7 +163,7 @@ class LandingPage extends Component {
                                         <Link to="/sport" className="card__side card__side--link"><div className="card__picture card__picture--1">
                                             &nbsp;
                                 </div>
-                                            <h4 className="card__heading">
+                                            <h4 className="card__heading card__heading--sport">
                                                 <span className="card__heading-span">
                                                     Sport
                                     </span>
@@ -195,7 +192,7 @@ class LandingPage extends Component {
                                         <Link to="/relax" className="card__side card__side--link"><div className="card__picture card__picture--2">
                                             &nbsp;
                                 </div>
-                                            <h4 className="card__heading">
+                                            <h4 className="card__heading card__heading--recupero">
                                                 <span className="card__heading-span">
                                                     Recupero
                                     </span>
