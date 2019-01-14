@@ -1,10 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import numeral from 'numeral';
 import selectArticles from '../selectors/articles';
 
-export const ArticlesSummary = ({ articleCount, articlesTotal }) => {
+export const ArticlesSummary = ({ articleCount }) => {
     const articleWord = articleCount === 1 ? 'Articolo' : 'Articoli';
     return (
         <div className="content-container-summary">

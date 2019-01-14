@@ -19,7 +19,7 @@ const articlesReducer = (state = articlesReducerDefaultState, action) => {
                         ...action.updates // voglio sovrascrivere tutto così, quello che gli passo sotto
                     }
                 }
-                else { return article };
+                return article;
             });
         case 'SET_ARTICLES':
             return action.articles;

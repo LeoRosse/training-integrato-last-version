@@ -284,7 +284,7 @@ class LandingPage extends Component {
                             <div className="footer__copyright">
                                 <ul className="footer__list">
                                     <li className="footer__item">
-                                        <a href="#" className="footer__link">Partner</a>
+                                    <Link to="/chi-sono" className="footer__link">Partner</Link>
                                     </li>
                                     <li className="footer__item">
                                         <Link to="/contact" className="footer__link">
@@ -303,10 +303,10 @@ class LandingPage extends Component {
                                 <a href="https://web.uniroma2.it/"><img src="images/logo-TorVergata.png" alt="CNM Logo" className="footer__logo__vergata" /></a>
                             </div>
                             <p className="footer__copyright">
-                                Built by <a href="" className="footer__link"> Leonardo Rosseti</a>,<br className="mobilesOnly" /> Design by  <a href="http://codingheroes.io/resources/" className="footer__link">Jonas Schmedtmann</a>
+                                Built by <a href="https://www.facebook.com/l.rosseti" className="footer__link"> Leonardo Rosseti</a>,<br className="mobilesOnly" /> Design by  <a href="http://codingheroes.io/resources/" className="footer__link">Jonas Schmedtmann</a>
                             </p>
                             <p className="footer__copyright footer__copyright--noborder">
-                            Copyright<a href="#" className="footer__link"> © Training Integrato 2018</a>  <br className="mobilesOnly" />All rights reserved.
+                            Copyright<a href="http://www.trainingintegrato.com/" className="footer__link"> © Training Integrato 2018</a>  <br className="mobilesOnly" />All rights reserved.
                             </p>
                         </div>
                     </div>

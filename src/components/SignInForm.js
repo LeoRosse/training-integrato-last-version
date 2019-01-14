@@ -1,5 +1,4 @@
 import React from 'react';
-import { firebase } from '../firebase/firebase';
 
 export default class SignInForm extends React.Component {
     constructor(props) {
