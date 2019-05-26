@@ -646,7 +646,7 @@ body {
       .card--sport__picture__compCorp--2 {
         background-blend-mode: hard-light; }
     .card--sport__picture--1 {
-      background-image: url("/images/sport_arancio_3.jpg"); }
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/images/sport-frontale-web.jpg"); }
     .card--sport__picture--2 {
       background-image: url("/images/preparazione_atletica_arancio.jpg"); }
     .card--sport__picture--3 {
@@ -753,7 +753,7 @@ body {
       background-image: linear-gradient(to right bottom, rgba(223, 87, 188, 0.5), rgba(160, 62, 153, 0.5)), url("/images/massaggio-olistico-web.jpg");
       background-blend-mode: soft-light; }
     .card--relax__picture--3 {
-      background-image: linear-gradient(to right bottom, rgba(223, 87, 188, 0.5), rgba(160, 62, 153, 0.5)), url("/images/massaggio.jpg");
+      background-image: linear-gradient(to right bottom, rgba(223, 87, 188, 0.5), rgba(160, 62, 153, 0.5)), url("/png/massaggio.jpg");
       background-blend-mode: overlay; }
   .card--relax__heading {
     font-size: 2.8rem;
@@ -1369,7 +1369,7 @@ body {
 
 .header__sport {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)), url("/images/sport-frontale-web.jpg");
+  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.5), rgba(255, 119, 48, 0.5)), url("/png/dani2.png");
   background-attachment: fixed;
   background-position: center -5px;
   background-repeat: no-repeat;
