@@ -144,10 +144,10 @@
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba($color-tertiary-light, 0.8),
-      rgba($color-tertiary-dark, 0.8)
+      rgba($color-violet-medium, 0.8),
+      rgba($color-violet-dark, 0.8)
     ),
-    url("/images/relax-frontale-web.jpg");
+    url("/png/riequilibrio.png");
   //prova parallax
   background-attachment: fixed;
   background-position: center -5px;
@@ -181,7 +181,7 @@
       rgba($color-primary-light, 0.8),
       rgba($color-primary-dark, 0.8)
     ),
-    url("/images/salute-frontale-web.jpg");
+    url("/png/salute.png");
   //prova parallax
   background-attachment: fixed;
   background-position: center -5px;
@@ -210,12 +210,7 @@
 
 .header__bia {
   height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-violet-medium, 0.8),
-      rgba($color-violet-dark, 0.8)
-    ),
-    url("/images/ppg.jpg");
+  background-image: url("/png/olistico.png");
   //prova parallax
   background-attachment: fixed;
   background-position: center -5px;

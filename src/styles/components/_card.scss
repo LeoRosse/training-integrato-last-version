@@ -85,18 +85,20 @@
     &--2 {
       background-image: linear-gradient(
           to right bottom,
-          rgba($color-tertiary-light, 0.8),
-          rgba($color-tertiary-dark, 0.8)
+          rgba($color-violet-medium, 0.8),
+          rgba($color-violet-dark, 0.8)
         ),
-        url("/images/relax-frontale-web.jpg");
+        url("/png/riequilibrio.png");
+        background-position: center;
+
     }
     &--3 {
       background-image: linear-gradient(
-          to right bottom,
-          $color-primary-light,
-          $color-primary-dark
-        ),
-        url("/images/salute-frontale-web.jpg");
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)
+      ),url("/png/salute.png");
+      background-position: right;
     }
   }
   &__heading {
@@ -363,20 +365,10 @@
         url("/images/bia-card-1.jpg");
     }
     &--7 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-violet-medium,
-          $color-violet-dark
-        ),
-        url("/images/composizionecorporea.jpg");
+      background-image: url("/png/bia.png");
     }
     &--8 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-violet-medium,
-          $color-violet-dark
-        ),
-        url("/images/ppg_ok.jpg");
+      background-image:  url("/png/ppg.png");
     }
   }
   &__heading {
@@ -401,14 +393,17 @@
             &--1{
                 background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85),rgba($color-secondary-dark, .85))
             }
-    
+    */
+     /*
             &--2{
                 background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85),rgba($color-tertiary-dark, .85))
             }
-    
+            */ 
+     /*
             &--3{
                 background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85),rgba($color-primary-dark, .85))
-            } */
+            } 
+            */
   }
   &__details {
     p,
@@ -493,18 +488,18 @@
       background-position: bottom;
       background-image: linear-gradient(
           to right bottom,
-          rgba($color-tertiary-light, 0.5),
-          rgba($color-tertiary-dark, 0.5)
+          rgba($color-violet-medium, 0.5),
+          rgba($color-violet-dark, 0.5)
         ),
         url("/images/massaggio-olistico-web.jpg");
       background-blend-mode: soft-light; // non funziona in explorer... cmq pazzesco! provare tutti i filtri!
     }
     &--3 {
       background-image: linear-gradient(
-          to right bottom,
-          rgba($color-tertiary-light, 0.5),
-          rgba($color-tertiary-dark, 0.5)
-        ),
+        to right bottom,
+        rgba($color-violet-medium, 0.5),
+        rgba($color-violet-dark, 0.5)
+      ),
         url("/images/massaggio.jpg");
       background-blend-mode: overlay; // non funziona in explorer... cmq pazzesco! provare tutti i filtri!
     }

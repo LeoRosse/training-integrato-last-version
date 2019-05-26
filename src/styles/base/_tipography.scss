@@ -112,8 +112,8 @@ body {
   display: inline-block;
   background-image: linear-gradient(
     to right,
-    $color-violet-medium,
-    $color-violet-dark
+    $color-tertiary-light,
+    $color-tertiary-dark
   );
 
   -webkit-background-clip: text; // così il background è visibile solo dove è scritto il testo! sarà solo sui caratteri!
@@ -139,8 +139,8 @@ body {
   display: inline-block;
   background-image: linear-gradient(
     to right,
-    rgba($color-tertiary-light, 0.8),
-    rgba($color-tertiary-dark, 0.8)
+    rgba($color-violet-medium, 0.8),
+    rgba($color-violet-dark, 0.8)
   );
   -webkit-background-clip: text; // così il background è visibile solo dove è scritto il testo! sarà solo sui caratteri!
   color: transparent;

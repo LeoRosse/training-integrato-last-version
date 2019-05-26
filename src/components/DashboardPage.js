@@ -6,7 +6,6 @@ import ArticleListFilters from './ArticleListFilters';
 const DashboardPage = () => (
     <div>
         <ArticlesSummary />
-        <ArticleListFilters />
         <ArticleList />
     </div>
 );
