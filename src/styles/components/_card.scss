@@ -34,8 +34,8 @@
       &-2 {
         background-image: linear-gradient(
           to right bottom,
-          rgba($color-tertiary-light, 0.8),
-          rgba($color-tertiary-dark, 0.8)
+          rgba($color-violet-medium, 0.8),
+          rgba($color-violet-dark, 0.8)
         );
       }
       &-3 {
@@ -58,7 +58,6 @@
     &:hover &__side--back {
         transform: rotateY(0); //dobbiamo definire la prospettiva sul parente!
     } */
-
   // Front side styling
   &__picture {
     background-size: cover;
@@ -77,10 +76,11 @@
     &--1 {
       background-image: linear-gradient(
           to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
+          rgba($color-secondary-light, 0.5),
+          rgba($color-secondary-dark, 0.5)
         ),
-        url("/images/sport-frontale-web.jpg");
+        url("/png/dani2.png");
+      background-position: center;
     }
     &--2 {
       background-image: linear-gradient(
@@ -89,15 +89,15 @@
           rgba($color-violet-dark, 0.8)
         ),
         url("/png/riequilibrio.png");
-        background-position: center;
-
+      background-position: center;
     }
     &--3 {
       background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)
-      ),url("/png/salute.png");
+          to right bottom,
+          rgba($color-primary-light, 0.8),
+          rgba($color-primary-dark, 0.8)
+        ),
+        url("/png/salute.png");
       background-position: right;
     }
   }
@@ -116,22 +116,22 @@
       top: -10rem;
       right: -22rem;
     }
-    &--sport{
+    &--sport {
       @include respond(tab-port) {
         top: -10rem;
         right: -22rem;
       }
-      @media(min-width:900px )and (max-width:1200px){
+      @media (min-width: 900px) and (max-width: 1200px) {
         top: -10rem;
         right: -31rem;
-    };
+      }
     }
-    &--recupero{
+    &--recupero {
       @include respond(tab-port) {
         top: -10rem;
         right: -16rem;
       }
-      @media(min-width:900px )and (max-width:1200px){
+      @media (min-width: 900px) and (max-width: 1200px) {
         top: -10rem;
         right: -25rem;
       }
@@ -179,7 +179,8 @@
     ul {
       list-style: none;
       width: 80%;
-      margin: 0 auto; // per centrare un blocco dentro un altro blocco! TRICK INCREDIBILE
+      margin: 0 auto;
+      // per centrare un blocco dentro un altro blocco! TRICK INCREDIBILE
       li {
         text-align: center;
         font-size: 1.5rem;
@@ -191,7 +192,6 @@
     }
   }
   // Back side styling
-
   &__cta {
     position: absolute;
     top: 50%;
@@ -202,7 +202,6 @@
   }
   &__price-box {
     text-align: center;
-
     color: $color-white;
     margin-bottom: 8rem;
   }
@@ -210,7 +209,6 @@
     font-size: 1.4rem;
     text-transform: uppercase;
   }
-
   &__price-value {
     font-size: 6rem;
     font-weight: 100;
@@ -257,7 +255,8 @@
 .card--sport {
   // Functionality
   perspective: 150rem;
-  -moz-perspective: 150rem; // per farlo lavorare anche in firefox
+  -moz-perspective: 150rem;
+  // per farlo lavorare anche in firefox
   position: relative;
   height: 50rem;
   &__salute {
@@ -270,11 +269,10 @@
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: hidden;
-
-    // nasconde il dietro di un elemento!
+    backface-visibility: hidden; // nasconde il dietro di un elemento!
     border-radius: 3px;
-    overflow: hidden; // perché c'ho messo una foto!
+    overflow: hidden;
+    // perché c'ho messo una foto!
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
     &--front {
       background-color: $color-white;
@@ -312,7 +310,8 @@
     &__compCorp {
       background-blend-mode: color; // non funziona in explorer... cmq pazzesco! provare tutti i filtri!
       &--2 {
-        background-blend-mode: hard-light; // non funziona in explorer... cmq pazzesco! provare tutti i filtri!
+        background-blend-mode: hard-light;
+        // non funziona in explorer... cmq pazzesco! provare tutti i filtri!
       }
     }
     &--1 {
@@ -320,7 +319,8 @@
           to right bottom,
           $color-secondary-light,
           $color-secondary-dark
-        ),  url("/images/sport-frontale-web.jpg");
+        ),
+        url("/images/sport-frontale-web.jpg");
     }
     &--2 {
       background-image: /* linear-gradient(
@@ -353,8 +353,7 @@
           $color-primary-dark
         ),
         url("/images/training_integrato-web.jpg");
-        background-blend-mode: hard-light;
-
+      background-blend-mode: hard-light;
     }
     &--6 {
       background-image: linear-gradient(
@@ -368,7 +367,7 @@
       background-image: url("/png/bia.png");
     }
     &--8 {
-      background-image:  url("/png/ppg.png");
+      background-image: url("/png/ppg.png");
     }
   }
   &__heading {
@@ -392,18 +391,13 @@
             box-decoration-break: clone;
             &--1{
                 background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85),rgba($color-secondary-dark, .85))
-            }
-    */
-     /*
-            &--2{
+            } */
+    /* &--2{
                 background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85),rgba($color-tertiary-dark, .85))
-            }
-            */ 
-     /*
-            &--3{
+            } */
+    /* &--3{
                 background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85),rgba($color-primary-dark, .85))
-            } 
-            */
+            } */
   }
   &__details {
     p,
@@ -465,8 +459,7 @@
   &__picture {
     background-size: cover;
     background-position: center;
-    height: 23rem;
-    // background-blend-mode: screen; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
+    height: 23rem; // background-blend-mode: screen; //non funziona in explorer... cmq pazzesco! provare tutti i filtri!
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     -webkit-clip-path: polygon(
       0 0,
@@ -492,14 +485,15 @@
           rgba($color-violet-dark, 0.5)
         ),
         url("/images/massaggio-olistico-web.jpg");
-      background-blend-mode: soft-light; // non funziona in explorer... cmq pazzesco! provare tutti i filtri!
+      background-blend-mode: soft-light;
+      // non funziona in explorer... cmq pazzesco! provare tutti i filtri!
     }
     &--3 {
       background-image: linear-gradient(
-        to right bottom,
-        rgba($color-violet-medium, 0.5),
-        rgba($color-violet-dark, 0.5)
-      ),
+          to right bottom,
+          rgba($color-violet-medium, 0.5),
+          rgba($color-violet-dark, 0.5)
+        ),
         url("/png/massaggio.jpg");
       background-blend-mode: overlay; // non funziona in explorer... cmq pazzesco! provare tutti i filtri!
     }

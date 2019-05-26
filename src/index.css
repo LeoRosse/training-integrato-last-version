@@ -466,7 +466,7 @@ body {
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)); }
+        background-image: linear-gradient(to right bottom, rgba(223, 87, 188, 0.8), rgba(160, 62, 153, 0.8)); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
     .card__side--link {
@@ -481,7 +481,8 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/images/sport-frontale-web.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.5), rgba(255, 119, 48, 0.5)), url("/png/dani2.png");
+      background-position: center; }
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, rgba(223, 87, 188, 0.8), rgba(160, 62, 153, 0.8)), url("/png/riequilibrio.png");
       background-position: center; }
@@ -682,18 +683,13 @@ body {
             box-decoration-break: clone;
             &--1{
                 background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85),rgba($color-secondary-dark, .85))
-            }
-    */
-    /*
-            &--2{
+            } */
+    /* &--2{
                 background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85),rgba($color-tertiary-dark, .85))
-            }
-            */
-    /*
-            &--3{
+            } */
+    /* &--3{
                 background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85),rgba($color-primary-dark, .85))
-            } 
-            */ }
+            } */ }
   .card--sport__details p,
   .card--sport__details ul {
     width: 80%;
