@@ -151,7 +151,7 @@ class LandingPage extends Component {
                 </span>
                 <br />
                 <br />
-                <a href="/composizionecorporea" className="btn-text">
+                <a href="/studiocorporeo" className="btn-text">
                   Scopri di più &rarr;
                 </a>
               </div>
