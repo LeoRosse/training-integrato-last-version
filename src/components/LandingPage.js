@@ -356,7 +356,7 @@ class LandingPage extends Component {
                 </ul>
               </div>
               <p className="footer__copyright footer__copyright--noborder">
-                Ricevo presso:
+                Si riceve presso:
                 <a
                   href="https://www.google.com/maps/place/Fisioner+-+Studio+di+Fisioterapia+e+Riabilitazione/@43.7752199,11.2099584,17z/data=!3m1!4b1!4m5!3m4!1s0x132a56d47364f9ed:0x7e4e0c795e4f1e5e!8m2!3d43.775216!4d11.2121471"
                   className="footer__link"
