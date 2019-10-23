@@ -273,7 +273,7 @@ body {
 .icon {
   font-size: 7rem;
   color: #eee;
-  margin-bottom: .7rem;
+  margin-bottom: 0.7rem;
   margin-right: 2rem; }
 
 .buttonPopup {
@@ -289,6 +289,10 @@ body {
 @media (max-width: 750px) {
   .desktopOnly {
     display: none !important; } }
+
+.marker {
+  color: #55c57a;
+  margin-left: 10px; }
 
 .content-container-summary {
   background: #364051;

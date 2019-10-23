@@ -355,7 +355,24 @@ class LandingPage extends Component {
                   </li>
                 </ul>
               </div>
+              <p className="footer__copyright footer__copyright--noborder">
+                Ricevo presso:
+                <a
+                  href="https://www.google.com/maps/place/Fisioner+-+Studio+di+Fisioterapia+e+Riabilitazione/@43.7752199,11.2099584,17z/data=!3m1!4b1!4m5!3m4!1s0x132a56d47364f9ed:0x7e4e0c795e4f1e5e!8m2!3d43.775216!4d11.2121471"
+                  className="footer__link"
+                >
+                  <i class="fas fa-map-marker marker"></i> Fisioner
+                </a>
+                <br className="mobilesOnly" />
+                <a
+                  href="https://www.google.com/maps/place/C.M.O.+Centro+Medicina+Osteopatica+di+Andrea+Corti+e+Nicola+Barsotti/@43.7575831,11.292416,17z/data=!3m1!4b1!4m5!3m4!1s0x132a538251b085a1:0x66c2abfc38649820!8m2!3d43.7575792!4d11.2946047"
+                  className="footer__link"
+                >
+                  <i class="fas fa-map-marker marker"></i> Cmo Firenze
+                </a>
+              </p>
             </div>
+
             <div className="col-1-of-2">
               <div className="footer__logo--box">
                 <a href="http://www.cnmitalia.com/">
